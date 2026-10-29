@@ -1,21 +1,13 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/410-v8360.jpg?v=1789454340185" group-title="NBA",NBA | 快船 vs 湖人 | 51-63 | 中文解说6 | 中文解说6
-https://live01-cn-ali.xdbrk.com/live/73287324_tsc.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/410-v8360.jpg?v=1789454340185" group-title="NBA",NBA | 快船 vs 湖人 | 51-63 | 中文解说6 | 直播23
-https://hello.ooo0ooo.top/live/3931585.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v115.jpg?v=1789454340185" group-title="美职业",美职业 | 温哥华白浪 vs 圣地亚哥FC | 3-0 | 直播4 | 直播4
-https://hello.ooo0ooo.top/live/4460362.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v115.jpg?v=1789454340185" group-title="美职业",美职业 | 温哥华白浪 vs 圣地亚哥FC | 3-0 | 直播4 | 原声5
-https://pul-tenm.gkykp.com/live/hd-en-1-4460362.m3u8?txSecret=df6b4b8a1c60d35f84c646db89900c3c&txTime=6AE41898
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/24-v101.jpg?v=1789454340185" group-title="美职业",美职业 | 圣何塞地震 vs 科罗拉多急流 | 1-1 | 直播24 | 直播24
-https://hello.ooo0ooo.top/live/4460359.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/24-v101.jpg?v=1789454340185" group-title="美职业",美职业 | 圣何塞地震 vs 科罗拉多急流 | 1-1 | 直播24 | 原声2
-https://pul-tenm.gkykp.com/live/hd-en-1-4460359.m3u8?txSecret=ca60a7377ba6f4f14c4a7d98e2ebd99f&txTime=6AE41898
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/5-v148.jpg?v=1789454340185" group-title="墨西超",墨西超 | 墨西哥美洲 vs 蒂华纳 | 1-1 | 直播5 | 直播5
-https://hello.ooo0ooo.top/live/4553853.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/5-v148.jpg?v=1789454340185" group-title="墨西超",墨西超 | 墨西哥美洲 vs 蒂华纳 | 1-1 | 直播5 | 原声7
-https://pul-tenm.gkykp.com/live/hd-en-1-4553853.m3u8?txSecret=a39aec07bd9c1ac44e33bb0f38c6e96d&txTime=6AE41898
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/2-v114.jpg?v=1789454340185" group-title="美职业",美职业 | 西雅图海湾人 vs 休斯敦迪纳摩 | 0-1 | 直播2 | 直播2
-https://hello.ooo0ooo.top/live/4460361.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/2-v114.jpg?v=1789454340185" group-title="美职业",美职业 | 西雅图海湾人 vs 休斯敦迪纳摩 | 0-1 | 直播2 | 原声4
-https://pul-tenm.gkykp.com/live/hd-en-1-4460361.m3u8?txSecret=f8557f63307e3d2fe28d77076a211b73&txTime=6AE41898
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/1-v130.jpg?v=1789454340185" group-title="亚冠二级",亚冠二级 | 阿德莱德联 vs 狮城水手 | 0-0 | 直播1 | 直播1
+https://hello.ooo0ooo.top/live/4621362.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/1-v130.jpg?v=1789454340185" group-title="亚冠二级",亚冠二级 | 阿德莱德联 vs 狮城水手 | 0-0 | 直播1 | 原声6
+https://pul-tenm.gkykp.com/live/hd-en-1-4621362.m3u8?txSecret=d2a209f93e2569466685491746de203b&txTime=6AE45BA0
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/10-v138.jpg?v=1789454340185" group-title="澳NBL",澳NBL | 布里斯班子弹 vs 凯恩斯太攀蛇 | 0-0 | 直播10 | 直播10
+https://hello.ooo0ooo.top/live/3925979.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/10-v138.jpg?v=1789454340185" group-title="澳NBL",澳NBL | 布里斯班子弹 vs 凯恩斯太攀蛇 | 0-0 | 直播10 | 原声2
+https://pul-tenm.gkykp.com/live/hd-en-2-3925979.m3u8?txSecret=34858474b96493e9bd11cc1a0bb96815&txTime=6AE45BA0
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v116.jpg?v=1789454340185" group-title="蒙古超",蒙古超 | 乌兰巴托FC vs 德仁FC | 0-0 | 直播4 | 直播4
+https://hello.ooo0ooo.top/live/4661293.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v116.jpg?v=1789454340185" group-title="蒙古超",蒙古超 | 乌兰巴托FC vs 德仁FC | 0-0 | 直播4 | 原声1
+https://pul-tenm.gkykp.com/live/sd-1-4661293.m3u8?txSecret=f65c1d8991ae2e7dc0af7b77ff662a8e&txTime=6AE45BA0
