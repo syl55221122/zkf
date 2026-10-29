@@ -10,13 +10,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: liveleagues-m3u8-refresh
+  group: liveleagues-refresh
   cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
@@ -27,24 +27,28 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Discover public pages and inspect HLS
-        run: python liveleagues.py liveleagues.m3u
+      - name: Scan public LiveLeagues pages
+        run: python -u liveleagues.py
 
-      - name: Commit updated playlist
+      - name: Upload scan report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: liveleagues-scan-report
+          path: liveleagues.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Commit updated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ ! -f liveleagues.m3u ]; then
-            echo "M3U 文件不存在，跳过提交"
-            exit 0
-          fi
-
-          git add -- liveleagues.m3u
+          git add -- liveleagues.m3u liveleagues.json
 
           if git diff --cached --quiet; then
-            echo "播放列表没有变化"
+            echo "没有文件变化，跳过提交"
           else
-            git commit -m "Auto update liveleagues.m3u"
+            git commit -m "Auto update LiveLeagues playlist and report"
             git push
           fi
