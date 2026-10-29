@@ -2,11 +2,11 @@ name: ⏱️ 咖啡直播源每10分钟自动更新
 
 on:
   schedule:
-    # 国际标准时间(UTC) 每 10 分钟执行一次
+    # 国际标准时间 (UTC) 每 10 分钟执行一次
     - cron: '*/10 * * * *'
   workflow_dispatch: # 允许手动点击触发
 
-# 核心安全设置：必须允许 Action 修改仓库文件并推送
+# 赋予工作流写权限，允许它提交文件到仓库
 permissions:
   contents: write
 
@@ -26,21 +26,27 @@ jobs:
     - name: 3. 安装依赖库
       run: |
         python -m pip install --upgrade pip
-        pip install requests beautifulsoup4
 
     - name: 4. 运行爬虫脚本
-      run: python scraper.py
+      # ⚠️ 确保这里的脚本文件名和你仓库里的 python 文件名完全一致
+      run: python generate_coffee_m3u.py --output coffee_live.m3u
 
     - name: 5. 将新抓取的直播源推送到 GitHub 仓库
       run: |
         git config --local user.email "github-actions[bot]@://github.com"
         git config --local user.name "github-actions[bot]"
         
-        # 检查文件是否有变动，避免没有赛事时因空提交而报错
-        git add live_list.json live_list.m3u
-        if git diff --staged --quiet; then
-          echo "直播源数据无变化，跳过本次提交。"
+        # 💡 核心修复：先检查文件是否存在，存在才执行 add，否则直接退出，防止崩溃
+        if [ -f "coffee_live.m3u" ]; then
+          git add coffee_live.m3u
+          
+          # 检查文件内容是否有实际变动，避免频繁无意义提交
+          if git diff --staged --quiet; then
+            echo "直播源数据无变化，跳过本次提交。"
+          else
+            git commit -m "自动更新直播源时间: $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
         else
-          git commit -m "自动更新直播源时间: $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          echo "⚠️ 提示：本次运行未生成 coffee_live.m3u 文件（当前可能无赛事），跳过推送。"
         fi
