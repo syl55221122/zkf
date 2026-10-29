@@ -1,0 +1,50 @@
+
+name: LiveLeagues M3U8 Auto Refresh
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: liveleagues-m3u8-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Discover public pages and inspect HLS
+        run: python liveleagues.py liveleagues.m3u
+
+      - name: Commit updated playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ ! -f liveleagues.m3u ]; then
+            echo "M3U 文件不存在，跳过提交"
+            exit 0
+          fi
+
+          git add -- liveleagues.m3u
+
+          if git diff --cached --quiet; then
+            echo "播放列表没有变化"
+          else
+            git commit -m "Auto update liveleagues.m3u"
+            git push
+          fi
