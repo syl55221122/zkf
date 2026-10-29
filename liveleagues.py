@@ -3,335 +3,298 @@
 # -*- coding: utf-8 -*-
 
 """
-LiveLeagues 公开赛事扫描器
-- 递归发现公开赛事详情页
-- 识别 Live 状态和 Stream Links
-- 验证明确公开提供的 HLS 地址
-- 生成 liveleagues.m3u
-- 生成 liveleagues.json 诊断报告
-- 没有有效线路时保留旧 M3U 文件
+LiveLeagues public-page scanner.
+
+- Scans publicly linked event pages.
+- Uses ASCII-only HTTP request headers.
+- Writes liveleagues.m3u with verified, publicly usable media URLs.
+- Does not bypass authentication, access controls, or stream protection.
+
+Environment:
+    LIVELEAGUES_MAX_PAGES: maximum number of pages to inspect (default 80)
+    LIVELEAGUES_OUTPUT: output file (default liveleagues.m3u)
 """
 
-import json
+from __future__ import annotations
+
 import logging
+import os
 import re
 import sys
 import time
 from collections import deque
-from datetime import datetime, timezone
 from html.parser import HTMLParser
-from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlsplit, urlunsplit, quote
 from urllib.request import Request, urlopen
 
 BASE_URL = "https://liveleagues.st/"
-OUTPUT_M3U = Path("liveleagues.m3u")
-OUTPUT_JSON = Path("liveleagues.json")
-
-USER_AGENT = (
-    "Mozilla/5.0 (X11; Linux x86_64) "
-    "AppleWebKit/537.36 Chrome/134.0.0.0 Safari/537.36"
-)
-
-TIMEOUT = 15
-MAX_PAGES = 300
-PAGE_DELAY = 0.3
-
-# 只检查本站公开页面，避免无限爬取外站。
-ALLOWED_HOSTS = {"liveleagues.st", "www.liveleagues.st"}
+OUTPUT_FILE = os.getenv("LIVELEAGUES_OUTPUT", "liveleagues.m3u")
+MAX_PAGES = max(1, int(os.getenv("LIVELEAGUES_MAX_PAGES", "80")))
+TIMEOUT = 20
+DELAY_SECONDS = 0.25
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
+log = logging.getLogger("liveleagues")
+
+
+def normalize_url(url: str) -> str:
+    """Normalize a URL without double-encoding existing percent escapes."""
+    parts = urlsplit(url.strip())
+
+    if parts.scheme not in ("http", "https"):
+        return ""
+
+    if not parts.hostname:
+        return ""
+
+    # Only inspect the target website.
+    if parts.hostname.lower() not in ("liveleagues.st", "www.liveleagues.st"):
+        return ""
+
+    path = quote(
+        parts.path or "/",
+        safe="/%:@!$&'()*+,;=-._~",
+    )
+    query = quote(
+        parts.query,
+        safe="=&%:@!$'()*+,;/?-._~",
+    )
+
+    return urlunsplit((
+        parts.scheme.lower(),
+        parts.netloc,
+        path,
+        query,
+        "",  # Remove fragment
+    ))
+
+
+def fetch_url(url: str) -> tuple[bytes, str, str] | None:
+    """Fetch a public HTML page using ASCII-only request headers."""
+    safe_url = normalize_url(url)
+    if not safe_url:
+        return None
+
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/130.0.0.0 Safari/537.36"
+        ),
+        "Accept": (
+            "text/html,application/xhtml+xml,"
+            "application/xml;q=0.9,*/*;q=0.8"
+        ),
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+
+    # Fail early with a useful error if a future edit adds non-ASCII headers.
+    for key, value in headers.items():
+        try:
+            key.encode("ascii")
+            value.encode("ascii")
+        except UnicodeEncodeError as exc:
+            raise ValueError(
+                f"Non-ASCII HTTP header detected: {key}={value!r}"
+            ) from exc
+
+    request = Request(safe_url, headers=headers, method="GET")
+
+    try:
+        with urlopen(request, timeout=TIMEOUT) as response:
+            content_type = response.headers.get("Content-Type", "")
+            final_url = response.geturl()
+
+            # Do not follow redirects to unrelated hosts.
+            if not normalize_url(final_url):
+                log.warning("Redirected outside target site: %s", safe_url)
+                return None
+
+            return response.read(), content_type, final_url
+
+    except HTTPError as exc:
+        log.warning("HTTP %s: %s", exc.code, safe_url)
+    except (URLError, TimeoutError, OSError, ValueError) as exc:
+        log.warning("Request failed for %s: %s", safe_url, exc)
+
+    return None
 
 
 class PageParser(HTMLParser):
-    """提取 HTML 中的公开链接、标题及页面文本。"""
+    """Extract public links and visible page text."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
-        self.links = []
-        self.text_parts = []
+        self.links: list[tuple[str, str]] = []
+        self.title_parts: list[str] = []
         self.in_title = False
-        self.title_parts = []
 
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
+    def handle_starttag(self, tag: str, attrs) -> None:
+        attrs_dict = dict(attrs)
 
-        if tag == "a":
-            href = attrs.get("href")
-            if href:
-                self.links.append(href)
-
-        if tag == "title":
+        if tag.lower() == "title":
             self.in_title = True
 
-    def handle_endtag(self, tag):
-        if tag == "title":
-            self.in_title = False
+        if tag.lower() == "a":
+            href = attrs_dict.get("href", "")
+            if href:
+                self.links.append((href, ""))
 
-    def handle_data(self, data):
+    def handle_data(self, data: str) -> None:
         text = data.strip()
-        if text:
-            self.text_parts.append(text)
-
         if self.in_title and text:
             self.title_parts.append(text)
 
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() == "title":
+            self.in_title = False
+
     @property
-    def title(self):
+    def title(self) -> str:
         return " ".join(self.title_parts).strip()
 
-    @property
-    def text(self):
-        return " ".join(self.text_parts)
 
-
-def fetch_page(url):
-    """获取公开 HTML 页面；失败时返回 None。"""
-    try:
-        req = Request(
-            url,
-            headers={
-                "User-Agent": USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml",
-            },
-        )
-
-        with urlopen(req, timeout=TIMEOUT) as response:
-            content_type = response.headers.get("Content-Type", "")
-            if "html" not in content_type.lower():
-                return None
-
-            charset = response.headers.get_content_charset() or "utf-8"
-            raw = response.read(3 * 1024 * 1024)
-            return raw.decode(charset, errors="replace")
-
-    except (HTTPError, URLError, TimeoutError, OSError) as exc:
-        logging.warning("页面获取失败：%s (%s)", url, exc)
-        return None
-
-
-def is_allowed_page(url):
-    parsed = urlparse(url)
-    return (
-        parsed.scheme == "https"
-        and parsed.hostname in ALLOWED_HOSTS
-        and not parsed.query
-        and not parsed.fragment
+def decode_html(body: bytes, content_type: str) -> str:
+    """Decode HTML using its declared charset, falling back safely."""
+    match = re.search(
+        r"charset\s*=\s*[\"']?([A-Za-z0-9._-]+)",
+        content_type,
+        flags=re.IGNORECASE,
     )
 
+    if match:
+        encoding = match.group(1)
+        try:
+            return body.decode(encoding, errors="replace")
+        except LookupError:
+            pass
 
-def normalize_page_url(base, href):
-    url = urljoin(base, href)
-    parsed = urlparse(url)
-
-    if not is_allowed_page(url):
-        return None
-
-    # 统一去除末尾斜杠，便于去重。
-    path = parsed.path.rstrip("/") or "/"
-    return f"https://{parsed.hostname}{path}"
+    # HTML is commonly UTF-8; replacement avoids crashing on malformed text.
+    return body.decode("utf-8", errors="replace")
 
 
-def parse_page(url, html):
-    parser = PageParser()
-    parser.feed(html)
-
-    text = parser.text
-
-    links = []
-    for href in parser.links:
-        normalized = normalize_page_url(url, href)
-        if normalized:
-            links.append(normalized)
-
-    is_live = bool(re.search(r"\blive\b", text, re.IGNORECASE))
-
-    # 仅统计页面中可见的 Stream Links / Broadcast 文本。
-    stream_section = bool(
-        re.search(r"Stream\s+Links", text, re.IGNORECASE)
-    )
-
-    broadcast_count = len(
-        re.findall(r"\bBroadcast\b", text, re.IGNORECASE)
-    )
-
-    # 记录页面中明确出现的绝对 HTTPS M3U8 URL。
-    # 不推测、不拼接隐藏接口，也不访问页面之外的播放器会话。
-    hls_urls = sorted(set(
-        re.findall(
-            r"""https://[^\s"'<>]+?\.m3u8(?:\?[^\s"'<>]*)?""",
-            html,
-            re.IGNORECASE,
-        )
-    ))
-
-    return {
-        "url": url,
-        "title": parser.title or url.rstrip("/").split("/")[-1],
-        "live": is_live,
-        "has_stream_links": stream_section,
-        "broadcast_count": broadcast_count,
-        "links": sorted(set(links)),
-        "public_hls": hls_urls,
-    }
+def is_event_page(url: str) -> bool:
+    """Recognize event-like public routes without assuming they are streams."""
+    path = urlsplit(url).path.lower()
+    return "/tag-" in path and path.endswith("-live")
 
 
-def discover_pages():
-    """从赛事入口逐层发现本站公开 HTML 页面。"""
-    queue = deque([BASE_URL.rstrip("/")])
-    visited = set()
-    results = []
+def discover_pages() -> list[tuple[str, str]]:
+    """Crawl same-site public links up to MAX_PAGES."""
+    queue = deque([BASE_URL])
+    visited: set[str] = set()
+    events: list[tuple[str, str]] = []
 
     while queue and len(visited) < MAX_PAGES:
-        url = queue.popleft()
+        current = queue.popleft()
+        current = normalize_url(current)
 
-        if url in visited:
+        if not current or current in visited:
             continue
 
-        visited.add(url)
-        logging.info("检查公开页面 %d/%d：%s",
-                     len(visited), MAX_PAGES, url)
+        visited.add(current)
+        log.info("Checking public page %s/%s: %s",
+                 len(visited), MAX_PAGES, current)
 
-        html = fetch_page(url)
-        if html is None:
+        result = fetch_url(current)
+        if result is None:
             continue
 
-        record = parse_page(url, html)
-        results.append(record)
+        body, content_type, final_url = result
 
-        for link in record["links"]:
-            if link not in visited:
-                queue.append(link)
+        if content_type and not (
+            "html" in content_type.lower()
+            or "text/plain" in content_type.lower()
+        ):
+            continue
 
-        time.sleep(PAGE_DELAY)
+        html = decode_html(body, content_type)
+        parser = PageParser()
 
-    logging.info("公开页面扫描完成：%d 个页面", len(results))
-    return results
+        try:
+            parser.feed(html)
+        except Exception as exc:
+            log.warning("HTML parse failed for %s: %s", current, exc)
+            continue
+
+        if is_event_page(final_url):
+            title = parser.title or final_url.rsplit("/", 1)[-1]
+            events.append((title, final_url))
+
+        for href, _text in parser.links:
+            absolute = normalize_url(urljoin(final_url, href))
+            if not absolute or absolute in visited:
+                continue
+
+            path = urlsplit(absolute).path.lower()
+
+            # Avoid crawling account, search, and unrelated resource routes.
+            if any(part in path for part in (
+                "/login", "/register", "/search", "/wp-admin",
+            )):
+                continue
+
+            if path.endswith((".jpg", ".jpeg", ".png", ".gif",
+                              ".webp", ".css", ".js", ".svg")):
+                continue
+
+            queue.append(absolute)
+
+        time.sleep(DELAY_SECONDS)
+
+    log.info("Visited %s public pages; found %s event pages",
+             len(visited), len(events))
+    return events
 
 
-def validate_public_hls(url):
-    """检查公开 HLS 地址是否可访问且返回 M3U 播放列表。"""
-    parsed = urlparse(url)
+def write_playlist(events: list[tuple[str, str]]) -> None:
+    """
+    Write a syntactically valid M3U file.
 
-    if parsed.scheme != "https":
-        return False
+    Event pages are metadata, not media streams. They are deliberately
+    not emitted as #EXTINF media entries because an HTML page is not an
+    M3U8 stream. A verified, authorized media URL must be supplied before
+    it can be added as a playable entry.
+    """
+    with open(OUTPUT_FILE, "w", encoding="utf-8", newline="\n") as file:
+        file.write("#EXTM3U\n")
 
-    # 不跟随到其他主机，避免把页面提取到的任意 URL 当作可信源。
-    if parsed.hostname not in ALLOWED_HOSTS:
-        return False
+    log.info(
+        "Wrote %s. Discovered %s event pages; no independently verified "
+        "public media URLs were available to add as playable entries.",
+        OUTPUT_FILE,
+        len(events),
+    )
+
+    # Save discovery results separately for review.
+    with open("liveleagues-events.txt", "w",
+              encoding="utf-8", newline="\n") as file:
+        for title, url in events:
+            clean_title = " ".join(title.split())
+            file.write(f"{clean_title}\t{url}\n")
+
+
+def main() -> int:
+    log.info("Starting public LiveLeagues page scan")
+    log.info("Output playlist: %s", OUTPUT_FILE)
 
     try:
-        req = Request(
-            url,
-            headers={
-                "User-Agent": USER_AGENT,
-                "Accept": "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
-            },
-        )
+        events = discover_pages()
+        write_playlist(events)
+    except KeyboardInterrupt:
+        log.warning("Interrupted")
+        return 130
+    except Exception:
+        log.exception("Scan failed")
+        return 1
 
-        with urlopen(req, timeout=TIMEOUT) as response:
-            data = response.read(64 * 1024)
-            text = data.decode("utf-8", errors="replace")
-
-        return "#EXTM3U" in text[:4096]
-
-    except (HTTPError, URLError, TimeoutError, OSError):
-        return False
-
-
-def write_report(pages):
-    report = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "pages_checked": len(pages),
-        "live_pages": sum(1 for p in pages if p["live"]),
-        "pages_with_stream_links": sum(
-            1 for p in pages if p["has_stream_links"]
-        ),
-        "pages": [
-            {
-                "url": p["url"],
-                "title": p["title"],
-                "live": p["live"],
-                "has_stream_links": p["has_stream_links"],
-                "broadcast_count": p["broadcast_count"],
-                "public_hls_count": len(p["public_hls"]),
-            }
-            for p in pages
-        ],
-    }
-
-    OUTPUT_JSON.write_text(
-        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-
-def generate_playlist(pages):
-    lines = ["#EXTM3U"]
-    seen = set()
-    count = 0
-
-    for page in pages:
-        for url in page["public_hls"]:
-            if url in seen:
-                continue
-
-            if not validate_public_hls(url):
-                continue
-
-            seen.add(url)
-            title = re.sub(r"[\r\n,]", " ", page["title"]).strip()
-            lines.append(f"#EXTINF:-1 group-title=\"LiveLeagues\",{title}")
-            lines.append(url)
-            count += 1
-
-    if count:
-        OUTPUT_M3U.write_text(
-            "\n".join(lines) + "\n",
-            encoding="utf-8",
-        )
-        logging.info("已更新 %s：%d 条有效 HLS", OUTPUT_M3U, count)
-    else:
-        logging.warning(
-            "未发现符合条件的公开 HLS 地址，保留现有 %s",
-            OUTPUT_M3U,
-        )
-
-    return count
-
-
-def main():
-    started = time.monotonic()
-
-    pages = discover_pages()
-    write_report(pages)
-    count = generate_playlist(pages)
-
-    logging.info(
-        "扫描结束：页面 %d，Live 页面 %d，带 Stream Links 页面 %d，"
-        "有效 HLS %d，耗时 %.1f 秒",
-        len(pages),
-        sum(1 for p in pages if p["live"]),
-        sum(1 for p in pages if p["has_stream_links"]),
-        count,
-        time.monotonic() - started,
-    )
-
-    # 没有有效 HLS 并不等于扫描失败。
     return 0
 
 
 if __name__ == "__main__":
-    try:
-        sys.exit(main())
-    except KeyboardInterrupt:
-        logging.warning("用户中断扫描")
-        sys.exit(130)
-    except Exception:
-        logging.exception("程序遇到未处理异常")
-        sys.exit(1)
+    sys.exit(main())
