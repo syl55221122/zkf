@@ -1,451 +1,337 @@
 
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 """
-LiveLeagues 公开赛事发现与 HLS 候选检查器
-
-功能：
-1. 遍历有限数量的同站公开赛事页面。
-2. 检查公开 HTML 与外部 JavaScript 文件。
-3. 识别源码中直接出现的 HTTP(S) M3U8 地址。
-4. 验证可公开读取的候选播放列表。
-5. 只有发现有效候选时才原子更新输出文件。
-6. 没有候选、网络失败或解析失败时保留旧文件。
-
-不执行网站 JavaScript，不复用浏览器 Cookie、会话或令牌，
-不访问未明确允许的第三方资源。
-
-Python 3.10+
+LiveLeagues 公开赛事扫描器
+- 递归发现公开赛事详情页
+- 识别 Live 状态和 Stream Links
+- 验证明确公开提供的 HLS 地址
+- 生成 liveleagues.m3u
+- 生成 liveleagues.json 诊断报告
+- 没有有效线路时保留旧 M3U 文件
 """
 
-import html
+import json
 import logging
-import os
 import re
 import sys
-import tempfile
 import time
-
 from collections import deque
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urljoin, urlsplit, urldefrag
+from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
-
 BASE_URL = "https://liveleagues.st/"
-OUTPUT_FILE = "liveleagues.m3u"
-
-TIMEOUT = 12
-RETRIES = 2
-MAX_PAGES = 80
-MAX_SCRIPTS = 100
-MAX_HTML_BYTES = 2 * 1024 * 1024
-MAX_JS_BYTES = 2 * 1024 * 1024
-MAX_PLAYLIST_BYTES = 512 * 1024
-
-# 只允许明确配置的公开资源域名。
-# 如服务商书面授权了其他静态资源域名，可在核实后添加。
-ALLOWED_HOSTS = {
-    "liveleagues.st",
-    "www.liveleagues.st",
-    "static.liveleagues.st",
-}
+OUTPUT_M3U = Path("liveleagues.m3u")
+OUTPUT_JSON = Path("liveleagues.json")
 
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; LiveLeaguesPublicIndexer/1.0)"
+    "Mozilla/5.0 (X11; Linux x86_64) "
+    "AppleWebKit/537.36 Chrome/134.0.0.0 Safari/537.36"
 )
+
+TIMEOUT = 15
+MAX_PAGES = 300
+PAGE_DELAY = 0.3
+
+# 只检查本站公开页面，避免无限爬取外站。
+ALLOWED_HOSTS = {"liveleagues.st", "www.liveleagues.st"}
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
-log = logging.getLogger("liveleagues")
 
 
 class PageParser(HTMLParser):
+    """提取 HTML 中的公开链接、标题及页面文本。"""
+
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.links = []
-        self.scripts = []
-        self.title_parts = []
+        self.text_parts = []
         self.in_title = False
+        self.title_parts = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        tag = tag.lower()
-
-        if tag == "title":
-            self.in_title = True
 
         if tag == "a":
             href = attrs.get("href")
             if href:
                 self.links.append(href)
 
-        if tag == "script":
-            src = attrs.get("src")
-            if src:
-                self.scripts.append(src)
+        if tag == "title":
+            self.in_title = True
 
     def handle_endtag(self, tag):
-        if tag.lower() == "title":
+        if tag == "title":
             self.in_title = False
 
     def handle_data(self, data):
-        if self.in_title:
-            self.title_parts.append(data)
+        text = data.strip()
+        if text:
+            self.text_parts.append(text)
+
+        if self.in_title and text:
+            self.title_parts.append(text)
 
     @property
     def title(self):
-        value = " ".join(" ".join(self.title_parts).split())
-        return value or "LiveLeagues"
+        return " ".join(self.title_parts).strip()
+
+    @property
+    def text(self):
+        return " ".join(self.text_parts)
 
 
-def allowed_url(url):
-    """仅允许 HTTP(S) 和明确列出的主机名。"""
+def fetch_page(url):
+    """获取公开 HTML 页面；失败时返回 None。"""
     try:
-        parts = urlsplit(url)
+        req = Request(
+            url,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "text/html,application/xhtml+xml",
+            },
+        )
 
-        if parts.scheme not in ("http", "https"):
-            return False
+        with urlopen(req, timeout=TIMEOUT) as response:
+            content_type = response.headers.get("Content-Type", "")
+            if "html" not in content_type.lower():
+                return None
 
-        if not parts.hostname:
-            return False
+            charset = response.headers.get_content_charset() or "utf-8"
+            raw = response.read(3 * 1024 * 1024)
+            return raw.decode(charset, errors="replace")
 
-        if parts.username or parts.password:
-            return False
-
-        return parts.hostname.lower() in ALLOWED_HOSTS
-    except ValueError:
-        return False
-
-
-def canonical_url(url):
-    url = urldefrag(url.strip())[0]
-
-    if not allowed_url(url):
-        return ""
-
-    parts = urlsplit(url)
-    return parts._replace(fragment="").geturl()
+    except (HTTPError, URLError, TimeoutError, OSError) as exc:
+        logging.warning("页面获取失败：%s (%s)", url, exc)
+        return None
 
 
-def fetch_bytes(url, accept, max_bytes):
-    """读取允许访问的公开资源，限制重试次数和响应体大小。"""
-    if not allowed_url(url):
-        log.debug("拒绝非允许域名：%s", url)
-        return None, None, None
+def is_allowed_page(url):
+    parsed = urlparse(url)
+    return (
+        parsed.scheme == "https"
+        and parsed.hostname in ALLOWED_HOSTS
+        and not parsed.query
+        and not parsed.fragment
+    )
 
-    headers = {
-        "User-Agent": USER_AGENT,
-        "Accept": accept,
+
+def normalize_page_url(base, href):
+    url = urljoin(base, href)
+    parsed = urlparse(url)
+
+    if not is_allowed_page(url):
+        return None
+
+    # 统一去除末尾斜杠，便于去重。
+    path = parsed.path.rstrip("/") or "/"
+    return f"https://{parsed.hostname}{path}"
+
+
+def parse_page(url, html):
+    parser = PageParser()
+    parser.feed(html)
+
+    text = parser.text
+
+    links = []
+    for href in parser.links:
+        normalized = normalize_page_url(url, href)
+        if normalized:
+            links.append(normalized)
+
+    is_live = bool(re.search(r"\blive\b", text, re.IGNORECASE))
+
+    # 仅统计页面中可见的 Stream Links / Broadcast 文本。
+    stream_section = bool(
+        re.search(r"Stream\s+Links", text, re.IGNORECASE)
+    )
+
+    broadcast_count = len(
+        re.findall(r"\bBroadcast\b", text, re.IGNORECASE)
+    )
+
+    # 记录页面中明确出现的绝对 HTTPS M3U8 URL。
+    # 不推测、不拼接隐藏接口，也不访问页面之外的播放器会话。
+    hls_urls = sorted(set(
+        re.findall(
+            r"""https://[^\s"'<>]+?\.m3u8(?:\?[^\s"'<>]*)?""",
+            html,
+            re.IGNORECASE,
+        )
+    ))
+
+    return {
+        "url": url,
+        "title": parser.title or url.rstrip("/").split("/")[-1],
+        "live": is_live,
+        "has_stream_links": stream_section,
+        "broadcast_count": broadcast_count,
+        "links": sorted(set(links)),
+        "public_hls": hls_urls,
     }
-
-    for attempt in range(1, RETRIES + 1):
-        try:
-            req = Request(url, headers=headers)
-
-            with urlopen(req, timeout=TIMEOUT) as response:
-                final_url = response.geturl()
-
-                if not allowed_url(final_url):
-                    log.warning("跳过外部重定向：%s", url)
-                    return None, None, None
-
-                status = getattr(response, "status", 200)
-                content_type = response.headers.get(
-                    "Content-Type", ""
-                ).lower()
-
-                raw = response.read(max_bytes + 1)
-
-            if status != 200 or len(raw) > max_bytes:
-                log.warning("状态异常或响应体过大：%s", url)
-                return None, None, None
-
-            return raw, content_type, final_url
-
-        except (HTTPError, URLError, TimeoutError, OSError, ValueError) as exc:
-            log.warning(
-                "读取失败 %s/%s：%s（%s）",
-                attempt, RETRIES, url, exc
-            )
-            if attempt < RETRIES:
-                time.sleep(attempt)
-
-        except Exception:
-            log.exception("读取资源时出现异常：%s", url)
-            return None, None, None
-
-    return None, None, None
-
-
-def fetch_text(url, accept, max_bytes):
-    raw, content_type, final_url = fetch_bytes(
-        url, accept, max_bytes
-    )
-
-    if raw is None:
-        return None, None, None
-
-    text = raw.decode("utf-8", errors="replace")
-    return text, content_type, final_url
-
-
-# 仅识别源码中直接写出的完整 HTTP(S) M3U8 URL。
-ABSOLUTE_M3U8 = re.compile(
-    r"""https?://[^\s"'<>\\]+?\.m3u8(?:\?[^\s"'<>\\]*)?""",
-    re.IGNORECASE,
-)
-
-# 识别页面中直接出现的相对 M3U8 路径。
-RELATIVE_M3U8 = re.compile(
-    r"""(?<![A-Za-z0-9])(?:/|\./|\.\./)[^\s"'<>\\]+?\.m3u8(?:\?[^\s"'<>\\]*)?""",
-    re.IGNORECASE,
-)
-
-
-def extract_candidates(base_url, source):
-    found = set()
-
-    source = html.unescape(source)
-
-    candidates = (
-        ABSOLUTE_M3U8.findall(source)
-        + RELATIVE_M3U8.findall(source)
-    )
-
-    for candidate in candidates:
-        candidate = candidate.strip().rstrip(".,;)]}")
-
-        if len(candidate) > 4096:
-            continue
-
-        full_url = urljoin(base_url, candidate)
-
-        # 播放源可能托管在第三方 CDN。
-        # 默认不抓取未列入允许名单的主机。
-        if not allowed_url(full_url):
-            continue
-
-        if not urlsplit(full_url).path.lower().endswith(".m3u8"):
-            continue
-
-        found.add(full_url)
-
-    return found
-
-
-def is_hls_playlist(url):
-    """
-    只验证允许域名中可直接读取的 M3U8 文本。
-    不跟随播放器流程，不请求密钥或媒体分片。
-    """
-    text, content_type, final_url = fetch_text(
-        url,
-        accept=(
-            "application/vnd.apple.mpegurl,"
-            "application/x-mpegURL,text/plain,*/*"
-        ),
-        max_bytes=MAX_PLAYLIST_BYTES,
-    )
-
-    if not text or not final_url:
-        return False
-
-    if not text.lstrip("\ufeff \t\r\n").startswith("#EXTM3U"):
-        log.info("候选地址未返回 M3U8 内容：%s", url)
-        return False
-
-    # 仅确认格式，不代表已验证播放权限或完整播放能力。
-    log.info("发现格式有效的 HLS 播放列表：%s", redact_url(url))
-    return True
-
-
-def redact_url(url):
-    """日志不输出查询参数，避免泄漏会话信息。"""
-    parts = urlsplit(url)
-    return parts._replace(query="", fragment="").geturl()
 
 
 def discover_pages():
-    start = canonical_url(BASE_URL)
-
-    if not start:
-        raise RuntimeError("起始页面不在允许域名列表中")
-
-    queue = deque([start])
+    """从赛事入口逐层发现本站公开 HTML 页面。"""
+    queue = deque([BASE_URL.rstrip("/")])
     visited = set()
-    script_urls = set()
-    candidates = {}
-    pages = 0
+    results = []
 
-    while queue and pages < MAX_PAGES:
-        page_url = queue.popleft()
+    while queue and len(visited) < MAX_PAGES:
+        url = queue.popleft()
 
-        if page_url in visited:
+        if url in visited:
             continue
 
-        visited.add(page_url)
+        visited.add(url)
+        logging.info("检查公开页面 %d/%d：%s",
+                     len(visited), MAX_PAGES, url)
 
-        log.info("检查公开页面 %s/%s：%s",
-                 pages + 1, MAX_PAGES, redact_url(page_url))
-
-        source, _, final_url = fetch_text(
-            page_url,
-            accept="text/html,application/xhtml+xml",
-            max_bytes=MAX_HTML_BYTES,
-        )
-
-        if not source or not final_url:
+        html = fetch_page(url)
+        if html is None:
             continue
 
-        pages += 1
+        record = parse_page(url, html)
+        results.append(record)
 
-        parser = PageParser()
+        for link in record["links"]:
+            if link not in visited:
+                queue.append(link)
 
-        try:
-            parser.feed(source)
-            parser.close()
-        except Exception:
-            log.warning("HTML 解析不完整：%s", redact_url(page_url))
+        time.sleep(PAGE_DELAY)
 
-        for stream in extract_candidates(final_url, source):
-            candidates.setdefault(stream, parser.title)
-
-        for src in parser.scripts:
-            script_url = canonical_url(urljoin(final_url, src))
-            if script_url:
-                script_urls.add(script_url)
-
-        for href in parser.links:
-            link = canonical_url(urljoin(final_url, href))
-            if not link:
-                continue
-
-            if link not in visited and link not in queue:
-                if len(queue) < MAX_PAGES * 4:
-                    queue.append(link)
-
-    log.info(
-        "公开页面检查完成：页面 %s 个，脚本 %s 个，"
-        "直接发现的 M3U8 候选 %s 个",
-        pages, len(script_urls), len(candidates)
-    )
-
-    # 检查有限数量的公开 JavaScript 静态文本。
-    scripts_checked = 0
-
-    for script_url in sorted(script_urls)[:MAX_SCRIPTS]:
-        source, _, final_url = fetch_text(
-            script_url,
-            accept="application/javascript,text/javascript,*/*",
-            max_bytes=MAX_JS_BYTES,
-        )
-
-        if not source or not final_url:
-            continue
-
-        scripts_checked += 1
-
-        for stream in extract_candidates(final_url, source):
-            candidates.setdefault(stream, "LiveLeagues")
-
-    log.info(
-        "静态脚本检查完成：读取 %s 个脚本，"
-        "共发现 %s 个候选",
-        scripts_checked, len(candidates)
-    )
-
-    return candidates, pages
+    logging.info("公开页面扫描完成：%d 个页面", len(results))
+    return results
 
 
-def write_m3u_atomically(output_path, entries):
-    target = Path(output_path).resolve()
-    target.parent.mkdir(parents=True, exist_ok=True)
+def validate_public_hls(url):
+    """检查公开 HLS 地址是否可访问且返回 M3U 播放列表。"""
+    parsed = urlparse(url)
 
-    temp_path = None
-    lines = ["#EXTM3U"]
+    if parsed.scheme != "https":
+        return False
 
-    for url, title in sorted(entries.items(), key=lambda x: x[1].lower()):
-        title = " ".join(
-            title.replace("\r", " ").replace("\n", " ").split()
-        )
-        title = title.replace(",", " ").replace("#", " ").replace("$", " ")
-
-        lines.append(
-            f'#EXTINF:-1 group-title="LiveLeagues",{title}'
-        )
-        lines.append(url)
+    # 不跟随到其他主机，避免把页面提取到的任意 URL 当作可信源。
+    if parsed.hostname not in ALLOWED_HOSTS:
+        return False
 
     try:
-        with tempfile.NamedTemporaryFile(
-            mode="w",
-            encoding="utf-8",
-            newline="\n",
-            dir=str(target.parent),
-            prefix="." + target.name + ".",
-            suffix=".tmp",
-            delete=False,
-        ) as file:
-            temp_path = Path(file.name)
-            file.write("\n".join(lines) + "\n")
-            file.flush()
-            os.fsync(file.fileno())
+        req = Request(
+            url,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
+            },
+        )
 
-        os.replace(str(temp_path), str(target))
-        log.info("播放列表已原子更新：%s", target)
-        return True
+        with urlopen(req, timeout=TIMEOUT) as response:
+            data = response.read(64 * 1024)
+            text = data.decode("utf-8", errors="replace")
 
-    except Exception:
-        log.exception("写入播放列表失败")
+        return "#EXTM3U" in text[:4096]
 
-        if temp_path:
-            try:
-                temp_path.unlink(missing_ok=True)
-            except OSError:
-                pass
-
+    except (HTTPError, URLError, TimeoutError, OSError):
         return False
 
 
-def main():
-    output_path = (
-        sys.argv[1] if len(sys.argv) > 1 else OUTPUT_FILE
+def write_report(pages):
+    report = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "pages_checked": len(pages),
+        "live_pages": sum(1 for p in pages if p["live"]),
+        "pages_with_stream_links": sum(
+            1 for p in pages if p["has_stream_links"]
+        ),
+        "pages": [
+            {
+                "url": p["url"],
+                "title": p["title"],
+                "live": p["live"],
+                "has_stream_links": p["has_stream_links"],
+                "broadcast_count": p["broadcast_count"],
+                "public_hls_count": len(p["public_hls"]),
+            }
+            for p in pages
+        ],
+    }
+
+    OUTPUT_JSON.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
     )
 
-    try:
-        candidates, page_count = discover_pages()
-    except Exception:
-        log.exception("赛事发现失败，保留现有文件")
-        return 1
 
-    # 仅验证允许主机上可直接读取的候选播放列表。
-    valid = {}
+def generate_playlist(pages):
+    lines = ["#EXTM3U"]
+    seen = set()
+    count = 0
 
-    for url, title in sorted(candidates.items()):
-        if is_hls_playlist(url):
-            valid[url] = title
+    for page in pages:
+        for url in page["public_hls"]:
+            if url in seen:
+                continue
 
-    if not valid:
-        log.warning(
-            "没有发现可直接读取的有效 M3U8；"
-            "保留旧文件。静态检查无法发现运行时动态生成的地址。"
+            if not validate_public_hls(url):
+                continue
+
+            seen.add(url)
+            title = re.sub(r"[\r\n,]", " ", page["title"]).strip()
+            lines.append(f"#EXTINF:-1 group-title=\"LiveLeagues\",{title}")
+            lines.append(url)
+            count += 1
+
+    if count:
+        OUTPUT_M3U.write_text(
+            "\n".join(lines) + "\n",
+            encoding="utf-8",
         )
-        log.info("本次检查公开页面数：%s", page_count)
-        return 0
+        logging.info("已更新 %s：%d 条有效 HLS", OUTPUT_M3U, count)
+    else:
+        logging.warning(
+            "未发现符合条件的公开 HLS 地址，保留现有 %s",
+            OUTPUT_M3U,
+        )
 
-    if not write_m3u_atomically(output_path, valid):
-        return 1
+    return count
 
-    log.info(
-        "任务完成：页面 %s 个，有效 M3U8 候选 %s 个",
-        page_count, len(valid)
+
+def main():
+    started = time.monotonic()
+
+    pages = discover_pages()
+    write_report(pages)
+    count = generate_playlist(pages)
+
+    logging.info(
+        "扫描结束：页面 %d，Live 页面 %d，带 Stream Links 页面 %d，"
+        "有效 HLS %d，耗时 %.1f 秒",
+        len(pages),
+        sum(1 for p in pages if p["live"]),
+        sum(1 for p in pages if p["has_stream_links"]),
+        count,
+        time.monotonic() - started,
     )
+
+    # 没有有效 HLS 并不等于扫描失败。
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except KeyboardInterrupt:
+        logging.warning("用户中断扫描")
+        sys.exit(130)
+    except Exception:
+        logging.exception("程序遇到未处理异常")
+        sys.exit(1)
