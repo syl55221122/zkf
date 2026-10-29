@@ -26,7 +26,7 @@ logging.basicConfig(
 log = logging.getLogger("liveleagues")
 
 def get_event_links():
-    """首步：使用浏览器打开首页，抓取所有带有 -live 后缀的房间链接"""
+    """第一步：使用浏览器打开首页，抓取所有带有 -live 后缀的房间链接"""
     event_urls = []
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -51,8 +51,11 @@ def get_event_links():
 
 def sniff_stream(url):
     """第二步：进入赛事房间，动态拦截并监听流量中的 .m3u8 链接"""
-    found_m3u8 = None
-    title = url.rsplit("/", 1)[-1]
+    # 彻底修复 nonlocal 变量声明顺序导致的语法冲突
+    state = {
+        "found_m3u8": None,
+        "title": url.rsplit("/", 1)[-1]
+    }
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -62,12 +65,11 @@ def sniff_stream(url):
         )
         page = context.new_page()
 
-        # 核心：定义网络请求拦截器
+        # 拦截器核心逻辑
         def handle_request(request):
-            nonlocal found_m3u8
             req_url = request.url
             if ".m3u8" in req_url.lower() and "chunklist" not in req_url.lower():
-                found_m3u8 = req_url
+                state["found_m3u8"] = req_url
                 log.info(f"成功嗅探到直播流地址: {req_url}")
 
         page.on("request", handle_request)
@@ -76,18 +78,17 @@ def sniff_stream(url):
             log.info(f"正在进入房间嗅探直播源: {url}")
             page.goto(url, timeout=30000)
             
-            # 获取页面标题
+            # 获取并清洗页面标题
             try:
                 page_title = page.title()
                 if page_title:
-                    nonlocal title
-                    title = re.sub(r"\s*-\s*LiveLeagues.*$", "", page_title, flags=re.IGNORECASE)
+                    state["title"] = re.sub(r"\s*-\s*LiveLeagues.*$", "", page_title, flags=re.IGNORECASE)
             except:
                 pass
 
-            # 模拟页面等待，给 iframe 播放器和 JS 足够的加载和播放时间来触发 m3u8 请求
+            # 模拟页面等待，留出时间让异步 JS 播放器加载完毕并触发网络请求
             for _ in range(8):
-                if found_m3u8:
+                if state["found_m3u8"]:
                     break
                 time.sleep(1)
                 
@@ -96,16 +97,16 @@ def sniff_stream(url):
         finally:
             browser.close()
 
-    if found_m3u8:
-        return title, found_m3u8
+    if state["found_m3u8"]:
+        return state["title"], state["found_m3u8"]
     return None
 
 def main():
     log.info("开始执行 Playwright 动态网络嗅探任务")
     event_urls = get_event_links()
     
-    # 限制最多扫描的房间数，防止 Action 执行过久超时（可根据需要微调）
-    max_scan = min(len(event_urls), 30)
+    # 限制单次扫描的前 40 个房间，防止在 GitHub 免费服务器上运行时间过长触发超时
+    max_scan = min(len(event_urls), 40)
     event_urls = event_urls[:max_scan]
 
     live_entries = []
@@ -115,7 +116,7 @@ def main():
         if result:
             live_entries.append(result)
             
-    # 写入最终的 M3U 文件
+    # 生成 IPTV 通用的 M3U 播放列表
     with open(OUTPUT_FILE, "w", encoding="utf-8", newline="\n") as file:
         file.write("#EXTM3U\n")
         for title, stream_url in live_entries:
