@@ -3,8 +3,8 @@ name: Coffee Live M3U Auto Refresh
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
-  workflow_dispatch:
+    - cron: '*/10 * * * *' # 每 10 分钟自动运行一次
+  workflow_dispatch:       # 支持手动触发
 
 permissions:
   contents: write
