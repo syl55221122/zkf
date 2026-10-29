@@ -16,8 +16,9 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
+    # === 修复此处的拼写错误 ===
     - name: Set up Python
-      uses: actions/tools/python@v5
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
@@ -38,6 +39,5 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@://github.com"
         git config --local user.name "github-actions[bot]"
-        # 修正：将原先错误的 liveleagues.json 改回 liveleagues.m3u
         git add liveleagues.m3u
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update liveleagues.m3u playlist [skip ci]" && git push)
