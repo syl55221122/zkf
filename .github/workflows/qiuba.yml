@@ -24,29 +24,15 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 检查代理配置
-        run: |
-          set +e
-          if [ -z "$HTTP_PROXY" ]; then
-            echo "RESULT: PROXY 未设置（secret 为空或不存在）"
-          else
-            echo "RESULT: PROXY 已设置，长度 ${#HTTP_PROXY}（正常应为 26）"
-            code=$(curl -s -o /dev/null -w "%{http_code}" -x "$HTTP_PROXY" --max-time 15 https://www.qiuba001.vip/api/categories)
-            echo "RESULT: curl 退出码 $?，经代理访问目标站返回 $code"
-          fi
-        env:
-          HTTP_PROXY: ${{ secrets.PROXY_URL }}
-          HTTPS_PROXY: ${{ secrets.PROXY_URL }}
-
       - name: 抓取比赛数据
         run: python runner.py
         env:
-          # 国内出口代理：在仓库 Settings → Secrets and variables → Actions
-          # 里添加名为 PROXY_URL 的 secret，值为代理地址
-          # （如 http://user:pass@1.2.3.4:8080）。未设置时直连，不影响。
-          # 注意：只给抓取步骤加代理，git push 不走代理。
-          HTTP_PROXY: ${{ secrets.PROXY_URL }}
-          HTTPS_PROXY: ${{ secrets.PROXY_URL }}
+          # 代理池：多个代理用英文逗号分隔。runner 会自动测试并选用
+          # 第一个可用的；若全部失效，会自动拉取新的国内代理重试；
+          # 若仍无可用则直连尝试。代理选择过程会打印在日志里。
+          # 在仓库 Settings → Secrets and variables → Actions 里添加
+          # 名为 PROXY_URL 的 secret。只给抓取步骤用，git push 不走代理。
+          PROXY_URL: ${{ secrets.PROXY_URL }}
 
       - name: 提交更新到仓库
         run: |
