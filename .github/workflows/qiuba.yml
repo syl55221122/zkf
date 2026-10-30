@@ -26,6 +26,13 @@ jobs:
 
       - name: 抓取比赛数据
         run: python runner.py
+        env:
+          # 国内出口代理：在仓库 Settings → Secrets and variables → Actions
+          # 里添加名为 PROXY_URL 的 secret，值为代理地址
+          # （如 http://user:pass@1.2.3.4:8080）。未设置时直连，不影响。
+          # 注意：只给抓取步骤加代理，git push 不走代理。
+          HTTP_PROXY: ${{ secrets.PROXY_URL }}
+          HTTPS_PROXY: ${{ secrets.PROXY_URL }}
 
       - name: 提交更新到仓库
         run: |
