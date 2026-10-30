@@ -5,16 +5,42 @@
 
 供 GitHub Actions 定时调用：实例化 qiuba.py 里的 Spider，
 抓取分类 + 直播中的比赛，输出 data/matches.json。
+
+qiuba.py 顶部有 `from base.spider import Spider`（原本依赖 TVBox/py
+框架）。为了让它能独立运行，这里在导入 qiuba 之前先向 sys.modules
+注入一个最小的 base.spider 桩模块，因此不再需要 base/ 目录。
 """
 import json
 import os
 import sys
+import types
 from datetime import datetime, timedelta, timezone
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
-from qiuba import Spider  # noqa: E402  (需要 base/spider.py 桩模块)
+
+def _install_spider_stub():
+    """注入最小的 base.spider 桩模块，使 qiuba.py 可独立导入。"""
+    if "base.spider" in sys.modules:
+        return
+    base_pkg = types.ModuleType("base")
+    base_pkg.__path__ = []  # 标记为包，避免后续导入歧义
+    spider_mod = types.ModuleType("base.spider")
+
+    class Spider:
+        def init(self, extend=""):
+            pass
+
+    spider_mod.Spider = Spider
+    base_pkg.spider = spider_mod
+    sys.modules["base"] = base_pkg
+    sys.modules["base.spider"] = spider_mod
+
+
+_install_spider_stub()
+
+from qiuba import Spider  # noqa: E402
 
 
 def main():
