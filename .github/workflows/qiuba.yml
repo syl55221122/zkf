@@ -2,8 +2,8 @@ name: 球吧数据自动更新
 
 on:
   schedule:
-    # 每小时整点运行一次（注意：cron 使用 UTC 时间）
-    - cron: "0 * * * *"
+    # 每 15 分钟运行一次（注意：cron 使用 UTC 时间）
+    - cron: "*/15 * * * *"
   # 允许在 GitHub Actions 页面手动点一下立即运行
   workflow_dispatch:
 
