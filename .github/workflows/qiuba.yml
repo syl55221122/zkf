@@ -1,0 +1,37 @@
+name: 球吧数据自动更新
+
+on:
+  schedule:
+    # 每小时整点运行一次（注意：cron 使用 UTC 时间）
+    - cron: "0 * * * *"
+  # 允许在 GitHub Actions 页面手动点一下立即运行
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 抓取比赛数据
+        run: python runner.py
+
+      - name: 提交更新到仓库
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          # 只有数据真正变化时才提交，避免空提交
+          git diff --cached --quiet || git commit -m "auto: 更新比赛数据 $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
