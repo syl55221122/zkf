@@ -25,19 +25,16 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 抓取比赛数据
+        # 代理全自动：proxy_harvester.py 每 2 小时实测维护 data/proxies.txt，
+        # runner 启动时自动选用可用的，无需任何手动配置。
         run: python runner.py
-        env:
-          # 代理池：多个代理用英文逗号分隔。runner 会自动测试并选用
-          # 第一个可用的；若全部失效，会自动拉取新的国内代理重试；
-          # 若仍无可用则直连尝试。代理选择过程会打印在日志里。
-          # 在仓库 Settings → Secrets and variables → Actions 里添加
-          # 名为 PROXY_URL 的 secret。只给抓取步骤用，git push 不走代理。
-          PROXY_URL: ${{ secrets.PROXY_URL }}
 
       - name: 提交更新到仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 先合入远端（代理池 workflow 也在提交 data/），避免推送冲突
+          git pull --rebase || true
           git add data/
           # 只有数据真正变化时才提交，避免空提交
           git diff --cached --quiet || git commit -m "auto: 更新比赛数据 $(date -u '+%Y-%m-%d %H:%M UTC')"
