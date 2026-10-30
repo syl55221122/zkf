@@ -12,14 +12,21 @@ qiuba.py 顶部有 `from base.spider import Spider`（原本依赖 TVBox/py
 框架）。为了让它能独立运行，这里在导入 qiuba 之前先向 sys.modules
 注入一个最小的 base.spider 桩模块，因此不再需要 base/ 目录。
 
-网络说明：requests 默认读取 HTTP_PROXY / HTTPS_PROXY 环境变量，
-workflow 里配置的国内代理会自动生效，无需改代码。
+代理说明（自动处理，无需人工干预）：
+  - workflow 通过 PROXY_URL 环境变量传入代理池，多个代理用英文逗号分隔。
+  - runner 启动时会自动测试并选用第一个可用的代理；若池内全部失效，
+    则自动从代理池 API 拉取新的国内代理重试；若仍无可用则直连尝试。
+  - 选定代理后会自动设置 HTTP_PROXY / HTTPS_PROXY 环境变量，
+    requests（qiuba.py 用的库）会默认读取，无需改业务代码。
 """
 import json
 import os
+import re
 import sys
 import types
 from datetime import datetime, timedelta, timezone
+
+import requests
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
@@ -46,6 +53,88 @@ def _install_spider_stub():
 _install_spider_stub()
 
 from qiuba import Spider  # noqa: E402
+
+
+PROXY_TEST_URL = "https://www.qiuba001.vip/api/categories"
+PROXY_POOL_API = (
+    "https://api.proxyscrape.com/v2/?request=displayproxies"
+    "&protocol=http&timeout=10000&country=CN&ssl=all&anonymity=all"
+)
+
+
+def _mask_proxy(p):
+    """脱敏打印代理地址（隐藏账号密码部分）。"""
+    return p.split("@")[-1] if "@" in p else p
+
+
+def _proxy_works(proxy, timeout=10):
+    """测试代理能否正常访问目标站（状态 200 且返回 JSON）。"""
+    try:
+        r = requests.get(
+            PROXY_TEST_URL,
+            proxies={"http": proxy, "https": proxy},
+            timeout=timeout,
+        )
+        return r.status_code == 200 and r.text[:1] in ("[", "{")
+    except Exception:
+        return False
+
+
+def _saved_candidates():
+    """从 PROXY_URL 环境变量解析候选代理（逗号/分号分隔，去重）。"""
+    raw = os.environ.get("PROXY_URL", "")
+    cands = []
+    for p in raw.replace(";", ",").split(","):
+        p = p.strip()
+        if p and p not in cands:
+            cands.append(p)
+    return cands
+
+
+def _fetch_fresh_proxies(limit=30):
+    """从免费代理池 API 拉取新的国内代理（直连拉取，不走代理）。"""
+    try:
+        r = requests.get(PROXY_POOL_API, timeout=20)
+        out = []
+        for line in r.text.splitlines():
+            line = line.strip()
+            if re.match(r"^\d{1,3}(\.\d{1,3}){3}:\d+$", line):
+                url = "http://" + line
+                if url not in out:
+                    out.append(url)
+            if len(out) >= limit:
+                break
+        return out
+    except Exception as e:  # noqa: BLE001
+        print(f"拉取新代理列表失败: {e}")
+        return []
+
+
+def setup_proxy():
+    """自动挑选可用代理并设置到环境变量。返回是否找到可用代理。"""
+    cands = _saved_candidates()
+    if cands:
+        print(f"测试 {len(cands)} 个候选代理...")
+        for p in cands:
+            if _proxy_works(p):
+                print(f"使用代理: {_mask_proxy(p)}")
+                os.environ["HTTP_PROXY"] = p
+                os.environ["HTTPS_PROXY"] = p
+                return True
+            print(f"代理不可用: {_mask_proxy(p)}")
+        print("候选代理全部失效，尝试拉取新的代理列表...")
+
+    fresh = _fetch_fresh_proxies()
+    print(f"拉取到 {len(fresh)} 个新代理，逐个测试...")
+    for p in fresh:
+        if _proxy_works(p):
+            print(f"使用新代理: {_mask_proxy(p)}")
+            os.environ["HTTP_PROXY"] = p
+            os.environ["HTTPS_PROXY"] = p
+            return True
+
+    print("WARN: 无可用代理，将直连尝试")
+    return False
 
 
 def fetch_matches_json(sp):
@@ -137,6 +226,9 @@ def build_m3u(sp):
 
 
 def main():
+    # 先自动挑选可用代理（会设置 HTTP_PROXY / HTTPS_PROXY 环境变量）
+    setup_proxy()
+
     sp = Spider()
     sp.init("")
 
