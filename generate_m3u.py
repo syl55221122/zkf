@@ -6,27 +6,37 @@ import requests
 import base64
 from urllib.parse import quote, unquote
 from datetime import datetime, timezone, timedelta
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 class QiubaM3UGenerator:
     def __init__(self):
         self.host = "https://www.qiuba001.vip"
         self.api = self.host + "/api"
+        
+        # 更加完整的浏览器 Headers，绕过简单的反爬
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             "Referer": self.host + "/",
             "Origin": self.host,
-            "Accept": "*/*",
-            "Accept-Language": "zh-CN,zh;q=0.9"
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Sec-Ch-Ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+            "Sec-Ch-Ua-Mobile": "?0",
+            "Sec-Ch-Ua-Platform": '"Windows"',
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "same-origin"
         }
-        self.video_headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            "Referer": self.host + "/",
-            "Origin": self.host,
-        }
+        
+        # 配置带有重试机制的 session
+        self.session = requests.Session()
+        retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+        self.session.mount('https://', HTTPAdapter(max_retries=retries))
 
     def _get(self, url):
         try:
-            r = requests.get(url, headers=self.headers, timeout=15)
+            r = self.session.get(url, headers=self.headers, timeout=15)
             r.raise_for_status()
             return r.json()
         except Exception as e:
@@ -35,7 +45,7 @@ class QiubaM3UGenerator:
 
     def _post(self, url, data):
         try:
-            r = requests.post(url, json=data, headers=self.headers, timeout=15)
+            r = self.session.post(url, json=data, headers=self.headers, timeout=15)
             r.raise_for_status()
             return r.json()
         except Exception as e:
@@ -63,12 +73,15 @@ class QiubaM3UGenerator:
 
     def generate(self, filename="live.m3u"):
         print("开始获取球吧直播赛事...")
-        # 获取所有分类或直接拉取赛事（这里拉取 live 和未开始的比赛）
         match_data = self._get(f"{self.api}/matches?page=1&page_size=100")
         items = match_data.get("items", [])
         
         if not items:
             print("未获取到任何赛事信息。")
+            # 即使没获取到，也创建一个空的或者保留旧的m3u文件，避免git commit报错中断
+            if not os.path.exists(filename):
+                with open(filename, "w", encoding="utf-8") as f:
+                    f.write('#EXTM3U\n')
             return
 
         m3u_content = '#EXTM3U x-tvg-url=""\n'
@@ -85,13 +98,11 @@ class QiubaM3UGenerator:
             competition_name = competition.get("name", "综合体育")
             status = item.get("status", "not_started")
             
-            # 只抓取进行中或未开始的比赛
             if status == "finished":
                 continue
 
             match_title = f"{competition_name}: {home_name} vs {away_name}"
             
-            # 获取比赛详情及信号源
             signals_data = self._get(f"{self.api}/matches/{match_id}/signals")
             signals = []
             if isinstance(signals_data, dict):
@@ -105,23 +116,19 @@ class QiubaM3UGenerator:
             for idx, sig in enumerate(signals):
                 source_id = sig.get("source_id", "")
                 display_name = sig.get("display_name", f"信号{idx+1}")
-                sig_status = sig.get("status", "")
                 
                 if not source_id:
                     continue
                 
-                # 获取真实的m3u8播放地址
                 real_url = self.get_real_url(source_id)
                 if not real_url:
                     continue
                 
-                # 组装 M3U 条目
                 group_title = competition_name
                 tvg_name = f"{home_name} vs {away_name}"
                 tvid = f"qiuba_{match_id}_{idx}"
                 
                 m3u_content += f'#EXTINF:-1 tvg-id="{tvid}" tvg-name="{tvg_name}" group-title="{group_title}",{match_title} - {display_name}\n'
-                # 如果需要携带请求头（Referer），可以在URL后附加 #pkg 形式或特定播放器支持的格式，标准m3u直接输出链接
                 m3u_content += f"{real_url}\n"
                 count += 1
 
