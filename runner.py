@@ -12,18 +12,18 @@ qiuba.py 顶部有 `from base.spider import Spider`（原本依赖 TVBox/py
 框架）。为了让它能独立运行，这里在导入 qiuba 之前先向 sys.modules
 注入一个最小的 base.spider 桩模块，因此不再需要 base/ 目录。
 
-代理说明（自动处理，无需人工干预）：
-  - workflow 通过 PROXY_URL 环境变量传入代理池，多个代理用英文逗号分隔。
-  - runner 启动时会自动测试并选用第一个可用的代理；若池内全部失效，
-    则自动从代理池 API 拉取新的国内代理重试；若仍无可用则直连尝试。
+代理说明（全自动，无需人工干预）：
+  - 代理池由 proxy_harvester.py 每 2 小时实测维护，写入 data/proxies.txt。
+  - runner 启动时：先试上次可用的代理（data/.last_proxy 缓存，命中则秒过）；
+    否则并行测试池中代理，选用响应最快的可用的；若全部失效则直连尝试。
   - 选定代理后会自动设置 HTTP_PROXY / HTTPS_PROXY 环境变量，
     requests（qiuba.py 用的库）会默认读取，无需改业务代码。
 """
 import json
 import os
-import re
 import sys
 import types
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 import requests
@@ -56,10 +56,8 @@ from qiuba import Spider  # noqa: E402
 
 
 PROXY_TEST_URL = "https://www.qiuba001.vip/api/categories"
-PROXY_POOL_API = (
-    "https://api.proxyscrape.com/v2/?request=displayproxies"
-    "&protocol=http&timeout=10000&country=CN&ssl=all&anonymity=all"
-)
+LAST_PROXY_FILE = os.path.join(BASE_DIR, "data", ".last_proxy")
+POOL_FILE = os.path.join(BASE_DIR, "data", "proxies.txt")
 
 
 def _mask_proxy(p):
@@ -67,7 +65,7 @@ def _mask_proxy(p):
     return p.split("@")[-1] if "@" in p else p
 
 
-def _proxy_works(proxy, timeout=10):
+def _proxy_works(proxy, timeout=8):
     """测试代理能否正常访问目标站（状态 200 且返回 JSON）。"""
     try:
         r = requests.get(
@@ -80,57 +78,86 @@ def _proxy_works(proxy, timeout=10):
         return False
 
 
-def _saved_candidates():
-    """从 PROXY_URL 环境变量解析候选代理（逗号/分号分隔，去重）。"""
-    raw = os.environ.get("PROXY_URL", "")
+def _parallel_pick(proxies, timeout=8):
+    """并行测试代理列表，返回第一个（响应最快）可用的代理，无则返回 None。"""
+    proxies = list(dict.fromkeys(p for p in proxies if p))  # 去重去空，保持顺序
+    if not proxies:
+        return None
+    with ThreadPoolExecutor(max_workers=min(20, len(proxies))) as ex:
+        future_to_proxy = {
+            ex.submit(_proxy_works, p, timeout): p for p in proxies
+        }
+        for fut in as_completed(future_to_proxy):
+            try:
+                if fut.result():
+                    winner = future_to_proxy[fut]
+                    for f in future_to_proxy:
+                        f.cancel()  # 尽力取消未开始的任务
+                    return winner
+            except Exception:  # noqa: BLE001
+                continue
+    return None
+
+
+def _pool_candidates():
+    """读取收割器维护的 data/proxies.txt 候选代理。"""
     cands = []
-    for p in raw.replace(";", ",").split(","):
-        p = p.strip()
-        if p and p not in cands:
-            cands.append(p)
+    try:
+        with open(POOL_FILE, encoding="utf-8") as f:
+            for line in f:
+                p = line.strip()
+                if p and p not in cands:
+                    cands.append(p)
+    except Exception:  # noqa: BLE001
+        pass
     return cands
 
 
-def _fetch_fresh_proxies(limit=30):
-    """从免费代理池 API 拉取新的国内代理（直连拉取，不走代理）。"""
+def _load_last_proxy():
+    """读取上次可用的代理缓存。"""
     try:
-        r = requests.get(PROXY_POOL_API, timeout=20)
-        out = []
-        for line in r.text.splitlines():
-            line = line.strip()
-            if re.match(r"^\d{1,3}(\.\d{1,3}){3}:\d+$", line):
-                url = "http://" + line
-                if url not in out:
-                    out.append(url)
-            if len(out) >= limit:
-                break
-        return out
+        with open(LAST_PROXY_FILE, encoding="utf-8") as f:
+            p = f.read().strip()
+            return p or None
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _save_last_proxy(proxy):
+    """缓存本次可用的代理，供下次优先试用（随 data/ 一起提交）。"""
+    try:
+        os.makedirs(os.path.dirname(LAST_PROXY_FILE), exist_ok=True)
+        with open(LAST_PROXY_FILE, "w", encoding="utf-8") as f:
+            f.write(proxy)
     except Exception as e:  # noqa: BLE001
-        print(f"拉取新代理列表失败: {e}")
-        return []
+        print(f"WARN: 缓存代理失败: {e}")
+
+
+def _apply_proxy(proxy):
+    os.environ["HTTP_PROXY"] = proxy
+    os.environ["HTTPS_PROXY"] = proxy
 
 
 def setup_proxy():
     """自动挑选可用代理并设置到环境变量。返回是否找到可用代理。"""
-    cands = _saved_candidates()
-    if cands:
-        print(f"测试 {len(cands)} 个候选代理...")
-        for p in cands:
-            if _proxy_works(p):
-                print(f"使用代理: {_mask_proxy(p)}")
-                os.environ["HTTP_PROXY"] = p
-                os.environ["HTTPS_PROXY"] = p
-                return True
-            print(f"代理不可用: {_mask_proxy(p)}")
-        print("候选代理全部失效，尝试拉取新的代理列表...")
+    # 1. 先试上次可用的代理，命中则秒过
+    last = _load_last_proxy()
+    if last:
+        if _proxy_works(last, timeout=6):
+            print(f"使用上次可用代理: {_mask_proxy(last)}")
+            _apply_proxy(last)
+            return True
+        print(f"上次代理已失效: {_mask_proxy(last)}")
 
-    fresh = _fetch_fresh_proxies()
-    print(f"拉取到 {len(fresh)} 个新代理，逐个测试...")
-    for p in fresh:
-        if _proxy_works(p):
-            print(f"使用新代理: {_mask_proxy(p)}")
-            os.environ["HTTP_PROXY"] = p
-            os.environ["HTTPS_PROXY"] = p
+    # 2. 并行测试代理池文件
+    cands = [p for p in _pool_candidates() if p != last]
+    if cands:
+        print(f"并行测试 {len(cands)} 个候选代理...")
+        hit = _parallel_pick(cands, timeout=8)
+        if hit:
+            print(f"使用代理: {_mask_proxy(hit)}")
+            _apply_proxy(hit)
+            _save_last_proxy(hit)
             return True
 
     print("WARN: 无可用代理，将直连尝试")
