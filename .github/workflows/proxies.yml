@@ -1,0 +1,39 @@
+name: 代理池自动维护
+
+on:
+  schedule:
+    # 每 2 小时刷新一次代理池（注意：cron 使用 UTC 时间）
+    - cron: "0 */2 * * *"
+  # 允许在 GitHub Actions 页面手动点一下立即运行
+  workflow_dispatch:
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 抓取并实测代理
+        run: python proxy_harvester.py
+
+      - name: 提交代理池
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 先合入远端（主流程每 15 分钟也在提交 data/），避免推送冲突
+          git pull --rebase || true
+          git add data/proxies.txt
+          # 只有代理池真正变化时才提交，避免空提交
+          git diff --cached --quiet || git commit -m "auto: 刷新代理池 $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
