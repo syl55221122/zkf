@@ -199,57 +199,74 @@ def fetch_matches_json(sp):
     return result
 
 
-def build_m3u(sp):
-    """解析所有未结束比赛的直播信号真实地址，返回 (m3u文本, 收录条数)。
+def _resolve_match_signals(sp, item):
+    """解析单场比赛全部信号的真实地址，返回 [(排序键, extinf, url)]。
+
+    qiuba.py 的 _get / _post / _decode_play_url 无共享可变状态，
+    可在多线程中并发调用。
+    """
+    results = []
+    match_id = str(item.get("id", ""))
+    home = item.get("home_team", {}).get("name", "主队")
+    away = item.get("away_team", {}).get("name", "客队")
+    comp = item.get("competition", {}).get("name", "综合体育")
+
+    sig_data = sp._get(f"{sp.api}/matches/{match_id}/signals")
+    signals = []
+    if isinstance(sig_data, dict):
+        signals = sig_data.get("signals", [])
+    elif isinstance(sig_data, list):
+        signals = sig_data
+
+    for idx, sig in enumerate(signals):
+        source_id = sig.get("source_id", "")
+        if not source_id:
+            continue
+        display = sig.get("display_name", f"信号{idx + 1}")
+
+        sess = sp._post(f"{sp.api}/play/session", {"source_id": source_id})
+        enc = (sess or {}).get("real_url_encrypted", "")
+        real_url = sp._decode_play_url(enc)
+        if not real_url:
+            continue
+
+        title = f"{comp}: {home} vs {away}"
+        extinf = (
+            f'#EXTINF:-1 tvg-id="qiuba_{match_id}_{idx}" '
+            f'tvg-name="{home} vs {away}" group-title="{comp}",'
+            f"{title} - {display}"
+        )
+        results.append(((comp, match_id, idx), extinf, real_url))
+    return results
+
+
+def build_m3u(sp, max_workers=8):
+    """并行解析所有未结束比赛的直播信号真实地址，返回 (m3u文本, 收录条数)。
 
     复用 qiuba.py 自带的 _get / _post / _decode_play_url 逻辑：
     signals 接口拿信号源 -> play/session 接口拿加密地址 -> 解出 m3u8。
+    比赛之间并行解析，输出按 (赛事, 比赛, 信号序号) 排序保证每次顺序稳定。
     """
-    lines = ["#EXTM3U"]
-    count = 0
-
     data = sp._get(f"{sp.api}/matches?page=1&page_size=100")
     items = data.get("items", []) if isinstance(data, dict) else []
+    items = [it for it in items
+             if it.get("status") != "finished" and it.get("id")]
 
-    for item in items:
-        if item.get("status") == "finished":
-            continue
-        match_id = str(item.get("id", ""))
-        if not match_id:
-            continue
-        home = item.get("home_team", {}).get("name", "主队")
-        away = item.get("away_team", {}).get("name", "客队")
-        comp = item.get("competition", {}).get("name", "综合体育")
+    all_results = []
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        futs = {ex.submit(_resolve_match_signals, sp, it): it for it in items}
+        for fut in as_completed(futs):
+            try:
+                all_results.extend(fut.result())
+            except Exception as e:  # noqa: BLE001
+                print(f"WARN: 比赛信号解析失败: {e}")
 
-        sig_data = sp._get(f"{sp.api}/matches/{match_id}/signals")
-        signals = []
-        if isinstance(sig_data, dict):
-            signals = sig_data.get("signals", [])
-        elif isinstance(sig_data, list):
-            signals = sig_data
-
-        for idx, sig in enumerate(signals):
-            source_id = sig.get("source_id", "")
-            if not source_id:
-                continue
-            display = sig.get("display_name", f"信号{idx + 1}")
-
-            sess = sp._post(f"{sp.api}/play/session", {"source_id": source_id})
-            enc = (sess or {}).get("real_url_encrypted", "")
-            real_url = sp._decode_play_url(enc)
-            if not real_url:
-                continue
-
-            title = f"{comp}: {home} vs {away}"
-            lines.append(
-                f'#EXTINF:-1 tvg-id="qiuba_{match_id}_{idx}" '
-                f'tvg-name="{home} vs {away}" group-title="{comp}",'
-                f"{title} - {display}"
-            )
-            lines.append(real_url)
-            count += 1
-
-    return "\n".join(lines) + "\n", count
+    all_results.sort(key=lambda x: x[0])
+    lines = ["#EXTM3U"]
+    for _, extinf, url in all_results:
+        lines.append(extinf)
+        lines.append(url)
+    return "\n".join(lines) + "\n", len(all_results)
 
 
 def main():
