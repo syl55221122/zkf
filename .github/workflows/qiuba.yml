@@ -26,12 +26,13 @@ jobs:
 
       - name: 检查代理配置
         run: |
+          set +e
           if [ -z "$HTTP_PROXY" ]; then
             echo "RESULT: PROXY 未设置（secret 为空或不存在）"
           else
-            echo "RESULT: PROXY 已设置，长度 ${#HTTP_PROXY}"
+            echo "RESULT: PROXY 已设置，长度 ${#HTTP_PROXY}（正常应为 26）"
             code=$(curl -s -o /dev/null -w "%{http_code}" -x "$HTTP_PROXY" --max-time 15 https://www.qiuba001.vip/api/categories)
-            echo "RESULT: 经代理访问目标站返回 $code"
+            echo "RESULT: curl 退出码 $?，经代理访问目标站返回 $code"
           fi
         env:
           HTTP_PROXY: ${{ secrets.PROXY_URL }}
