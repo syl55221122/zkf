@@ -31,9 +31,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # 先合入远端（主流程每 15 分钟也在提交 data/），避免推送冲突
-          git pull --rebase || true
           git add data/proxies.txt
           # 只有代理池真正变化时才提交，避免空提交
-          git diff --cached --quiet || git commit -m "auto: 刷新代理池 $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          if git diff --cached --quiet; then
+            echo "代理池无变化，跳过提交"
+          else
+            git commit -m "auto: 刷新代理池 $(date -u '+%Y-%m-%d %H:%M UTC')"
+            # 先提交再合入远端：pull --rebase 要求工作区干净，所以必须在 commit 之后；
+            # 球吧主流程每 15 分钟也在提交 data/，rebase 能把我们的提交接到最新远端之后
+            git pull --rebase
+            # 万一在 pull 和 push 的间隙又有新提交，重试一次
+            git push || { sleep 5; git pull --rebase && git push; }
+          fi
