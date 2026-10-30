@@ -1,3 +1,19 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="qiuba_24503_0" tvg-name="印度斯坦航空SC vs 科达古" group-title="印班超",印班超: 印度斯坦航空SC vs 科达古 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4661738.m3u8?txSecret=92d48a089b8f17594fba8d7c838a1337&txTime=6AE58459
+#EXTINF:-1 tvg-id="qiuba_24503_1" tvg-name="印度斯坦航空SC vs 科达古" group-title="印班超",印班超: 印度斯坦航空SC vs 科达古 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4661738.m3u8?txSecret=3b293fdd66cf2c5f0bd855a752009c12&txTime=6AE58C51
+#EXTINF:-1 tvg-id="qiuba_24503_2" tvg-name="印度斯坦航空SC vs 科达古" group-title="印班超",印班超: 印度斯坦航空SC vs 科达古 - 高清K
+https://hello.ooo0ooo.top/live/4661738.m3u8
+#EXTINF:-1 tvg-id="qiuba_24505_0" tvg-name="南方黄眼企鹅女篮 vs 北卡胡女篮" group-title="新西兰女联",新西兰女联: 南方黄眼企鹅女篮 vs 北卡胡女篮 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3938233.m3u8?txSecret=cb6e13fd9250a31c39ea5febb452032d&txTime=6AE58459
+#EXTINF:-1 tvg-id="qiuba_24505_1" tvg-name="南方黄眼企鹅女篮 vs 北卡胡女篮" group-title="新西兰女联",新西兰女联: 南方黄眼企鹅女篮 vs 北卡胡女篮 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3938233.m3u8?txSecret=6a0a35e3d88813d3c4bbf0330803161b&txTime=6AE58C51
+#EXTINF:-1 tvg-id="qiuba_24505_2" tvg-name="南方黄眼企鹅女篮 vs 北卡胡女篮" group-title="新西兰女联",新西兰女联: 南方黄眼企鹅女篮 vs 北卡胡女篮 - 高清K
+https://hello.ooo0ooo.top/live/3938233.m3u8
+#EXTINF:-1 tvg-id="qiuba_24504_0" tvg-name="新西兰破坏者 vs 阿德莱德36人" group-title="澳NBL",澳NBL: 新西兰破坏者 vs 阿德莱德36人 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3925978.m3u8?txSecret=6f162461d16da200232423d914d419df&txTime=6AE58459
+#EXTINF:-1 tvg-id="qiuba_24504_1" tvg-name="新西兰破坏者 vs 阿德莱德36人" group-title="澳NBL",澳NBL: 新西兰破坏者 vs 阿德莱德36人 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-2-3925978.m3u8?txSecret=29047c6a17a653832441cbfacfaf8026&txTime=6AE58C51
 #EXTINF:-1 tvg-id="qiuba_24504_2" tvg-name="新西兰破坏者 vs 阿德莱德36人" group-title="澳NBL",澳NBL: 新西兰破坏者 vs 阿德莱德36人 - 高清K
 https://hello.ooo0ooo.top/live/3925978.m3u8
