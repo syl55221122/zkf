@@ -1,23 +1,9 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="qiuba_25160_1" tvg-name="黄蜂 vs 76人" group-title="NBA",NBA: 黄蜂 vs 76人 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931590.m3u8%3FtxSecret%3Dc2aab12524cb3bf783e24929bde986d9%26txTime%3D6AE678C8
-#EXTINF:-1 tvg-id="qiuba_25160_4" tvg-name="黄蜂 vs 76人" group-title="NBA",NBA: 黄蜂 vs 76人 - 主线路
-http://play.sportsteam368.com/play/vxt/?id=10022600148&id2=
-#EXTINF:-1 tvg-id="qiuba_25449_0" tvg-name="台钢猎鹰 vs 桃园领航猿" group-title="中台P联",中台P联: 台钢猎鹰 vs 桃园领航猿 - 高清K
-https://hello.ooo0ooo.top/live/3957082.m3u8
-#EXTINF:-1 tvg-id="qiuba_25157_2" tvg-name="马卡拉 vs 瓜亚基尔巴塞罗那" group-title="厄瓜甲",厄瓜甲: 马卡拉 vs 瓜亚基尔巴塞罗那 - 高清K
-https://hello.ooo0ooo.top/live/4646967.m3u8
-#EXTINF:-1 tvg-id="qiuba_25163_1" tvg-name="圣洛伦佐体育会 vs 亚松森自由" group-title="巴拉甲",巴拉甲: 圣洛伦佐体育会 vs 亚松森自由 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4631221.m3u8%3FtxSecret%3De5399b3af7b2fc37d84cf168c5a3c763%26txTime%3D6AE67D9E
-#EXTINF:-1 tvg-id="qiuba_25149_2" tvg-name="维拉诺瓦 vs 尤文图德" group-title="巴西乙",巴西乙: 维拉诺瓦 vs 尤文图德 - 高清K
-https://hello.ooo0ooo.top/live/4494791.m3u8
-#EXTINF:-1 tvg-id="qiuba_25162_0" tvg-name="累西腓航海 vs 阿瓦伊" group-title="巴西乙",巴西乙: 累西腓航海 vs 阿瓦伊 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4495736.m3u8?txSecret=5d52c43d368b2d3fa77016c7e87d0003&txTime=6AE7BA20
-#EXTINF:-1 tvg-id="qiuba_25162_1" tvg-name="累西腓航海 vs 阿瓦伊" group-title="巴西乙",巴西乙: 累西腓航海 vs 阿瓦伊 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4495736.m3u8%3FtxSecret%3D844e463930dc03a66a3eec67956a0105%26txTime%3D6AE67D9E
-#EXTINF:-1 tvg-id="qiuba_25162_2" tvg-name="累西腓航海 vs 阿瓦伊" group-title="巴西乙",巴西乙: 累西腓航海 vs 阿瓦伊 - 高清K
-https://hello.ooo0ooo.top/live/4495736.m3u8
-#EXTINF:-1 tvg-id="qiuba_25153_0" tvg-name="圣何塞地震 vs 皇家盐湖城" group-title="美职业",美职业: 圣何塞地震 vs 皇家盐湖城 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4460331.m3u8?txSecret=13506442e08b43cf07d9b0a248ee8b30&txTime=6AE7BA20
-#EXTINF:-1 tvg-id="qiuba_25151_2" tvg-name="波尔图 vs 埃斯托里尔" group-title="葡超",葡超: 波尔图 vs 埃斯托里尔 - 高清K
-https://hello.ooo0ooo.top/live/4578236.m3u8
+#EXTINF:-1 tvg-id="qiuba_25172_2" tvg-name="马刺 vs 森林狼" group-title="NBA",NBA: 马刺 vs 森林狼 - 主线路
+https://www.rtmpcdn.com/live/0f10030d-01f4-4256-9a2f-e30636368818.m3u8
+#EXTINF:-1 tvg-id="qiuba_25172_3" tvg-name="马刺 vs 森林狼" group-title="NBA",NBA: 马刺 vs 森林狼 - 高清K
+https://hello.ooo0ooo.top/live/3931594.m3u8
+#EXTINF:-1 tvg-id="qiuba_25181_0" tvg-name="瓜达拉哈拉 vs 亚特兰特" group-title="墨西超",墨西超: 瓜达拉哈拉 vs 亚特兰特 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-1-4553925.m3u8?txSecret=b59b7b9214c3f667262b4302c219fda2&txTime=6AE7E4C9
+#EXTINF:-1 tvg-id="qiuba_25181_1" tvg-name="瓜达拉哈拉 vs 亚特兰特" group-title="墨西超",墨西超: 瓜达拉哈拉 vs 亚特兰特 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4553925.m3u8%3FtxSecret%3Db8773bd4312e40eb9227f6ce6c0e6d9f%26txTime%3D6AE6A7DC
