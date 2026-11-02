@@ -1,27 +1,13 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/qq_415_v8385.jpg?v=1789454340185" group-title="NBA",NBA | 勇士 vs 快船 | 0-0 | 中文解说11 | 中文解说11
-https://live01-cn-ali.xdbrk.com/live/55285440_tsc.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/qq_415_v8385.jpg?v=1789454340185" group-title="NBA",NBA | 勇士 vs 快船 | 0-0 | 中文解说11 | 直播12
-https://hello.ooo0ooo.top/live/3931598.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/qq_415_v8385.jpg?v=1789454340185" group-title="NBA",NBA | 勇士 vs 快船 | 0-0 | 中文解说11 | 原声13
-https://pul-tenm.gkykp.com/live/hd-en-2-3931598.m3u8?txSecret=b4ffe40ba06134f82290729704799230&txTime=6AE93AF8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/6-v150.jpg?v=1789454340185" group-title="美职业",美职业 | 新英格兰革命 vs 迈阿密国际 | 1-0 | 直播6 | 直播6
-https://hello.ooo0ooo.top/live/4460335.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/6-v150.jpg?v=1789454340185" group-title="美职业",美职业 | 新英格兰革命 vs 迈阿密国际 | 1-0 | 直播6 | 原声12
-https://pul-tenm.gkykp.com/live/hd-en-1-4460335.m3u8?txSecret=4c7d685f34271508d2899770a209b3ae&txTime=6AE93AF8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/19-v116.jpg?v=1789454340185" group-title="阿甲",阿甲 | 拉努斯 vs 门多萨体操击剑 | 1-1 | 直播19 | 直播19
-https://hello.ooo0ooo.top/live/4539845.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/19-v116.jpg?v=1789454340185" group-title="阿甲",阿甲 | 拉努斯 vs 门多萨体操击剑 | 1-1 | 直播19 | 原声1
-https://pul-tenm.gkykp.com/live/sd-1-4539845.m3u8?txSecret=6589cf532ef40445b6462eac1f53e68b&txTime=6AE93AF8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/1-v151.jpg?v=1789454340185" group-title="墨西超",墨西超 | 蓝十字 vs 莱昂 | 0-0 | 直播1 | 直播1
-https://hello.ooo0ooo.top/live/4553929.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/1-v151.jpg?v=1789454340185" group-title="墨西超",墨西超 | 蓝十字 vs 莱昂 | 0-0 | 直播1 | 原声7
-https://pul-tenm.gkykp.com/live/hd-en-1-4553929.m3u8?txSecret=9eefcd9d025e7864ac5c6f8717fdac5f&txTime=6AE93AF8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/17-v134.jpg?v=1789454340185" group-title="哥伦杯",哥伦杯 | 圣塔菲 vs 云斯卡尔达斯 | 0-0 | 直播17 | 直播17
-https://hello.ooo0ooo.top/live/4657873.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/17-v134.jpg?v=1789454340185" group-title="哥伦杯",哥伦杯 | 圣塔菲 vs 云斯卡尔达斯 | 0-0 | 直播17 | 原声8
-https://pul-tenm.gkykp.com/live/sd-1-4657873.m3u8?txSecret=e2624f146de2cb9bfeb49d009985ae3d&txTime=6AE93AF8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v135.jpg?v=1789454340185" group-title="美乙",美乙 | 新墨西哥联 vs 凤凰重生 | 0-0 | 直播4 | 直播4
-https://hello.ooo0ooo.top/live/4663348.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v135.jpg?v=1789454340185" group-title="美乙",美乙 | 新墨西哥联 vs 凤凰重生 | 0-0 | 直播4 | 原声3
-https://pul-tenm.gkykp.com/live/sd-1-4663348.m3u8?txSecret=d92fa67a29d394ba8df4376bb4fb1975&txTime=6AE93AF8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/3-v183.jpg?v=1789454340185" group-title="印班超",印班超 | 科达古 vs 反叛者SC | 0-0 | 直播3 | 直播3
+https://hello.ooo0ooo.top/live/4663427.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/2-v135.jpg?v=1789454340185" group-title="蒙古超",蒙古超 | 中央骏马 vs 德仁FC | 1-1 | 直播2 | 直播2
+https://hello.ooo0ooo.top/live/4661421.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/2-v135.jpg?v=1789454340185" group-title="蒙古超",蒙古超 | 中央骏马 vs 德仁FC | 1-1 | 直播2 | 原声2
+https://pul-tenm.gkykp.com/live/sd-1-4661421.m3u8?txSecret=a9c7e8b8a04dc795cbf785bc634103b0&txTime=6AE997C8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/6-v151.jpg?v=1789454340185" group-title="澳女篮",澳女篮 | 本迪高精灵女篮 vs 吉朗毒液女篮 | 4-5 | 直播6 | 直播6
+https://hello.ooo0ooo.top/live/3925772.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/6-v151.jpg?v=1789454340185" group-title="澳女篮",澳女篮 | 本迪高精灵女篮 vs 吉朗毒液女篮 | 4-5 | 直播6 | 原声5
+https://pul-tenm.gkykp.com/live/sd-2-3925772.m3u8?txSecret=47b762f112f4d2ee67232f8a9ce78489&txTime=6AE997C8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/12-v149.jpg?v=1789454340185" group-title="NCAA",NCAA | 格兰布林大学 vs 北伊利诺大学 | 11-9 | 直播12 | 直播12
+https://hello.ooo0ooo.top/live/3950687.m3u8
