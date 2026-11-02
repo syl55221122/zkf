@@ -1,59 +1,39 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="qiuba_25640_0" tvg-name="勇士 vs 快船" group-title="NBA",NBA: 勇士 vs 快船 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3931598.m3u8?txSecret=578a05e16fff5f4e629fd193b7447203&txTime=6AE93199
-#EXTINF:-1 tvg-id="qiuba_25640_1" tvg-name="勇士 vs 快船" group-title="NBA",NBA: 勇士 vs 快船 - 主线路
-https://www.rtmpcdn.com/live/ef7d7109-89b0-4955-b2ea-3596cad76264.m3u8
-#EXTINF:-1 tvg-id="qiuba_25640_2" tvg-name="勇士 vs 快船" group-title="NBA",NBA: 勇士 vs 快船 - 高清K
-https://hello.ooo0ooo.top/live/3931598.m3u8
-#EXTINF:-1 tvg-id="qiuba_25642_0" tvg-name="湖人 vs 猛龙" group-title="NBA",NBA: 湖人 vs 猛龙 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3931599.m3u8?txSecret=f4205c82d2a6ace881bc705af1426bab&txTime=6AE93FA8
-#EXTINF:-1 tvg-id="qiuba_25642_1" tvg-name="湖人 vs 猛龙" group-title="NBA",NBA: 湖人 vs 猛龙 - 主线路
-https://www.rtmpcdn.com/live/f9b2d275-65d8-4323-8a5d-ab1dfd4a8e13.m3u8
-#EXTINF:-1 tvg-id="qiuba_25642_2" tvg-name="湖人 vs 猛龙" group-title="NBA",NBA: 湖人 vs 猛龙 - 高清K
-https://hello.ooo0ooo.top/live/3931599.m3u8
-#EXTINF:-1 tvg-id="qiuba_25638_0" tvg-name="蓝十字 vs 莱昂" group-title="墨西超",墨西超: 蓝十字 vs 莱昂 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-1-4553929.m3u8?txSecret=61d55db676d65940ae789c3d234392f4&txTime=6AE94368
-#EXTINF:-1 tvg-id="qiuba_25638_1" tvg-name="蓝十字 vs 莱昂" group-title="墨西超",墨西超: 蓝十字 vs 莱昂 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4553929.m3u8%3FtxSecret%3D334650d9d63c6c6c2f19455ac5f191a1%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25638_2" tvg-name="蓝十字 vs 莱昂" group-title="墨西超",墨西超: 蓝十字 vs 莱昂 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4553929.m3u8%3FtxSecret%3D60e550e4252bda8e2b7832197bce09b9%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25638_3" tvg-name="蓝十字 vs 莱昂" group-title="墨西超",墨西超: 蓝十字 vs 莱昂 - 高清K
-https://hello.ooo0ooo.top/live/4553929.m3u8
-#EXTINF:-1 tvg-id="qiuba_25942_0" tvg-name="马那瓜 vs UNAN马纳瓜" group-title="尼加拉瓜甲级联赛",尼加拉瓜甲级联赛: 马那瓜 vs UNAN马纳瓜 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4664539.m3u8?txSecret=47674328256bbe9ac74653e7ae6586d7&txTime=6AE94368
-#EXTINF:-1 tvg-id="qiuba_25942_1" tvg-name="马那瓜 vs UNAN马纳瓜" group-title="尼加拉瓜甲级联赛",尼加拉瓜甲级联赛: 马那瓜 vs UNAN马纳瓜 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4664539.m3u8%3FtxSecret%3D7cc921738683f57c99eddaa9bedcee19%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25942_2" tvg-name="马那瓜 vs UNAN马纳瓜" group-title="尼加拉瓜甲级联赛",尼加拉瓜甲级联赛: 马那瓜 vs UNAN马纳瓜 - 高清K
-https://hello.ooo0ooo.top/live/4664539.m3u8
-#EXTINF:-1 tvg-id="qiuba_25643_0" tvg-name="萨克拉门托 vs 塔尔萨钻机工" group-title="美乙",美乙: 萨克拉门托 vs 塔尔萨钻机工 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4663349.m3u8?txSecret=00a970f42c297a4b17c33fdbc66157fe&txTime=6AE94368
-#EXTINF:-1 tvg-id="qiuba_25643_1" tvg-name="萨克拉门托 vs 塔尔萨钻机工" group-title="美乙",美乙: 萨克拉门托 vs 塔尔萨钻机工 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4663349.m3u8%3FtxSecret%3D5775046bb63fd980f43bc7b84e850866%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25643_2" tvg-name="萨克拉门托 vs 塔尔萨钻机工" group-title="美乙",美乙: 萨克拉门托 vs 塔尔萨钻机工 - 高清K
-https://hello.ooo0ooo.top/live/4663349.m3u8
-#EXTINF:-1 tvg-id="qiuba_25940_0" tvg-name="博伊西 vs 诺克斯维尔一" group-title="美国甲级联赛-附加赛",美国甲级联赛-附加赛: 博伊西 vs 诺克斯维尔一 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4662740.m3u8%3FtxSecret%3Dccb27619d4c28f32a6a8209a42378fbe%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25940_1" tvg-name="博伊西 vs 诺克斯维尔一" group-title="美国甲级联赛-附加赛",美国甲级联赛-附加赛: 博伊西 vs 诺克斯维尔一 - 高清K
-https://hello.ooo0ooo.top/live/4662740.m3u8
-#EXTINF:-1 tvg-id="qiuba_25636_0" tvg-name="新英格兰革命 vs 迈阿密国际" group-title="美职业",美职业: 新英格兰革命 vs 迈阿密国际 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-1-4460335.m3u8?txSecret=d7938494ed8b89197df0b362ea4589ab&txTime=6AE94368
-#EXTINF:-1 tvg-id="qiuba_25636_1" tvg-name="新英格兰革命 vs 迈阿密国际" group-title="美职业",美职业: 新英格兰革命 vs 迈阿密国际 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4460335.m3u8%3FtxSecret%3D83ad727e017b027f157af7d79a3405f8%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25636_2" tvg-name="新英格兰革命 vs 迈阿密国际" group-title="美职业",美职业: 新英格兰革命 vs 迈阿密国际 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4460335.m3u8%3FtxSecret%3D7360db9b3f52a0abf9fa04ce8552bb21%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25636_3" tvg-name="新英格兰革命 vs 迈阿密国际" group-title="美职业",美职业: 新英格兰革命 vs 迈阿密国际 - 高清K
-https://hello.ooo0ooo.top/live/4460335.m3u8
-#EXTINF:-1 tvg-id="qiuba_25641_0" tvg-name="洛杉矶FC vs 明尼苏达联" group-title="美职业",美职业: 洛杉矶FC vs 明尼苏达联 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-1-4460333.m3u8?txSecret=dad9bf3eb4a26882916c8a01d84ebdd9&txTime=6AE94368
-#EXTINF:-1 tvg-id="qiuba_25641_1" tvg-name="洛杉矶FC vs 明尼苏达联" group-title="美职业",美职业: 洛杉矶FC vs 明尼苏达联 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4460333.m3u8%3FtxSecret%3D218998a179678414b21072d5e37cd8f4%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25641_2" tvg-name="洛杉矶FC vs 明尼苏达联" group-title="美职业",美职业: 洛杉矶FC vs 明尼苏达联 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4460333.m3u8%3FtxSecret%3Da528d83791dab39de982ff67a29d7727%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25641_3" tvg-name="洛杉矶FC vs 明尼苏达联" group-title="美职业",美职业: 洛杉矶FC vs 明尼苏达联 - 高清K
-https://hello.ooo0ooo.top/live/4460333.m3u8
-#EXTINF:-1 tvg-id="qiuba_25644_0" tvg-name="波特兰伐木工 vs 休斯敦迪纳摩" group-title="美职业",美职业: 波特兰伐木工 vs 休斯敦迪纳摩 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4460337.m3u8?txSecret=e6d533ecc9a41dfdbfaad81e4189dbf2&txTime=6AE94368
-#EXTINF:-1 tvg-id="qiuba_25644_1" tvg-name="波特兰伐木工 vs 休斯敦迪纳摩" group-title="美职业",美职业: 波特兰伐木工 vs 休斯敦迪纳摩 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4460337.m3u8%3FtxSecret%3Ddc3a98554b2f6144c60c231c71131d10%26txTime%3D6AE80751
-#EXTINF:-1 tvg-id="qiuba_25644_2" tvg-name="波特兰伐木工 vs 休斯敦迪纳摩" group-title="美职业",美职业: 波特兰伐木工 vs 休斯敦迪纳摩 - 高清K
-https://hello.ooo0ooo.top/live/4460337.m3u8
+#EXTINF:-1 tvg-id="qiuba_25943_0" tvg-name="格兰布林大学 vs 北伊利诺大学" group-title="NCAA",NCAA: 格兰布林大学 vs 北伊利诺大学 - 高清K
+https://hello.ooo0ooo.top/live/3950687.m3u8
+#EXTINF:-1 tvg-id="qiuba_25649_0" tvg-name="科达古 vs 反叛者SC" group-title="印班超",印班超: 科达古 vs 反叛者SC - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4663427.m3u8?txSecret=477de87107c38ce5adf0d61714d74c4c&txTime=6AE9AD58
+#EXTINF:-1 tvg-id="qiuba_25649_1" tvg-name="科达古 vs 反叛者SC" group-title="印班超",印班超: 科达古 vs 反叛者SC - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4663427.m3u8%3FtxSecret%3D0d729aeb7d148af89b75c5be119f1fa9%26txTime%3D6AE87131
+#EXTINF:-1 tvg-id="qiuba_25649_2" tvg-name="科达古 vs 反叛者SC" group-title="印班超",印班超: 科达古 vs 反叛者SC - 高清K
+https://hello.ooo0ooo.top/live/4663427.m3u8
+#EXTINF:-1 tvg-id="qiuba_25941_0" tvg-name="恩波利青年队 vs 卡利亚里U20" group-title="意青联甲",意青联甲: 恩波利青年队 vs 卡利亚里U20 - 高清K
+https://hello.ooo0ooo.top/live/4570722.m3u8
+#EXTINF:-1 tvg-id="qiuba_25650_0" tvg-name="墨尔本联 vs 新西兰破坏者" group-title="澳NBL",澳NBL: 墨尔本联 vs 新西兰破坏者 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-2-3925975.m3u8?txSecret=62c4639be9d35d4da2015981d9b31691&txTime=6AE9AD58
+#EXTINF:-1 tvg-id="qiuba_25650_1" tvg-name="墨尔本联 vs 新西兰破坏者" group-title="澳NBL",澳NBL: 墨尔本联 vs 新西兰破坏者 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3925975.m3u8%3FtxSecret%3Df96675569f01740b556a4276a3ee6f7b%26txTime%3D6AE87131
+#EXTINF:-1 tvg-id="qiuba_25650_2" tvg-name="墨尔本联 vs 新西兰破坏者" group-title="澳NBL",澳NBL: 墨尔本联 vs 新西兰破坏者 - 高清V2
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3925975.m3u8%3FtxSecret%3D0c9a0fb067b577b2eb1fbe38b8dd48d6%26txTime%3D6AE87131
+#EXTINF:-1 tvg-id="qiuba_25650_3" tvg-name="墨尔本联 vs 新西兰破坏者" group-title="澳NBL",澳NBL: 墨尔本联 vs 新西兰破坏者 - 高清K
+https://hello.ooo0ooo.top/live/3925975.m3u8
+#EXTINF:-1 tvg-id="qiuba_25945_0" tvg-name="伊洛瓦底 U20 vs 大港星联 U20" group-title="缅甸国家联赛 U20",缅甸国家联赛 U20: 伊洛瓦底 U20 vs 大港星联 U20 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4664464.m3u8?txSecret=df13a4c95af7d4047d4e1cd1d7f23261&txTime=6AE9AD58
+#EXTINF:-1 tvg-id="qiuba_25945_1" tvg-name="伊洛瓦底 U20 vs 大港星联 U20" group-title="缅甸国家联赛 U20",缅甸国家联赛 U20: 伊洛瓦底 U20 vs 大港星联 U20 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4664464.m3u8%3FtxSecret%3D38677911ee5d81e489a50a408e134d5f%26txTime%3D6AE87131
+#EXTINF:-1 tvg-id="qiuba_25945_2" tvg-name="伊洛瓦底 U20 vs 大港星联 U20" group-title="缅甸国家联赛 U20",缅甸国家联赛 U20: 伊洛瓦底 U20 vs 大港星联 U20 - 高清K
+https://hello.ooo0ooo.top/live/4664464.m3u8
+#EXTINF:-1 tvg-id="qiuba_25648_0" tvg-name="中央骏马 vs 德仁FC" group-title="蒙古超",蒙古超: 中央骏马 vs 德仁FC - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4661421.m3u8?txSecret=5d0a0a93fa9df73f804dde9fe450e6cf&txTime=6AE9AD58
+#EXTINF:-1 tvg-id="qiuba_25648_1" tvg-name="中央骏马 vs 德仁FC" group-title="蒙古超",蒙古超: 中央骏马 vs 德仁FC - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4661421.m3u8%3FtxSecret%3Df2dbb6ce51f7e909f21dd5134a435877%26txTime%3D6AE87131
+#EXTINF:-1 tvg-id="qiuba_25648_2" tvg-name="中央骏马 vs 德仁FC" group-title="蒙古超",蒙古超: 中央骏马 vs 德仁FC - 高清K
+https://hello.ooo0ooo.top/live/4661421.m3u8
+#EXTINF:-1 tvg-id="qiuba_25652_0" tvg-name="龙仁三星女篮 vs 富川KEB女篮" group-title="韩女甲",韩女甲: 龙仁三星女篮 vs 富川KEB女篮 - 高清K
+https://hello.ooo0ooo.top/live/3946124.m3u8
+#EXTINF:-1 tvg-id="qiuba_25651_0" tvg-name="大邱石油公社飞马 vs 安养赤红火箭" group-title="韩篮甲",韩篮甲: 大邱石油公社飞马 vs 安养赤红火箭 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3933863.m3u8?txSecret=ea575e4411f191b23a34cd8a03e001fe&txTime=6AE9AD58
+#EXTINF:-1 tvg-id="qiuba_25651_1" tvg-name="大邱石油公社飞马 vs 安养赤红火箭" group-title="韩篮甲",韩篮甲: 大邱石油公社飞马 vs 安养赤红火箭 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3933863.m3u8%3FtxSecret%3D7a7e7b7931c326ad0669efdffb9d2a66%26txTime%3D6AE87131
+#EXTINF:-1 tvg-id="qiuba_25651_2" tvg-name="大邱石油公社飞马 vs 安养赤红火箭" group-title="韩篮甲",韩篮甲: 大邱石油公社飞马 vs 安养赤红火箭 - 高清K
+https://hello.ooo0ooo.top/live/3933863.m3u8
