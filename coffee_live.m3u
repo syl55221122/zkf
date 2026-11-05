@@ -1,17 +1,23 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/8-v178.jpg?v=1789454340185" group-title="澳女篮",澳女篮 | 吉朗毒液女篮 vs 汤斯维尔火力女篮 | 20-36 | 直播8 | 直播8
-https://hello.ooo0ooo.top/live/3925774.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/8-v178.jpg?v=1789454340185" group-title="澳女篮",澳女篮 | 吉朗毒液女篮 vs 汤斯维尔火力女篮 | 20-36 | 直播8 | 原声5
-https://pul-tenm.gkykp.com/live/hd-en-2-3925774.m3u8?txSecret=b83861f6ac536bf07ad17c1656253d0e&txTime=6AED9008
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/9-v152.jpg?v=1789454340185" group-title="澳NBL",澳NBL | 凯恩斯太攀蛇 vs 伊拉瓦拉老鹰 | 0-0 | 直播9 | 直播9
-https://hello.ooo0ooo.top/live/3925970.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/9-v152.jpg?v=1789454340185" group-title="澳NBL",澳NBL | 凯恩斯太攀蛇 vs 伊拉瓦拉老鹰 | 0-0 | 直播9 | 原声6
-https://pul-tenm.gkykp.com/live/sd-2-3925970.m3u8?txSecret=db4455295a18cb66a591f1dcff9655cd&txTime=6AED9008
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/3-v199.jpg?v=1789454340185" group-title="印班超",印班超 | 班加罗尔根源 vs 班加罗尔城 | 0-0 | 直播3 | 直播3
-https://hello.ooo0ooo.top/live/4663453.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/3-v199.jpg?v=1789454340185" group-title="印班超",印班超 | 班加罗尔根源 vs 班加罗尔城 | 0-0 | 直播3 | 原声1
-https://pul-tenm.gkykp.com/live/sd-1-4663453.m3u8?txSecret=19109713d6a787c16cd235a711a2105d&txTime=6AED9008
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v153.jpg?v=1789454340185" group-title="蒙古超",蒙古超 | 阿姆塔特FC vs 伊尔赤姆 | 0-0 | 直播4 | 直播4
-https://hello.ooo0ooo.top/live/4661423.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/7-v178.jpg?v=1789454340185" group-title="中U21",中U21 | 天津津门虎U20 vs 深圳新鹏城U20 | 1-0 | 直播7 | 直播7
-https://hello.ooo0ooo.top/live/4640323.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/28-v113.jpg?v=1789454340185" group-title="俄篮超",俄篮超 | 希姆基 vs 马钢城冶金 | 29-34 | 直播28 | 直播28
+https://hello.ooo0ooo.top/live/3939635.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/28-v113.jpg?v=1789454340185" group-title="俄篮超",俄篮超 | 希姆基 vs 马钢城冶金 | 29-34 | 直播28 | 原声6
+https://pul-tenm.gkykp.com/live/sd-2-3939635.m3u8?txSecret=61a55be63ff33749f7b9032291eebc4a&txTime=6AEE0359
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/31-v100.jpg?v=1789454340185" group-title="伊拉超",伊拉超 | 摩苏尔 vs 杜赫克 | 0-0 | 直播31 | 直播31
+https://hello.ooo0ooo.top/live/4626174.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/31-v100.jpg?v=1789454340185" group-title="伊拉超",伊拉超 | 摩苏尔 vs 杜赫克 | 0-0 | 直播31 | 原声13
+https://pul-tenm.gkykp.com/live/sd-1-4626174.m3u8?txSecret=3e44113c0f3c8b058cf9f4bac3064d36&txTime=6AEE0359
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/47-v62.jpg?v=1789454340185" group-title="俄杯",俄杯 | 乌里扬诺夫斯克伏尔加 vs 莫斯科切尔塔诺沃 | 0-0 | 直播47 | 直播47
+https://hello.ooo0ooo.top/live/4659344.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/47-v62.jpg?v=1789454340185" group-title="俄杯",俄杯 | 乌里扬诺夫斯克伏尔加 vs 莫斯科切尔塔诺沃 | 0-0 | 直播47 | 原声8
+https://pul-tenm.gkykp.com/live/sd-1-4659344.m3u8?txSecret=d12443267be6ed4089957b90d4bd2190&txTime=6AEE0359
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/38-v84.jpg?v=1789454340185" group-title="俄篮超",俄篮超 | 库尔斯克罗斯人 vs 莫斯科中央陆军B队 | 4-7 | 直播38 | 直播38
+https://hello.ooo0ooo.top/live/3939658.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/38-v84.jpg?v=1789454340185" group-title="俄篮超",俄篮超 | 库尔斯克罗斯人 vs 莫斯科中央陆军B队 | 4-7 | 直播38 | 原声3
+https://pul-tenm.gkykp.com/live/sd-2-3939658.m3u8?txSecret=ac09573d7ab12703a77fa492f228156e&txTime=6AEE0359
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/30-v105.jpg?v=1789454340185" group-title="埃及杯",埃及杯 | 埃及国家银行 vs 柏迪福阿德 | 4-1 | 直播30 | 直播30
+https://hello.ooo0ooo.top/live/4664034.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/27-v116.jpg?v=1789454340185" group-title="俄篮超",俄篮超 | 布良斯克杰斯纳 vs 格罗兹尼迪纳摩 | 29-25 | 直播27 | 直播27
+https://hello.ooo0ooo.top/live/3939798.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/27-v116.jpg?v=1789454340185" group-title="俄篮超",俄篮超 | 布良斯克杰斯纳 vs 格罗兹尼迪纳摩 | 29-25 | 直播27 | 原声5
+https://pul-tenm.gkykp.com/live/sd-2-3939798.m3u8?txSecret=4fe6c62988b875d8e7aa1ff2f96def80&txTime=6AEE0359
