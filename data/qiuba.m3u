@@ -1,91 +1,95 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="qiuba_27615_0" tvg-name="森林狼 vs 爵士" group-title="NBA",NBA: 森林狼 vs 爵士 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3931640.m3u8?txSecret=e02a9ddffdaba6fca5b47c44953fb2e3&txTime=6AF25CA0
-#EXTINF:-1 tvg-id="qiuba_27615_1" tvg-name="森林狼 vs 爵士" group-title="NBA",NBA: 森林狼 vs 爵士 - 高清K
-https://hello.ooo0ooo.top/live/3931640.m3u8
-#EXTINF:-1 tvg-id="qiuba_27615_2" tvg-name="森林狼 vs 爵士" group-title="NBA",NBA: 森林狼 vs 爵士 - 主线路
-https://www.rtmpcdn.com/live/b8b19295-a1a1-46bb-8416-c54e05b76672.m3u8
-#EXTINF:-1 tvg-id="qiuba_27615_3" tvg-name="森林狼 vs 爵士" group-title="NBA",NBA: 森林狼 vs 爵士 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931640.m3u8%3FtxSecret%3Dcf67c3715cba66ff38f48dd5e893babc%26txTime%3D6AF12048
-#EXTINF:-1 tvg-id="qiuba_27615_4" tvg-name="森林狼 vs 爵士" group-title="NBA",NBA: 森林狼 vs 爵士 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931640.m3u8%3FtxSecret%3Dc5d0df3e94b8744d3c6f1bb0bc17aa62%26txTime%3D6AF12048
-#EXTINF:-1 tvg-id="qiuba_27615_5" tvg-name="森林狼 vs 爵士" group-title="NBA",NBA: 森林狼 vs 爵士 - 主线路
-https://play.aarray.cn/rrty/hd-zh-2-3931640_gqzm.m3u8?auth_key=1794191422-0-0-a915048a3da60803ce3f1801e3fa6f75&token=4d6ee3daa32d4141&device=4&platform=rrty
-#EXTINF:-1 tvg-id="qiuba_27617_0" tvg-name="独行侠 vs 篮网" group-title="NBA",NBA: 独行侠 vs 篮网 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3931641.m3u8?txSecret=861421b883bc5955674069e8d7ac6dc4&txTime=6AF26420
-#EXTINF:-1 tvg-id="qiuba_27617_1" tvg-name="独行侠 vs 篮网" group-title="NBA",NBA: 独行侠 vs 篮网 - 高清K
-https://hello.ooo0ooo.top/live/3931641.m3u8
-#EXTINF:-1 tvg-id="qiuba_27617_2" tvg-name="独行侠 vs 篮网" group-title="NBA",NBA: 独行侠 vs 篮网 - 主线路
-https://www.rtmpcdn.com/live/af390226-555c-476b-a29c-58000be82f18.m3u8
-#EXTINF:-1 tvg-id="qiuba_27617_3" tvg-name="独行侠 vs 篮网" group-title="NBA",NBA: 独行侠 vs 篮网 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931641.m3u8%3FtxSecret%3Dc92344e13dcdbaed288917db771ac4b7%26txTime%3D6AF127B7
-#EXTINF:-1 tvg-id="qiuba_27617_4" tvg-name="独行侠 vs 篮网" group-title="NBA",NBA: 独行侠 vs 篮网 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931641.m3u8%3FtxSecret%3D826fd95b21ae25e659021b060864c967%26txTime%3D6AF127B7
-#EXTINF:-1 tvg-id="qiuba_27617_5" tvg-name="独行侠 vs 篮网" group-title="NBA",NBA: 独行侠 vs 篮网 - 主线路
-https://play.aarray.cn/rrty/hd-zh-2-3931641_gqzm.m3u8?auth_key=1794192785-0-0-0f9974c857deb2d45c224282b8cf8a8d&token=88619997e04ab4d3&device=4&platform=rrty
-#EXTINF:-1 tvg-id="qiuba_27619_0" tvg-name="雄鹿 vs 凯尔特人" group-title="NBA",NBA: 雄鹿 vs 凯尔特人 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3931642.m3u8?txSecret=fe62f11ae678cc901801d142654c3a73&txTime=6AF26AB0
-#EXTINF:-1 tvg-id="qiuba_27619_1" tvg-name="雄鹿 vs 凯尔特人" group-title="NBA",NBA: 雄鹿 vs 凯尔特人 - 高清K
-https://hello.ooo0ooo.top/live/3931642.m3u8
-#EXTINF:-1 tvg-id="qiuba_27619_2" tvg-name="雄鹿 vs 凯尔特人" group-title="NBA",NBA: 雄鹿 vs 凯尔特人 - 主线路
-https://www.rtmpcdn.com/live/251e4c1f-7810-4bb1-bf88-ec7bafca8380.m3u8
-#EXTINF:-1 tvg-id="qiuba_27619_3" tvg-name="雄鹿 vs 凯尔特人" group-title="NBA",NBA: 雄鹿 vs 凯尔特人 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931642.m3u8%3FtxSecret%3D0d9b09efc758a2c1b1ddd44ea12fc189%26txTime%3D6AF12E64
-#EXTINF:-1 tvg-id="qiuba_27619_4" tvg-name="雄鹿 vs 凯尔特人" group-title="NBA",NBA: 雄鹿 vs 凯尔特人 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931642.m3u8%3FtxSecret%3Db4554d139bee354fdaafed391a097ad1%26txTime%3D6AF12E64
-#EXTINF:-1 tvg-id="qiuba_27619_5" tvg-name="雄鹿 vs 凯尔特人" group-title="NBA",NBA: 雄鹿 vs 凯尔特人 - 主线路
-https://play.aarray.cn/rrty/hd-zh-2-3931642_gqzm.m3u8?auth_key=1794189198-0-0-407ac32e5883e2717572ac5079f3c935&token=6fcb8849dfed945f&device=4&platform=rrty
-#EXTINF:-1 tvg-id="qiuba_27624_0" tvg-name="快船 vs 鹈鹕" group-title="NBA",NBA: 快船 vs 鹈鹕 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3931643.m3u8?txSecret=3e5324cbe3486c9d5a40c12c2bb745b0&txTime=6AF27938
-#EXTINF:-1 tvg-id="qiuba_27624_1" tvg-name="快船 vs 鹈鹕" group-title="NBA",NBA: 快船 vs 鹈鹕 - 高清K
-https://hello.ooo0ooo.top/live/3931643.m3u8
-#EXTINF:-1 tvg-id="qiuba_27624_2" tvg-name="快船 vs 鹈鹕" group-title="NBA",NBA: 快船 vs 鹈鹕 - 主线路
-https://www.rtmpcdn.com/live/d46b8f27-9164-472a-84ff-e021c482e7cd.m3u8
-#EXTINF:-1 tvg-id="qiuba_27624_3" tvg-name="快船 vs 鹈鹕" group-title="NBA",NBA: 快船 vs 鹈鹕 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931643.m3u8%3FtxSecret%3D782a5dde8c623936a770ad2d8d0dac4c%26txTime%3D6AF13CC5
-#EXTINF:-1 tvg-id="qiuba_27624_4" tvg-name="快船 vs 鹈鹕" group-title="NBA",NBA: 快船 vs 鹈鹕 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931643.m3u8%3FtxSecret%3D55a81be82ae45ae8770873f6739ca610%26txTime%3D6AF13CC5
-#EXTINF:-1 tvg-id="qiuba_27624_5" tvg-name="快船 vs 鹈鹕" group-title="NBA",NBA: 快船 vs 鹈鹕 - 主线路
-https://play.aarray.cn/rrty/hd-zh-2-3931643_gqzm.m3u8?auth_key=1794192815-0-0-bac761392251b298852a53b9c21b8727&token=2fd5aea34d532606&device=4&platform=rrty
-#EXTINF:-1 tvg-id="qiuba_27625_0" tvg-name="国王 vs 热火" group-title="NBA",NBA: 国王 vs 热火 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3931644.m3u8?txSecret=aa0c8913f8feea91595fc6b9d950eefd&txTime=6AF27938
-#EXTINF:-1 tvg-id="qiuba_27625_1" tvg-name="国王 vs 热火" group-title="NBA",NBA: 国王 vs 热火 - 高清K
-https://hello.ooo0ooo.top/live/3931644.m3u8
-#EXTINF:-1 tvg-id="qiuba_27625_2" tvg-name="国王 vs 热火" group-title="NBA",NBA: 国王 vs 热火 - 主线路
-https://www.rtmpcdn.com/live/0cde377f-515a-4745-a91c-93978d57eac4.m3u8
-#EXTINF:-1 tvg-id="qiuba_27625_3" tvg-name="国王 vs 热火" group-title="NBA",NBA: 国王 vs 热火 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931644.m3u8%3FtxSecret%3Df3460767ace1b51d802cf47760ad6d6d%26txTime%3D6AF13D05
-#EXTINF:-1 tvg-id="qiuba_27625_4" tvg-name="国王 vs 热火" group-title="NBA",NBA: 国王 vs 热火 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931644.m3u8%3FtxSecret%3Dc533a6703dd0189e24b8f3b49f093657%26txTime%3D6AF13D05
-#EXTINF:-1 tvg-id="qiuba_27625_5" tvg-name="国王 vs 热火" group-title="NBA",NBA: 国王 vs 热火 - 主线路
-https://play.aarray.cn/rrty/hd-zh-2-3931644_gqzm.m3u8?auth_key=1794192906-0-0-05332bd1a41768f486805c6cf9f27000&token=5e0f2be4d403271a&device=4&platform=rrty
-#EXTINF:-1 tvg-id="qiuba_27848_0" tvg-name="匹兹堡大学 vs 宾夕法尼亚州立大学" group-title="NCAA",NCAA: 匹兹堡大学 vs 宾夕法尼亚州立大学 - 高清K
-https://hello.ooo0ooo.top/live/3949109.m3u8
-#EXTINF:-1 tvg-id="qiuba_27849_0" tvg-name="休斯顿大学 vs 加州大学伯克利分校" group-title="NCAA",NCAA: 休斯顿大学 vs 加州大学伯克利分校 - 高清K
-https://hello.ooo0ooo.top/live/3951148.m3u8
-#EXTINF:-1 tvg-id="qiuba_27621_0" tvg-name="阿利安萨 vs 拉尼洛斯" group-title="哥伦甲",哥伦甲: 阿利安萨 vs 拉尼洛斯 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4569365.m3u8?txSecret=64d76e40b1ef712db5bb2c0f1c3e7129&txTime=6AF28040
-#EXTINF:-1 tvg-id="qiuba_27621_1" tvg-name="阿利安萨 vs 拉尼洛斯" group-title="哥伦甲",哥伦甲: 阿利安萨 vs 拉尼洛斯 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4569365.m3u8%3FtxSecret%3Ddac40285c479d2e8ac7b443bad033306%26txTime%3D6AF14439
-#EXTINF:-1 tvg-id="qiuba_27621_2" tvg-name="阿利安萨 vs 拉尼洛斯" group-title="哥伦甲",哥伦甲: 阿利安萨 vs 拉尼洛斯 - 高清K
-https://hello.ooo0ooo.top/live/4569365.m3u8
-#EXTINF:-1 tvg-id="qiuba_27620_0" tvg-name="海盗 vs 坎昆" group-title="墨西乙",墨西乙: 海盗 vs 坎昆 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4664865.m3u8?txSecret=fc0df6e99c7d426873ece402c4fb302a&txTime=6AF28040
-#EXTINF:-1 tvg-id="qiuba_27620_2" tvg-name="海盗 vs 坎昆" group-title="墨西乙",墨西乙: 海盗 vs 坎昆 - 高清K
-https://hello.ooo0ooo.top/live/4664865.m3u8
-#EXTINF:-1 tvg-id="qiuba_27626_0" tvg-name="莱昂 vs 瓜达拉哈拉" group-title="墨西超",墨西超: 莱昂 vs 瓜达拉哈拉 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-1-4553938.m3u8?txSecret=d53535faf3837719669874a9ce89c379&txTime=6AF28040
-#EXTINF:-1 tvg-id="qiuba_27626_1" tvg-name="莱昂 vs 瓜达拉哈拉" group-title="墨西超",墨西超: 莱昂 vs 瓜达拉哈拉 - 高清V1
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4553938.m3u8%3FtxSecret%3Ddb472a938182974a1b88b18f48e5207b%26txTime%3D6AF14439
-#EXTINF:-1 tvg-id="qiuba_27626_2" tvg-name="莱昂 vs 瓜达拉哈拉" group-title="墨西超",墨西超: 莱昂 vs 瓜达拉哈拉 - 高清V2
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4553938.m3u8%3FtxSecret%3Dd9e79470e718b250894dcb93a8ac6e6b%26txTime%3D6AF14439
-#EXTINF:-1 tvg-id="qiuba_27626_3" tvg-name="莱昂 vs 瓜达拉哈拉" group-title="墨西超",墨西超: 莱昂 vs 瓜达拉哈拉 - 高清K
-https://hello.ooo0ooo.top/live/4553938.m3u8
-#EXTINF:-1 tvg-id="qiuba_27622_0" tvg-name="秘鲁体育大学 vs 莫克瓜" group-title="秘鲁甲",秘鲁甲: 秘鲁体育大学 vs 莫克瓜 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4550754.m3u8?txSecret=31b3965cd3f92198fa6d85cb5153d73b&txTime=6AF28040
-#EXTINF:-1 tvg-id="qiuba_27622_1" tvg-name="秘鲁体育大学 vs 莫克瓜" group-title="秘鲁甲",秘鲁甲: 秘鲁体育大学 vs 莫克瓜 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4550754.m3u8%3FtxSecret%3Dfea8c18f8047cf491154169620a0d9da%26txTime%3D6AF14439
-#EXTINF:-1 tvg-id="qiuba_27622_2" tvg-name="秘鲁体育大学 vs 莫克瓜" group-title="秘鲁甲",秘鲁甲: 秘鲁体育大学 vs 莫克瓜 - 高清K
-https://hello.ooo0ooo.top/live/4550754.m3u8
-#EXTINF:-1 tvg-id="qiuba_27846_0" tvg-name="奇维尔库伊 vs 瑞加塔斯" group-title="阿根廷全国篮球联赛",阿根廷全国篮球联赛: 奇维尔库伊 vs 瑞加塔斯 - 高清K
-https://hello.ooo0ooo.top/live/3945668.m3u8
+#EXTINF:-1 tvg-id="qiuba_27859_0" tvg-name="维克多利亚苏梅 vs 沃洛奇斯克‎" group-title="乌克兰甲级联赛",乌克兰甲级联赛: 维克多利亚苏梅 vs 沃洛奇斯克‎ - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4589999.m3u8?txSecret=875b0272aa93d740468991d4bebff959&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27859_1" tvg-name="维克多利亚苏梅 vs 沃洛奇斯克‎" group-title="乌克兰甲级联赛",乌克兰甲级联赛: 维克多利亚苏梅 vs 沃洛奇斯克‎ - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4589999.m3u8%3FtxSecret%3Db3d1bebd5dd7f317f6a217e7c65e9005%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27859_2" tvg-name="维克多利亚苏梅 vs 沃洛奇斯克‎" group-title="乌克兰甲级联赛",乌克兰甲级联赛: 维克多利亚苏梅 vs 沃洛奇斯克‎ - 高清K
+https://hello.ooo0ooo.top/live/4589999.m3u8
+#EXTINF:-1 tvg-id="qiuba_27634_0" tvg-name="塔什干棉农B队 vs 卡塔库尔甘" group-title="乌兹甲",乌兹甲: 塔什干棉农B队 vs 卡塔库尔甘 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4525685.m3u8?txSecret=5b289e8418d0b010edde053684893ebe&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27634_1" tvg-name="塔什干棉农B队 vs 卡塔库尔甘" group-title="乌兹甲",乌兹甲: 塔什干棉农B队 vs 卡塔库尔甘 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4525685.m3u8%3FtxSecret%3D65882de5e4df9bd9c90345f0655eef1b%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27634_2" tvg-name="塔什干棉农B队 vs 卡塔库尔甘" group-title="乌兹甲",乌兹甲: 塔什干棉农B队 vs 卡塔库尔甘 - 高清K
+https://hello.ooo0ooo.top/live/4525685.m3u8
+#EXTINF:-1 tvg-id="qiuba_27853_0" tvg-name="FK加扎尔肯特 vs FA共和国" group-title="乌兹甲",乌兹甲: FK加扎尔肯特 vs FA共和国 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4525682.m3u8?txSecret=1bde3f1f4506edff5f70a6e9c5190e72&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27853_1" tvg-name="FK加扎尔肯特 vs FA共和国" group-title="乌兹甲",乌兹甲: FK加扎尔肯特 vs FA共和国 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4525682.m3u8%3FtxSecret%3Dbfb3ef386a68650e572fcc6d222aeeca%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27853_2" tvg-name="FK加扎尔肯特 vs FA共和国" group-title="乌兹甲",乌兹甲: FK加扎尔肯特 vs FA共和国 - 高清K
+https://hello.ooo0ooo.top/live/4525682.m3u8
+#EXTINF:-1 tvg-id="qiuba_27854_0" tvg-name="休尔坦古佐 vs 布哈拉国立大学" group-title="乌兹甲",乌兹甲: 休尔坦古佐 vs 布哈拉国立大学 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4525687.m3u8%3FtxSecret%3Dea8d4470ec738ba8af4dd4270beeb34f%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27854_1" tvg-name="休尔坦古佐 vs 布哈拉国立大学" group-title="乌兹甲",乌兹甲: 休尔坦古佐 vs 布哈拉国立大学 - 高清K
+https://hello.ooo0ooo.top/live/4525687.m3u8
+#EXTINF:-1 tvg-id="qiuba_27855_0" tvg-name="雅潘FK vs 洛钦" group-title="乌兹甲",乌兹甲: 雅潘FK vs 洛钦 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4525688.m3u8?txSecret=cd359a668558ca281ee07157fe709c70&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27855_1" tvg-name="雅潘FK vs 洛钦" group-title="乌兹甲",乌兹甲: 雅潘FK vs 洛钦 - 高清K
+https://hello.ooo0ooo.top/live/4525688.m3u8
+#EXTINF:-1 tvg-id="qiuba_27856_0" tvg-name="贝科博德冶金 vs 努库斯咸海" group-title="乌兹甲",乌兹甲: 贝科博德冶金 vs 努库斯咸海 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4525684.m3u8?txSecret=d0f3e7c8184057c80f02576828a549f7&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27856_1" tvg-name="贝科博德冶金 vs 努库斯咸海" group-title="乌兹甲",乌兹甲: 贝科博德冶金 vs 努库斯咸海 - 高清K
+https://hello.ooo0ooo.top/live/4525684.m3u8
+#EXTINF:-1 tvg-id="qiuba_27860_0" tvg-name="澳门大熊猫 vs 多伦多JC运输队" group-title="亚洲锦标赛",亚洲锦标赛: 澳门大熊猫 vs 多伦多JC运输队 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3957986.m3u8?txSecret=edd14362357e709c3f3f2b4bad5a49b3&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27860_1" tvg-name="澳门大熊猫 vs 多伦多JC运输队" group-title="亚洲锦标赛",亚洲锦标赛: 澳门大熊猫 vs 多伦多JC运输队 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3957986.m3u8%3FtxSecret%3D55fcc219087ab4be7612a4b81e23a9d0%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27860_2" tvg-name="澳门大熊猫 vs 多伦多JC运输队" group-title="亚洲锦标赛",亚洲锦标赛: 澳门大熊猫 vs 多伦多JC运输队 - 高清K
+https://hello.ooo0ooo.top/live/3957986.m3u8
+#EXTINF:-1 tvg-id="qiuba_27687_0" tvg-name="米卡 vs 舒拉克B队" group-title="亚美甲",亚美甲: 米卡 vs 舒拉克B队 - 高清K
+https://hello.ooo0ooo.top/live/4601057.m3u8
+#EXTINF:-1 tvg-id="qiuba_27643_0" tvg-name="哈尔FC vs 班加罗尔B队" group-title="印班超",印班超: 哈尔FC vs 班加罗尔B队 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4665069.m3u8?txSecret=c2aeabc38073ce0e352bc42e9a5965bb&txTime=6AF2ED00
+#EXTINF:-1 tvg-id="qiuba_27643_1" tvg-name="哈尔FC vs 班加罗尔B队" group-title="印班超",印班超: 哈尔FC vs 班加罗尔B队 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4665069.m3u8%3FtxSecret%3D4ac143facf8586a6fd4b853095b216ab%26txTime%3D6AF1B09D
+#EXTINF:-1 tvg-id="qiuba_27643_2" tvg-name="哈尔FC vs 班加罗尔B队" group-title="印班超",印班超: 哈尔FC vs 班加罗尔B队 - 高清K
+https://hello.ooo0ooo.top/live/4665069.m3u8
+#EXTINF:-1 tvg-id="qiuba_27637_0" tvg-name="岛根魔术 vs 富山松鸡" group-title="日篮B1",日篮B1: 岛根魔术 vs 富山松鸡 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3934223.m3u8?txSecret=2811f8d2db049237b83143e8020d70cb&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27637_1" tvg-name="岛根魔术 vs 富山松鸡" group-title="日篮B1",日篮B1: 岛根魔术 vs 富山松鸡 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3934223.m3u8%3FtxSecret%3D264af37f20aae47490b37315ad9d23fb%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27637_2" tvg-name="岛根魔术 vs 富山松鸡" group-title="日篮B1",日篮B1: 岛根魔术 vs 富山松鸡 - 高清K
+https://hello.ooo0ooo.top/live/3934223.m3u8
+#EXTINF:-1 tvg-id="qiuba_27638_0" tvg-name="长崎维尔卡 vs 仙台89人" group-title="日篮B1",日篮B1: 长崎维尔卡 vs 仙台89人 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3934371.m3u8?txSecret=84803dec20142e4df1da7cdd690dac37&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27638_1" tvg-name="长崎维尔卡 vs 仙台89人" group-title="日篮B1",日篮B1: 长崎维尔卡 vs 仙台89人 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3934371.m3u8%3FtxSecret%3D61eaf041400e229db733bb38b16fee6a%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27638_2" tvg-name="长崎维尔卡 vs 仙台89人" group-title="日篮B1",日篮B1: 长崎维尔卡 vs 仙台89人 - 高清K
+https://hello.ooo0ooo.top/live/3934371.m3u8
+#EXTINF:-1 tvg-id="qiuba_27639_0" tvg-name="茨城机器人 vs 琉球黄金帝王" group-title="日篮B1",日篮B1: 茨城机器人 vs 琉球黄金帝王 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3934519.m3u8?txSecret=6e83a40325abd9a14d1219dd9635257c&txTime=6AF2ED00
+#EXTINF:-1 tvg-id="qiuba_27639_1" tvg-name="茨城机器人 vs 琉球黄金帝王" group-title="日篮B1",日篮B1: 茨城机器人 vs 琉球黄金帝王 - 高清K
+https://hello.ooo0ooo.top/live/3934519.m3u8
+#EXTINF:-1 tvg-id="qiuba_27640_0" tvg-name="群马雷鹤 vs 名古屋钻石海豚" group-title="日篮B1",日篮B1: 群马雷鹤 vs 名古屋钻石海豚 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3934668.m3u8?txSecret=3b01b98db3e7057455882c947d54bdf1&txTime=6AF2ED00
+#EXTINF:-1 tvg-id="qiuba_27640_1" tvg-name="群马雷鹤 vs 名古屋钻石海豚" group-title="日篮B1",日篮B1: 群马雷鹤 vs 名古屋钻石海豚 - 高清K
+https://hello.ooo0ooo.top/live/3934668.m3u8
+#EXTINF:-1 tvg-id="qiuba_27641_0" tvg-name="川崎雷霆勇者 vs 千叶阿尔提里" group-title="日篮B1",日篮B1: 川崎雷霆勇者 vs 千叶阿尔提里 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3934818.m3u8?txSecret=76e0f08809ab21210b85a852617d129c&txTime=6AF2ED00
+#EXTINF:-1 tvg-id="qiuba_27641_1" tvg-name="川崎雷霆勇者 vs 千叶阿尔提里" group-title="日篮B1",日篮B1: 川崎雷霆勇者 vs 千叶阿尔提里 - 高清K
+https://hello.ooo0ooo.top/live/3934818.m3u8
+#EXTINF:-1 tvg-id="qiuba_27642_0" tvg-name="京都创荣 vs 北海道风神" group-title="日篮B1",日篮B1: 京都创荣 vs 北海道风神 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3934073.m3u8?txSecret=e0d261411d650118b9f767be322889fd&txTime=6AF2ED00
+#EXTINF:-1 tvg-id="qiuba_27642_1" tvg-name="京都创荣 vs 北海道风神" group-title="日篮B1",日篮B1: 京都创荣 vs 北海道风神 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3934073.m3u8%3FtxSecret%3D0baea037e83232046d2bb40ae0c66c61%26txTime%3D6AF1B09D
+#EXTINF:-1 tvg-id="qiuba_27642_2" tvg-name="京都创荣 vs 北海道风神" group-title="日篮B1",日篮B1: 京都创荣 vs 北海道风神 - 高清K
+https://hello.ooo0ooo.top/live/3934073.m3u8
+#EXTINF:-1 tvg-id="qiuba_27858_0" tvg-name="EAC将军 vs AU酋长" group-title="菲律宾 NCAA",菲律宾 NCAA: EAC将军 vs AU酋长 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3947145.m3u8?txSecret=131d4595467d6cc8bbea3101118a7f9a&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27858_1" tvg-name="EAC将军 vs AU酋长" group-title="菲律宾 NCAA",菲律宾 NCAA: EAC将军 vs AU酋长 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3947145.m3u8%3FtxSecret%3D87f19e996ac80631d6e7cdd1f39f759d%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27858_2" tvg-name="EAC将军 vs AU酋长" group-title="菲律宾 NCAA",菲律宾 NCAA: EAC将军 vs AU酋长 - 高清K
+https://hello.ooo0ooo.top/live/3947145.m3u8
+#EXTINF:-1 tvg-id="qiuba_27636_0" tvg-name="清州KB之星女篮 vs 友利银行女篮" group-title="韩女甲",韩女甲: 清州KB之星女篮 vs 友利银行女篮 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3946134.m3u8?txSecret=2ffb44ecc1296b0699bcf99538387c97&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27636_1" tvg-name="清州KB之星女篮 vs 友利银行女篮" group-title="韩女甲",韩女甲: 清州KB之星女篮 vs 友利银行女篮 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3946134.m3u8%3FtxSecret%3D5d5a7515238602523e3f884bcd2c9ef5%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27636_2" tvg-name="清州KB之星女篮 vs 友利银行女篮" group-title="韩女甲",韩女甲: 清州KB之星女篮 vs 友利银行女篮 - 高清K
+https://hello.ooo0ooo.top/live/3946134.m3u8
+#EXTINF:-1 tvg-id="qiuba_27635_0" tvg-name="首尔三星雷电 vs 水原KT音速弹" group-title="韩篮甲",韩篮甲: 首尔三星雷电 vs 水原KT音速弹 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-2-3933608.m3u8?txSecret=14c6d659a6cb8d258fd6c660f6ed60fe&txTime=6AF2EC88
+#EXTINF:-1 tvg-id="qiuba_27635_1" tvg-name="首尔三星雷电 vs 水原KT音速弹" group-title="韩篮甲",韩篮甲: 首尔三星雷电 vs 水原KT音速弹 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3933608.m3u8%3FtxSecret%3Dcf527aa236888e6593dbb991c5055bc6%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27635_2" tvg-name="首尔三星雷电 vs 水原KT音速弹" group-title="韩篮甲",韩篮甲: 首尔三星雷电 vs 水原KT音速弹 - 高清V2
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3933608.m3u8%3FtxSecret%3D7959ab520e4f7b50caf6652a5492027c%26txTime%3D6AF1B05D
+#EXTINF:-1 tvg-id="qiuba_27635_3" tvg-name="首尔三星雷电 vs 水原KT音速弹" group-title="韩篮甲",韩篮甲: 首尔三星雷电 vs 水原KT音速弹 - 高清K
+https://hello.ooo0ooo.top/live/3933608.m3u8
