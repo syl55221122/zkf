@@ -1,47 +1,87 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="qiuba_28095_0" tvg-name="天津津门虎U20 vs 山东泰山U20" group-title="中U21",中U21: 天津津门虎U20 vs 山东泰山U20 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4667239.m3u8?txSecret=b432ef3795d705b123622433fb97b8bc&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28095_1" tvg-name="天津津门虎U20 vs 山东泰山U20" group-title="中U21",中U21: 天津津门虎U20 vs 山东泰山U20 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4667239.m3u8%3FtxSecret%3De800cd2d1a7533df34b3277f33b3658c%26txTime%3D6AF58B88
-#EXTINF:-1 tvg-id="qiuba_28095_2" tvg-name="天津津门虎U20 vs 山东泰山U20" group-title="中U21",中U21: 天津津门虎U20 vs 山东泰山U20 - 高清K
-https://hello.ooo0ooo.top/live/4667239.m3u8
-#EXTINF:-1 tvg-id="qiuba_28096_0" tvg-name="武汉三镇U20 vs 辽宁铁人U20" group-title="中U21",中U21: 武汉三镇U20 vs 辽宁铁人U20 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4667240.m3u8?txSecret=5290c7d8ac92fce05ed62daf48345586&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28096_1" tvg-name="武汉三镇U20 vs 辽宁铁人U20" group-title="中U21",中U21: 武汉三镇U20 vs 辽宁铁人U20 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4667240.m3u8%3FtxSecret%3Db4c56006354c09dbc3803f4e030cf408%26txTime%3D6AF58B88
-#EXTINF:-1 tvg-id="qiuba_28096_2" tvg-name="武汉三镇U20 vs 辽宁铁人U20" group-title="中U21",中U21: 武汉三镇U20 vs 辽宁铁人U20 - 高清K
-https://hello.ooo0ooo.top/live/4667240.m3u8
-#EXTINF:-1 tvg-id="qiuba_28099_0" tvg-name="班加罗尔B队 vs 反叛者SC" group-title="印班超",印班超: 班加罗尔B队 vs 反叛者SC - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4665811.m3u8?txSecret=4b0e00e2fa1dcdb59f6868a398419c2c&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28099_1" tvg-name="班加罗尔B队 vs 反叛者SC" group-title="印班超",印班超: 班加罗尔B队 vs 反叛者SC - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4665811.m3u8%3FtxSecret%3D5c0a8dc3c9d9f88b2bcf4300901b25bd%26txTime%3D6AF58B88
-#EXTINF:-1 tvg-id="qiuba_28099_2" tvg-name="班加罗尔B队 vs 反叛者SC" group-title="印班超",印班超: 班加罗尔B队 vs 反叛者SC - 高清K
-https://hello.ooo0ooo.top/live/4665811.m3u8
-#EXTINF:-1 tvg-id="qiuba_28098_0" tvg-name="泰国U23 vs 卡塔尔U23" group-title="国际友谊",国际友谊: 泰国U23 vs 卡塔尔U23 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4662876.m3u8?txSecret=256d904d8c058086b0081b4792217ec7&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28098_1" tvg-name="泰国U23 vs 卡塔尔U23" group-title="国际友谊",国际友谊: 泰国U23 vs 卡塔尔U23 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4662876.m3u8%3FtxSecret%3D96faa7c295c9f9dd14a1f8e48f12e8fa%26txTime%3D6AF58B88
-#EXTINF:-1 tvg-id="qiuba_28098_2" tvg-name="泰国U23 vs 卡塔尔U23" group-title="国际友谊",国际友谊: 泰国U23 vs 卡塔尔U23 - 高清K
-https://hello.ooo0ooo.top/live/4662876.m3u8
-#EXTINF:-1 tvg-id="qiuba_28100_0" tvg-name="阿德莱德36人 vs 墨尔本联" group-title="澳NBL",澳NBL: 阿德莱德36人 vs 墨尔本联 - 高清B
-https://pul-tenm.gkykp.com/live/sd-2-3925963.m3u8?txSecret=bed1801361caaf3983c03830d7854c07&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28100_1" tvg-name="阿德莱德36人 vs 墨尔本联" group-title="澳NBL",澳NBL: 阿德莱德36人 vs 墨尔本联 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3925963.m3u8%3FtxSecret%3D66a74d9de7c968723eec34b24f109b49%26txTime%3D6AF58B88
-#EXTINF:-1 tvg-id="qiuba_28100_2" tvg-name="阿德莱德36人 vs 墨尔本联" group-title="澳NBL",澳NBL: 阿德莱德36人 vs 墨尔本联 - 高清K
-https://hello.ooo0ooo.top/live/3925963.m3u8
-#EXTINF:-1 tvg-id="qiuba_28346_0" tvg-name="莱卡特老虎 vs 阿德莱德城" group-title="澳大利亚锦标赛",澳大利亚锦标赛: 莱卡特老虎 vs 阿德莱德城 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4657686.m3u8?txSecret=c09ba251e88fdcd4a3e8b347fc8aea25&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28346_1" tvg-name="莱卡特老虎 vs 阿德莱德城" group-title="澳大利亚锦标赛",澳大利亚锦标赛: 莱卡特老虎 vs 阿德莱德城 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4657686.m3u8%3FtxSecret%3D6f55312ef9cabf373d574ff67d930976%26txTime%3D6AF58BC7
-#EXTINF:-1 tvg-id="qiuba_28346_2" tvg-name="莱卡特老虎 vs 阿德莱德城" group-title="澳大利亚锦标赛",澳大利亚锦标赛: 莱卡特老虎 vs 阿德莱德城 - 高清K
-https://hello.ooo0ooo.top/live/4657686.m3u8
-#EXTINF:-1 tvg-id="qiuba_28097_0" tvg-name="塔斯马尼亚珍宝女篮 vs 南区飞人女篮" group-title="澳女篮",澳女篮: 塔斯马尼亚珍宝女篮 vs 南区飞人女篮 - 高清B
-https://pul-tenm.gkykp.com/live/hd-en-2-3925779.m3u8?txSecret=94bbb31876ecec774a4daa442f107b4d&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28097_1" tvg-name="塔斯马尼亚珍宝女篮 vs 南区飞人女篮" group-title="澳女篮",澳女篮: 塔斯马尼亚珍宝女篮 vs 南区飞人女篮 - 高清K
-https://hello.ooo0ooo.top/live/3925779.m3u8
-#EXTINF:-1 tvg-id="qiuba_28347_0" tvg-name="玛布亚红雀 vs LPU海盗" group-title="菲律宾 NCAA",菲律宾 NCAA: 玛布亚红雀 vs LPU海盗 - 高清B
-https://pul-tenm.gkykp.com/live/sd-2-3959790.m3u8?txSecret=3ad6c6aacaf45cb688366bd753cb4c51&txTime=6AF6C7B8
-#EXTINF:-1 tvg-id="qiuba_28347_1" tvg-name="玛布亚红雀 vs LPU海盗" group-title="菲律宾 NCAA",菲律宾 NCAA: 玛布亚红雀 vs LPU海盗 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3959790.m3u8%3FtxSecret%3D5c9f5a4bee7d01027595fbde4c2e4789%26txTime%3D6AF58B88
-#EXTINF:-1 tvg-id="qiuba_28347_2" tvg-name="玛布亚红雀 vs LPU海盗" group-title="菲律宾 NCAA",菲律宾 NCAA: 玛布亚红雀 vs LPU海盗 - 高清K
-https://hello.ooo0ooo.top/live/3959790.m3u8
+#EXTINF:-1 tvg-id="qiuba_28358_0" tvg-name="立陶宛 (女) vs 芬兰 (女)" group-title="FIBA欧洲女子篮球锦标赛2027资格赛",FIBA欧洲女子篮球锦标赛2027资格赛: 立陶宛 (女) vs 芬兰 (女) - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3885381.m3u8?txSecret=3da62c2b08d8779897d18327b6a6b955&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28358_1" tvg-name="立陶宛 (女) vs 芬兰 (女)" group-title="FIBA欧洲女子篮球锦标赛2027资格赛",FIBA欧洲女子篮球锦标赛2027资格赛: 立陶宛 (女) vs 芬兰 (女) - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3885381.m3u8%3FtxSecret%3D87b0902f8c83333d05f025b1f071ffa6%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28358_2" tvg-name="立陶宛 (女) vs 芬兰 (女)" group-title="FIBA欧洲女子篮球锦标赛2027资格赛",FIBA欧洲女子篮球锦标赛2027资格赛: 立陶宛 (女) vs 芬兰 (女) - 高清K
+https://hello.ooo0ooo.top/live/3885381.m3u8
+#EXTINF:-1 tvg-id="qiuba_28112_0" tvg-name="伊泽夫斯克 vs 希姆基" group-title="俄篮超",俄篮超: 伊泽夫斯克 vs 希姆基 - 高清K
+https://hello.ooo0ooo.top/live/3939742.m3u8
+#EXTINF:-1 tvg-id="qiuba_28229_0" tvg-name="格罗兹尼迪纳摩 vs 列夫达" group-title="俄篮超",俄篮超: 格罗兹尼迪纳摩 vs 列夫达 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3939602.m3u8?txSecret=a5cce45d6d51aa8dbbfe9adb8fd9e33c&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28229_1" tvg-name="格罗兹尼迪纳摩 vs 列夫达" group-title="俄篮超",俄篮超: 格罗兹尼迪纳摩 vs 列夫达 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3939602.m3u8%3FtxSecret%3D72f09ad62c349aa7b026f8eea93df86b%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28229_2" tvg-name="格罗兹尼迪纳摩 vs 列夫达" group-title="俄篮超",俄篮超: 格罗兹尼迪纳摩 vs 列夫达 - 高清K
+https://hello.ooo0ooo.top/live/3939602.m3u8
+#EXTINF:-1 tvg-id="qiuba_28230_0" tvg-name="莫斯科中央陆军B队 vs 乌法" group-title="俄篮超",俄篮超: 莫斯科中央陆军B队 vs 乌法 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3939613.m3u8?txSecret=03feb62feef4d7a1e26f5d56e6bbaf3a&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28230_1" tvg-name="莫斯科中央陆军B队 vs 乌法" group-title="俄篮超",俄篮超: 莫斯科中央陆军B队 vs 乌法 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3939613.m3u8%3FtxSecret%3D694682ad841c87ca610bfb57b05f2a8b%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28230_2" tvg-name="莫斯科中央陆军B队 vs 乌法" group-title="俄篮超",俄篮超: 莫斯科中央陆军B队 vs 乌法 - 高清K
+https://hello.ooo0ooo.top/live/3939613.m3u8
+#EXTINF:-1 tvg-id="qiuba_28231_0" tvg-name="坦波夫 vs 尤格拉" group-title="俄篮超",俄篮超: 坦波夫 vs 尤格拉 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3939728.m3u8?txSecret=b06134cdf3e0f6b14c0c34a65e1abd75&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28231_1" tvg-name="坦波夫 vs 尤格拉" group-title="俄篮超",俄篮超: 坦波夫 vs 尤格拉 - 高清K
+https://hello.ooo0ooo.top/live/3939728.m3u8
+#EXTINF:-1 tvg-id="qiuba_28114_0" tvg-name="乌兹别克斯坦 vs 俄罗斯" group-title="国际友谊",国际友谊: 乌兹别克斯坦 vs 俄罗斯 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4663034.m3u8?txSecret=1bfa34e3060017ada6aa060519043f47&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28114_1" tvg-name="乌兹别克斯坦 vs 俄罗斯" group-title="国际友谊",国际友谊: 乌兹别克斯坦 vs 俄罗斯 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4663034.m3u8%3FtxSecret%3D4347112d2379a7293babbc0d4e6bf667%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28114_2" tvg-name="乌兹别克斯坦 vs 俄罗斯" group-title="国际友谊",国际友谊: 乌兹别克斯坦 vs 俄罗斯 - 高清K
+https://hello.ooo0ooo.top/live/4663034.m3u8
+#EXTINF:-1 tvg-id="qiuba_28240_0" tvg-name="立陶宛 vs 苏里南" group-title="国际友谊",国际友谊: 立陶宛 vs 苏里南 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4667164.m3u8?txSecret=cd8ae37297f1957465e60e02a89c0bdd&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28240_1" tvg-name="立陶宛 vs 苏里南" group-title="国际友谊",国际友谊: 立陶宛 vs 苏里南 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4667164.m3u8%3FtxSecret%3D1f8014a32de870db2052ea196f92b221%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28240_2" tvg-name="立陶宛 vs 苏里南" group-title="国际友谊",国际友谊: 立陶宛 vs 苏里南 - 高清K
+https://hello.ooo0ooo.top/live/4667164.m3u8
+#EXTINF:-1 tvg-id="qiuba_28357_0" tvg-name="法国U20 vs 丹麦U20" group-title="国际友谊",国际友谊: 法国U20 vs 丹麦U20 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4667163.m3u8?txSecret=6c66ce6b69807df4f4d7edafec6400d5&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28357_1" tvg-name="法国U20 vs 丹麦U20" group-title="国际友谊",国际友谊: 法国U20 vs 丹麦U20 - 高清K
+https://hello.ooo0ooo.top/live/4667163.m3u8
+#EXTINF:-1 tvg-id="qiuba_28237_0" tvg-name="帕尔努 vs 克拉夫诺斯" group-title="欧俱杯",欧俱杯: 帕尔努 vs 克拉夫诺斯 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3944909.m3u8?txSecret=433fc74ae8bf2c62b3f526ff33c97737&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28237_1" tvg-name="帕尔努 vs 克拉夫诺斯" group-title="欧俱杯",欧俱杯: 帕尔努 vs 克拉夫诺斯 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3944909.m3u8%3FtxSecret%3Dcbbd0fa14863d215ec8155503d128fd3%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28237_2" tvg-name="帕尔努 vs 克拉夫诺斯" group-title="欧俱杯",欧俱杯: 帕尔努 vs 克拉夫诺斯 - 高清K
+https://hello.ooo0ooo.top/live/3944909.m3u8
+#EXTINF:-1 tvg-id="qiuba_28238_0" tvg-name="土耳其 vs 比利时" group-title="欧国联",欧国联: 土耳其 vs 比利时 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-1-4518077.m3u8?txSecret=01c7357051cb28f5d89def1f0578fd45&txTime=6AF74120
+#EXTINF:-1 tvg-id="qiuba_28238_1" tvg-name="土耳其 vs 比利时" group-title="欧国联",欧国联: 土耳其 vs 比利时 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4518077.m3u8%3FtxSecret%3D39af0339c14b7e3fb7982e7f38cac22d%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28238_2" tvg-name="土耳其 vs 比利时" group-title="欧国联",欧国联: 土耳其 vs 比利时 - 高清V2
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4518077.m3u8%3FtxSecret%3Dc3ead556c252087e5675629a37707d50%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28238_3" tvg-name="土耳其 vs 比利时" group-title="欧国联",欧国联: 土耳其 vs 比利时 - 高清K
+https://hello.ooo0ooo.top/live/4518077.m3u8
+#EXTINF:-1 tvg-id="qiuba_28239_0" tvg-name="亚美尼亚 vs 塞浦路斯" group-title="欧国联",欧国联: 亚美尼亚 vs 塞浦路斯 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-1-4518083.m3u8?txSecret=75880097ec1fe219b51597f820842a1c&txTime=6AF74120
+#EXTINF:-1 tvg-id="qiuba_28239_1" tvg-name="亚美尼亚 vs 塞浦路斯" group-title="欧国联",欧国联: 亚美尼亚 vs 塞浦路斯 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4518083.m3u8%3FtxSecret%3D858225abdb5ba8732f46ee3b542fae7a%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28239_2" tvg-name="亚美尼亚 vs 塞浦路斯" group-title="欧国联",欧国联: 亚美尼亚 vs 塞浦路斯 - 高清V2
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4518083.m3u8%3FtxSecret%3D78f469e726e75a74106f5b69cad33d90%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28239_3" tvg-name="亚美尼亚 vs 塞浦路斯" group-title="欧国联",欧国联: 亚美尼亚 vs 塞浦路斯 - 高清K
+https://hello.ooo0ooo.top/live/4518083.m3u8
+#EXTINF:-1 tvg-id="qiuba_28113_0" tvg-name="加纳 vs 索马里" group-title="非洲杯",非洲杯: 加纳 vs 索马里 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4642738.m3u8?txSecret=f19d62aa8d1333dbd645150df40e6506&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28113_1" tvg-name="加纳 vs 索马里" group-title="非洲杯",非洲杯: 加纳 vs 索马里 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4642738.m3u8%3FtxSecret%3De1700bcd78c0023af56aa9795ba38f2e%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28113_2" tvg-name="加纳 vs 索马里" group-title="非洲杯",非洲杯: 加纳 vs 索马里 - 高清K
+https://hello.ooo0ooo.top/live/4642738.m3u8
+#EXTINF:-1 tvg-id="qiuba_28232_0" tvg-name="马达加斯加 vs 几内亚比绍" group-title="非洲杯",非洲杯: 马达加斯加 vs 几内亚比绍 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4642729.m3u8?txSecret=555ce1370daac8d711f5ef1230033439&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28232_1" tvg-name="马达加斯加 vs 几内亚比绍" group-title="非洲杯",非洲杯: 马达加斯加 vs 几内亚比绍 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4642729.m3u8%3FtxSecret%3D03a72234605924bf6416ae65da598e88%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28232_2" tvg-name="马达加斯加 vs 几内亚比绍" group-title="非洲杯",非洲杯: 马达加斯加 vs 几内亚比绍 - 高清K
+https://hello.ooo0ooo.top/live/4642729.m3u8
+#EXTINF:-1 tvg-id="qiuba_28233_0" tvg-name="刚果(金) vs 塞拉利昂" group-title="非洲杯",非洲杯: 刚果(金) vs 塞拉利昂 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4642731.m3u8?txSecret=fe6107a011023d0e04bca4c364ec9a11&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28233_1" tvg-name="刚果(金) vs 塞拉利昂" group-title="非洲杯",非洲杯: 刚果(金) vs 塞拉利昂 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4642731.m3u8%3FtxSecret%3Dd7a64a6f290aec8056b63a19048f4ff6%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28233_2" tvg-name="刚果(金) vs 塞拉利昂" group-title="非洲杯",非洲杯: 刚果(金) vs 塞拉利昂 - 高清K
+https://hello.ooo0ooo.top/live/4642731.m3u8
+#EXTINF:-1 tvg-id="qiuba_28235_0" tvg-name="赤道几内亚 vs 津巴布韦" group-title="非洲杯",非洲杯: 赤道几内亚 vs 津巴布韦 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4642741.m3u8?txSecret=ab97301aaa7ef79b4cef6a1c62cf40e3&txTime=6AF74198
+#EXTINF:-1 tvg-id="qiuba_28235_1" tvg-name="赤道几内亚 vs 津巴布韦" group-title="非洲杯",非洲杯: 赤道几内亚 vs 津巴布韦 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4642741.m3u8%3FtxSecret%3D769308403b412ef208be3cc6a5ad0655%26txTime%3D6AF60534
+#EXTINF:-1 tvg-id="qiuba_28235_2" tvg-name="赤道几内亚 vs 津巴布韦" group-title="非洲杯",非洲杯: 赤道几内亚 vs 津巴布韦 - 高清K
+https://hello.ooo0ooo.top/live/4642741.m3u8
