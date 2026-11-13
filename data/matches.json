@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 10:56:06",
+  "updated_at": "2026-11-13 18:41:25",
   "home": {
     "class": [
       {
@@ -13,67 +13,130 @@
     ],
     "list": [
       {
-        "vod_id": "qiuba|28270|NBA%20%E5%A5%87%E6%89%8D%20132%3A132%20%E6%B4%BB%E5%A1%9E",
-        "vod_name": "NBA 奇才 132:132 活塞",
-        "vod_pic": "https://www.qiuba008.vip/teams/ac18ecfecac3af349477383866cf8ef5.png",
-        "vod_remarks": "🔴 进行中 132:132 | 6路 11-13 08:00",
-        "_status": "live",
-        "_signal_count": 6,
-        "_start_time": "2026-11-13T00:00:00.000Z"
-      },
-      {
-        "vod_id": "qiuba|28273|NBA%20%E6%A3%AE%E6%9E%97%E7%8B%BC%20108%3A72%20%E7%8B%AC%E8%A1%8C%E4%BE%A0",
-        "vod_name": "NBA 森林狼 108:72 独行侠",
-        "vod_pic": "https://www.qiuba008.vip/teams/1700678b84ba5a771e76a067027bebb9.png",
-        "vod_remarks": "🔴 进行中 108:72 | 6路 11-13 09:00",
-        "_status": "live",
-        "_signal_count": 6,
-        "_start_time": "2026-11-13T01:00:00.000Z"
-      },
-      {
-        "vod_id": "qiuba|28274|NBA%20%E5%A4%AA%E9%98%B3%2050%3A40%20%E9%BB%84%E8%9C%82",
-        "vod_name": "NBA 太阳 50:40 黄蜂",
-        "vod_pic": "https://www.qiuba008.vip/teams/903d0e8ac3089b5b845364e30ef5360e.png",
-        "vod_remarks": "🔴 进行中 50:40 | 6路 11-13 10:00",
-        "_status": "live",
-        "_signal_count": 6,
-        "_start_time": "2026-11-13T02:00:00.000Z"
-      },
-      {
-        "vod_id": "qiuba|28528|NCAA%20%E6%B3%A2%E5%A3%AB%E9%A1%BF%E5%A4%A7%E5%AD%A6%2098%3A71%20%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%A8%81%E5%B0%94%E5%A3%AB%28NC%29",
-        "vod_name": "NCAA 波士顿大学 98:71 约翰逊威尔士(NC)",
-        "vod_pic": "https://www.qiuba008.vip/teams/321d2534a97b3ef4353ac149a00a9e83.png",
-        "vod_remarks": "🔴 进行中 98:71 | 1路 11-13 07:00",
-        "_status": "live",
-        "_signal_count": 1,
-        "_start_time": "2026-11-12T23:00:00.000Z"
-      },
-      {
-        "vod_id": "qiuba|28352|NCAA%20%E5%BE%97%E5%B7%9E%E5%86%9C%E5%B7%A5%E5%A4%A7%E5%AD%A6%2072%3A60%20%E4%BF%84%E5%85%8B%E6%8B%89%E8%8D%B7%E9%A9%AC%E5%B7%9E%E7%AB%8B%E5%A4%A7%E5%AD%A6",
-        "vod_name": "NCAA 得州农工大学 72:60 俄克拉荷马州立大学",
-        "vod_pic": "https://www.qiuba008.vip/teams/n799bf997bdeb8f96fe671db2eb19abe8.png",
-        "vod_remarks": "🔴 进行中 72:60 | 3路 11-13 09:00",
+        "vod_id": "qiuba|28558|%E7%BC%85%E7%94%B8%E5%9B%BD%E5%AE%B6%E8%81%94%E8%B5%9B%20U20%20%E4%BC%8A%E6%B4%9B%E7%93%A6%E5%BA%95%20U20%201%3A2%20%E5%AE%9E%E7%9A%86%E8%81%94%20U20",
+        "vod_name": "缅甸国家联赛 U20 伊洛瓦底 U20 1:2 实皆联 U20",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 1:2 | 3路 11-13 17:00",
         "_status": "live",
         "_signal_count": 3,
-        "_start_time": "2026-11-13T01:00:00.000Z"
+        "_start_time": "2026-11-13T09:00:00.000Z"
       },
       {
-        "vod_id": "qiuba|28540|NCAA%20%E5%8D%97%E4%BC%8A%E5%88%A9%E8%AF%BA%E5%A4%A7%E5%AD%A6%2077%3A70%20%E9%87%8C%E5%A5%87%E8%92%99%E5%BE%B7%E5%A4%A7%E5%AD%A6",
-        "vod_name": "NCAA 南伊利诺大学 77:70 里奇蒙德大学",
-        "vod_pic": "https://www.qiuba008.vip/teams/ne94dd55b86772da9e1560fb36c4d5475.png",
-        "vod_remarks": "🔴 进行中 77:70 | 3路 11-13 09:00",
+        "vod_id": "qiuba|28559|%E7%BC%85%E7%94%B8%E5%9B%BD%E5%AE%B6%E8%81%94%E8%B5%9B%20U20%20%E5%A4%A7%E6%B8%AF%E6%98%9F%E8%81%94%20U20%201%3A0%20%E4%BB%B0%E5%85%89%E5%9F%8E%E8%B6%B3%E7%90%83%E4%BF%B1%E4%B9%90%E9%83%A8%20U20",
+        "vod_name": "缅甸国家联赛 U20 大港星联 U20 1:0 仰光城足球俱乐部 U20",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 1:0 | 3路 11-13 17:00",
         "_status": "live",
         "_signal_count": 3,
-        "_start_time": "2026-11-13T01:00:00.000Z"
+        "_start_time": "2026-11-13T09:00:00.000Z"
       },
       {
-        "vod_id": "qiuba|28310|NCAA%20%E6%9D%A8%E7%99%BE%E7%BF%B0%E5%A4%A7%E5%AD%A6%2043%3A29%20%E8%92%99%E5%A4%A7%E6%8B%BF%E5%B7%9E%E7%AB%8B%E5%A4%A7%E5%AD%A6",
-        "vod_name": "NCAA 杨百翰大学 43:29 蒙大拿州立大学",
-        "vod_pic": "https://www.qiuba008.vip/teams/6531b5907a010b11c34a85882b01ba5a.jpg",
-        "vod_remarks": "🔴 进行中 43:29 | 2路 11-13 10:00",
+        "vod_id": "qiuba|28285|%E9%9F%A9%E7%AF%AE%E7%94%B2%20%E5%8E%9F%E5%B7%9E%E4%B8%9C%E6%B5%A6%E6%96%B0%E4%B8%96%E4%BB%A3%2043%3A32%20%E6%B0%B4%E5%8E%9FKT%E9%9F%B3%E9%80%9F%E5%BC%B9",
+        "vod_name": "韩篮甲 原州东浦新世代 43:32 水原KT音速弹",
+        "vod_pic": "https://www.qiuba008.vip/teams/e94f441698752284a7b2f6c37ea3aee6.png",
+        "vod_remarks": "🔴 进行中 43:32 | 3路 11-13 18:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28286|%E9%9F%A9%E5%A5%B3%E7%94%B2%20%E5%8F%8B%E5%88%A9%E9%93%B6%E8%A1%8C%E5%A5%B3%E7%AF%AE%2024%3A27%20BNK%E9%87%9C%E5%B1%B1%E8%90%A8%E5%A7%86%E5%A5%B3%E7%AF%AE",
+        "vod_name": "韩女甲 友利银行女篮 24:27 BNK釜山萨姆女篮",
+        "vod_pic": "https://www.qiuba008.vip/teams/372ebf16ae571d85ee98090b0ee60e41.png",
+        "vod_remarks": "🔴 进行中 24:27 | 3路 11-13 18:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28287|%E6%97%A5%E5%A5%B3%E7%94%B2%20%E5%A7%AC%E8%B7%AF%E7%99%BD%E9%B9%AD%E5%A5%B3%E7%AF%AE%2028%3A26%20%E9%98%BF%E5%85%B0%E9%A9%AC%E9%9B%B7%E7%A7%8B%E7%94%B0%E5%A5%B3%E7%AF%AE",
+        "vod_name": "日女甲 姬路白鹭女篮 28:26 阿兰马雷秋田女篮",
+        "vod_pic": "https://www.qiuba008.vip/teams/e5868f9608b2ac68c7e51f53ac3696f7.png",
+        "vod_remarks": "🔴 进行中 28:26 | 2路 11-13 18:00",
         "_status": "live",
         "_signal_count": 2,
-        "_start_time": "2026-11-13T02:00:00.000Z"
+        "_start_time": "2026-11-13T10:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28557|%E4%B9%8C%E5%85%8B%E5%85%B0%E7%94%B2%E7%BA%A7%E8%81%94%E8%B5%9B%20%E6%99%AE%E9%87%8C%E5%8D%A1%E5%B8%95%E4%BA%9A%201%3A0%20%E9%AB%98%E5%8D%8E%E5%B0%A4%E5%A4%AB%E5%8D%A1%E4%BA%8C%E9%98%9F",
+        "vod_name": "乌克兰甲级联赛 普里卡帕亚 1:0 高华尤夫卡二队",
+        "vod_pic": "https://www.qiuba008.vip/teams/e10111e45c3d939d4c5779271de91a49.png",
+        "vod_remarks": "🔴 进行中 1:0 | 3路 11-13 18:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28560|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E4%BD%A9%E7%89%B9%E7%BD%97%E9%B2%81%201%3A0%20AFC%E6%A2%85%E5%A1%94%E9%B2%81%E5%B8%83%E4%BD%90",
+        "vod_name": "国际友谊 佩特罗鲁 1:0 AFC梅塔鲁布佐",
+        "vod_pic": "https://www.qiuba008.vip/teams/a568766c6a9883fa021d0469ec813dc2.png",
+        "vod_remarks": "🔴 进行中 1:0 | 2路 11-13 18:00",
+        "_status": "live",
+        "_signal_count": 2,
+        "_start_time": "2026-11-13T10:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28561|%E6%A0%BC%E9%B2%81%E5%90%89%E4%BA%9A%E7%AF%AE%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E6%8F%90%E6%AF%94%E9%87%8C%E8%A5%BF%E5%9B%BD%E7%AB%8B%E5%A4%A7%E5%AD%A6%2030%3A33%20%E7%A7%91%E5%8D%A1%E6%96%AF%E4%BA%9ABC",
+        "vod_name": "格鲁吉亚篮球超级联赛 提比里西国立大学 30:33 科卡斯亚BC",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 30:33 | 3路 11-13 18:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28288|%E6%97%A5%E7%AF%AEB1%20%E5%B2%9B%E6%A0%B9%E9%AD%94%E6%9C%AF%2036%3A35%20%E4%BB%99%E5%8F%B089%E4%BA%BA",
+        "vod_name": "日篮B1 岛根魔术 36:35 仙台89人",
+        "vod_pic": "https://www.qiuba008.vip/teams/eeefbdedda12dba4c46c4ab4ecbcbc4b.png",
+        "vod_remarks": "🔴 进行中 36:35 | 3路 11-13 18:05",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:05:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28289|%E6%97%A5%E7%AF%AEB2%20%E4%B8%9C%E4%BA%AC%E8%81%94%E5%90%88%2026%3A31%20%E7%86%8A%E6%9C%AC%E7%81%AB%E5%B1%B1",
+        "vod_name": "日篮B2 东京联合 26:31 熊本火山",
+        "vod_pic": "https://www.qiuba008.vip/teams/42a97215019ab03ef4f0cd8166e62904.png",
+        "vod_remarks": "🔴 进行中 26:31 | 3路 11-13 18:05",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:05:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28290|%E6%97%A5%E7%AF%AEB1%20%E5%8C%97%E6%B5%B7%E9%81%93%E9%A3%8E%E7%A5%9E%2030%3A27%20%E7%A5%9E%E6%88%B7%E9%B9%B3%E9%B8%9F",
+        "vod_name": "日篮B1 北海道风神 30:27 神户鹳鸟",
+        "vod_pic": "https://www.qiuba008.vip/teams/91dbdd6543d4ba046a7e386f6d4726f1.png",
+        "vod_remarks": "🔴 进行中 30:27 | 3路 11-13 18:05",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:05:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28291|%E6%97%A5%E7%AF%AEB1%20%E5%B7%9D%E5%B4%8E%E9%9B%B7%E9%9C%86%E5%8B%87%E8%80%85%2031%3A35%20%E4%BD%90%E8%B4%BA%E6%B0%94%E7%90%83%E4%BA%BA",
+        "vod_name": "日篮B1 川崎雷霆勇者 31:35 佐贺气球人",
+        "vod_pic": "https://www.qiuba008.vip/teams/e8edc9b94b7fd45ec9de586cacb1df6b.png",
+        "vod_remarks": "🔴 进行中 31:35 | 3路 11-13 18:05",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:05:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28292|%E6%97%A5%E7%AF%AEB1%20%E4%BA%AC%E9%83%BD%E5%88%9B%E8%8D%A3%2029%3A23%20%E8%8C%A8%E5%9F%8E%E6%9C%BA%E5%99%A8%E4%BA%BA",
+        "vod_name": "日篮B1 京都创荣 29:23 茨城机器人",
+        "vod_pic": "https://www.qiuba008.vip/teams/706def05df715f6e1a0c2e8e3cfcdc33.png",
+        "vod_remarks": "🔴 进行中 29:23 | 3路 11-13 18:15",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:15:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|28294|%E6%97%A5%E7%AF%AEB1%20%E7%A7%8B%E7%94%B0%E5%8C%97%E9%83%A8%E5%96%9C%E6%82%A6%209%3A13%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%92%BB%E7%9F%B3%E6%B5%B7%E8%B1%9A",
+        "vod_name": "日篮B1 秋田北部喜悦 9:13 名古屋钻石海豚",
+        "vod_pic": "https://www.qiuba008.vip/teams/518fcabe90dafc4100d80de02554a004.png",
+        "vod_remarks": "🔴 进行中 9:13 | 3路 11-13 18:30",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-13T10:30:00.000Z"
       }
     ],
     "filters": {}
@@ -184,66 +247,57 @@
           "_start_time": "2026-11-14T14:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28278|%E5%8D%B0%E7%8F%AD%E8%B6%85%20%E7%9A%87%E5%AE%B6%E7%8F%AD%E5%8A%A0%E7%BD%97%E5%B0%94%20vs%20%E7%8F%AD%E5%8A%A0%E7%BD%97%E5%B0%94%E6%A2%A6%E5%B9%BB%E8%81%94",
-          "vod_name": "印班超 皇家班加罗尔 vs 班加罗尔梦幻联",
-          "vod_pic": "https://www.qiuba008.vip/teams/4b6b4944af08355d5375a8d95e6a8395.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 11:30",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T03:30:00.000Z"
+          "vod_id": "qiuba|28558|%E7%BC%85%E7%94%B8%E5%9B%BD%E5%AE%B6%E8%81%94%E8%B5%9B%20U20%20%E4%BC%8A%E6%B4%9B%E7%93%A6%E5%BA%95%20U20%201%3A2%20%E5%AE%9E%E7%9A%86%E8%81%94%20U20",
+          "vod_name": "缅甸国家联赛 U20 伊洛瓦底 U20 1:2 实皆联 U20",
+          "vod_pic": "",
+          "vod_remarks": "🔴 进行中 1:2 | 3路 11-13 17:00",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T09:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28277|%E8%92%99%E5%8F%A4%E8%B6%85%20%E4%B9%8C%E5%85%B0%E5%B7%B4%E6%89%98FC%20vs%20%E7%8C%8E%E4%BA%BAFC",
-          "vod_name": "蒙古超 乌兰巴托FC vs 猎人FC",
-          "vod_pic": "https://www.qiuba008.vip/teams/0c7d6546c9204e45c17bc2d9d05f7a4b.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 13:00",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T05:00:00.000Z"
+          "vod_id": "qiuba|28559|%E7%BC%85%E7%94%B8%E5%9B%BD%E5%AE%B6%E8%81%94%E8%B5%9B%20U20%20%E5%A4%A7%E6%B8%AF%E6%98%9F%E8%81%94%20U20%201%3A0%20%E4%BB%B0%E5%85%89%E5%9F%8E%E8%B6%B3%E7%90%83%E4%BF%B1%E4%B9%90%E9%83%A8%20U20",
+          "vod_name": "缅甸国家联赛 U20 大港星联 U20 1:0 仰光城足球俱乐部 U20",
+          "vod_pic": "",
+          "vod_remarks": "🔴 进行中 1:0 | 3路 11-13 17:00",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T09:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28281|%E5%8D%B0%E7%8F%AD%E8%B6%85%20%E7%A7%91%E8%BE%BE%E5%8F%A4%20vs%20%E7%89%B9%E5%85%8B%E5%B0%BC%E5%85%8B",
-          "vod_name": "印班超 科达古 vs 特克尼克",
-          "vod_pic": "https://www.qiuba008.vip/teams/50ce7bce72e26e6d0bbf86e1b2fa763d.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 13:55",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T05:55:00.000Z"
+          "vod_id": "qiuba|28557|%E4%B9%8C%E5%85%8B%E5%85%B0%E7%94%B2%E7%BA%A7%E8%81%94%E8%B5%9B%20%E6%99%AE%E9%87%8C%E5%8D%A1%E5%B8%95%E4%BA%9A%201%3A0%20%E9%AB%98%E5%8D%8E%E5%B0%A4%E5%A4%AB%E5%8D%A1%E4%BA%8C%E9%98%9F",
+          "vod_name": "乌克兰甲级联赛 普里卡帕亚 1:0 高华尤夫卡二队",
+          "vod_pic": "https://www.qiuba008.vip/teams/e10111e45c3d939d4c5779271de91a49.png",
+          "vod_remarks": "🔴 进行中 1:0 | 3路 11-13 18:00",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28283|%E8%92%99%E5%8F%A4%E8%B6%85%20%E5%BE%B7%E4%BB%81FC%20vs%20%E4%B8%AD%E5%A4%AE%E9%AA%8F%E9%A9%AC",
-          "vod_name": "蒙古超 德仁FC vs 中央骏马",
-          "vod_pic": "https://www.qiuba008.vip/teams/e4f8faa800643a16387371e8f8234079.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 16:00",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T08:00:00.000Z"
-        },
-        {
-          "vod_id": "qiuba|28293|%E5%8D%B0%E7%8F%AD%E8%B6%85%20%E5%B8%95%E9%87%8C%E5%85%8B%E7%8E%9B%20vs%20%E5%93%88%E5%B0%94FC",
-          "vod_name": "印班超 帕里克玛 vs 哈尔FC",
-          "vod_pic": "https://www.qiuba008.vip/teams/9797959a20ca90fb6901b819293bb1bd.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 16:30",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T08:30:00.000Z"
+          "vod_id": "qiuba|28560|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E4%BD%A9%E7%89%B9%E7%BD%97%E9%B2%81%201%3A0%20AFC%E6%A2%85%E5%A1%94%E9%B2%81%E5%B8%83%E4%BD%90",
+          "vod_name": "国际友谊 佩特罗鲁 1:0 AFC梅塔鲁布佐",
+          "vod_pic": "https://www.qiuba008.vip/teams/a568766c6a9883fa021d0469ec813dc2.png",
+          "vod_remarks": "🔴 进行中 1:0 | 2路 11-13 18:00",
+          "_status": "live",
+          "_signal_count": 2,
+          "_start_time": "2026-11-13T10:00:00.000Z"
         },
         {
           "vod_id": "qiuba|28295|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E6%8D%B7%E5%85%8BU18%20vs%20%E6%B3%A2%E5%85%B0U18",
           "vod_name": "国际友谊 捷克U18 vs 波兰U18",
           "vod_pic": "https://www.qiuba008.vip/teams/9cc25407f209e031babdac7d3c520ccb.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 19:00",
+          "vod_remarks": "⚪ 未开始 0:0 | 1路 11-13 19:00",
           "_status": "not_started",
-          "_signal_count": 0,
+          "_signal_count": 1,
           "_start_time": "2026-11-13T11:00:00.000Z"
         },
         {
           "vod_id": "qiuba|28521|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E4%B9%8C%E5%85%B9%E5%88%AB%E5%85%8B%E6%96%AF%E5%9D%A6U20%20vs%20%E5%A7%94%E5%86%85%E7%91%9E%E6%8B%89U20",
           "vod_name": "国际友谊 乌兹别克斯坦U20 vs 委内瑞拉U20",
           "vod_pic": "https://www.qiuba008.vip/teams/c57a3eca95d70187183db603776b53e5.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 19:00",
+          "vod_remarks": "⚪ 未开始 0:0 | 3路 11-13 19:00",
           "_status": "not_started",
-          "_signal_count": 0,
+          "_signal_count": 3,
           "_start_time": "2026-11-13T11:00:00.000Z"
         },
         {
@@ -263,41 +317,23 @@
           "_status": "not_started",
           "_signal_count": 0,
           "_start_time": "2026-11-13T12:00:00.000Z"
+        },
+        {
+          "vod_id": "qiuba|28298|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E4%B8%AD%E5%9B%BD%E5%8F%B0%E5%8C%97%20vs%20%E5%90%89%E5%B0%94%E5%90%89%E6%96%AF%E6%96%AF%E5%9D%A6",
+          "vod_name": "国际友谊 中国台北 vs 吉尔吉斯斯坦",
+          "vod_pic": "https://www.qiuba008.vip/teams/985e51b605c92cc968c1b313eef9dd95.png",
+          "vod_remarks": "⚪ 未开始 0:0 11-13 20:00",
+          "_status": "not_started",
+          "_signal_count": 0,
+          "_start_time": "2026-11-13T12:00:00.000Z"
         }
       ]
     },
     {
       "type_id": "2",
       "type_name": "篮球",
-      "total": 96,
+      "total": 87,
       "list": [
-        {
-          "vod_id": "qiuba|28270|NBA%20%E5%A5%87%E6%89%8D%20132%3A132%20%E6%B4%BB%E5%A1%9E",
-          "vod_name": "NBA 奇才 132:132 活塞",
-          "vod_pic": "https://www.qiuba008.vip/teams/ac18ecfecac3af349477383866cf8ef5.png",
-          "vod_remarks": "🔴 进行中 132:132 | 6路 11-13 08:00",
-          "_status": "live",
-          "_signal_count": 6,
-          "_start_time": "2026-11-13T00:00:00.000Z"
-        },
-        {
-          "vod_id": "qiuba|28273|NBA%20%E6%A3%AE%E6%9E%97%E7%8B%BC%20108%3A72%20%E7%8B%AC%E8%A1%8C%E4%BE%A0",
-          "vod_name": "NBA 森林狼 108:72 独行侠",
-          "vod_pic": "https://www.qiuba008.vip/teams/1700678b84ba5a771e76a067027bebb9.png",
-          "vod_remarks": "🔴 进行中 108:72 | 6路 11-13 09:00",
-          "_status": "live",
-          "_signal_count": 6,
-          "_start_time": "2026-11-13T01:00:00.000Z"
-        },
-        {
-          "vod_id": "qiuba|28274|NBA%20%E5%A4%AA%E9%98%B3%2050%3A40%20%E9%BB%84%E8%9C%82",
-          "vod_name": "NBA 太阳 50:40 黄蜂",
-          "vod_pic": "https://www.qiuba008.vip/teams/903d0e8ac3089b5b845364e30ef5360e.png",
-          "vod_remarks": "🔴 进行中 50:40 | 6路 11-13 10:00",
-          "_status": "live",
-          "_signal_count": 6,
-          "_start_time": "2026-11-13T02:00:00.000Z"
-        },
         {
           "vod_id": "qiuba|28405|NBA%20%E5%B0%BC%E5%85%8B%E6%96%AF%20vs%20%E6%AD%A5%E8%A1%8C%E8%80%85",
           "vod_name": "NBA 尼克斯 vs 步行者",
@@ -380,76 +416,103 @@
           "_start_time": "2026-11-14T03:30:00.000Z"
         },
         {
-          "vod_id": "qiuba|28528|NCAA%20%E6%B3%A2%E5%A3%AB%E9%A1%BF%E5%A4%A7%E5%AD%A6%2098%3A71%20%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%A8%81%E5%B0%94%E5%A3%AB%28NC%29",
-          "vod_name": "NCAA 波士顿大学 98:71 约翰逊威尔士(NC)",
-          "vod_pic": "https://www.qiuba008.vip/teams/321d2534a97b3ef4353ac149a00a9e83.png",
-          "vod_remarks": "🔴 进行中 98:71 | 1路 11-13 07:00",
-          "_status": "live",
-          "_signal_count": 1,
-          "_start_time": "2026-11-12T23:00:00.000Z"
-        },
-        {
-          "vod_id": "qiuba|28352|NCAA%20%E5%BE%97%E5%B7%9E%E5%86%9C%E5%B7%A5%E5%A4%A7%E5%AD%A6%2072%3A60%20%E4%BF%84%E5%85%8B%E6%8B%89%E8%8D%B7%E9%A9%AC%E5%B7%9E%E7%AB%8B%E5%A4%A7%E5%AD%A6",
-          "vod_name": "NCAA 得州农工大学 72:60 俄克拉荷马州立大学",
-          "vod_pic": "https://www.qiuba008.vip/teams/n799bf997bdeb8f96fe671db2eb19abe8.png",
-          "vod_remarks": "🔴 进行中 72:60 | 3路 11-13 09:00",
+          "vod_id": "qiuba|28285|%E9%9F%A9%E7%AF%AE%E7%94%B2%20%E5%8E%9F%E5%B7%9E%E4%B8%9C%E6%B5%A6%E6%96%B0%E4%B8%96%E4%BB%A3%2043%3A32%20%E6%B0%B4%E5%8E%9FKT%E9%9F%B3%E9%80%9F%E5%BC%B9",
+          "vod_name": "韩篮甲 原州东浦新世代 43:32 水原KT音速弹",
+          "vod_pic": "https://www.qiuba008.vip/teams/e94f441698752284a7b2f6c37ea3aee6.png",
+          "vod_remarks": "🔴 进行中 43:32 | 3路 11-13 18:00",
           "_status": "live",
           "_signal_count": 3,
-          "_start_time": "2026-11-13T01:00:00.000Z"
+          "_start_time": "2026-11-13T10:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28540|NCAA%20%E5%8D%97%E4%BC%8A%E5%88%A9%E8%AF%BA%E5%A4%A7%E5%AD%A6%2077%3A70%20%E9%87%8C%E5%A5%87%E8%92%99%E5%BE%B7%E5%A4%A7%E5%AD%A6",
-          "vod_name": "NCAA 南伊利诺大学 77:70 里奇蒙德大学",
-          "vod_pic": "https://www.qiuba008.vip/teams/ne94dd55b86772da9e1560fb36c4d5475.png",
-          "vod_remarks": "🔴 进行中 77:70 | 3路 11-13 09:00",
+          "vod_id": "qiuba|28286|%E9%9F%A9%E5%A5%B3%E7%94%B2%20%E5%8F%8B%E5%88%A9%E9%93%B6%E8%A1%8C%E5%A5%B3%E7%AF%AE%2024%3A27%20BNK%E9%87%9C%E5%B1%B1%E8%90%A8%E5%A7%86%E5%A5%B3%E7%AF%AE",
+          "vod_name": "韩女甲 友利银行女篮 24:27 BNK釜山萨姆女篮",
+          "vod_pic": "https://www.qiuba008.vip/teams/372ebf16ae571d85ee98090b0ee60e41.png",
+          "vod_remarks": "🔴 进行中 24:27 | 3路 11-13 18:00",
           "_status": "live",
           "_signal_count": 3,
-          "_start_time": "2026-11-13T01:00:00.000Z"
+          "_start_time": "2026-11-13T10:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28310|NCAA%20%E6%9D%A8%E7%99%BE%E7%BF%B0%E5%A4%A7%E5%AD%A6%2043%3A29%20%E8%92%99%E5%A4%A7%E6%8B%BF%E5%B7%9E%E7%AB%8B%E5%A4%A7%E5%AD%A6",
-          "vod_name": "NCAA 杨百翰大学 43:29 蒙大拿州立大学",
-          "vod_pic": "https://www.qiuba008.vip/teams/6531b5907a010b11c34a85882b01ba5a.jpg",
-          "vod_remarks": "🔴 进行中 43:29 | 2路 11-13 10:00",
+          "vod_id": "qiuba|28287|%E6%97%A5%E5%A5%B3%E7%94%B2%20%E5%A7%AC%E8%B7%AF%E7%99%BD%E9%B9%AD%E5%A5%B3%E7%AF%AE%2028%3A26%20%E9%98%BF%E5%85%B0%E9%A9%AC%E9%9B%B7%E7%A7%8B%E7%94%B0%E5%A5%B3%E7%AF%AE",
+          "vod_name": "日女甲 姬路白鹭女篮 28:26 阿兰马雷秋田女篮",
+          "vod_pic": "https://www.qiuba008.vip/teams/e5868f9608b2ac68c7e51f53ac3696f7.png",
+          "vod_remarks": "🔴 进行中 28:26 | 2路 11-13 18:00",
           "_status": "live",
           "_signal_count": 2,
-          "_start_time": "2026-11-13T02:00:00.000Z"
+          "_start_time": "2026-11-13T10:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28275|%E5%A2%A8%E8%81%94%20%E5%A4%AA%E9%98%B3%20vs%20%E5%A4%AA%E7%A9%BA%E4%BA%BA",
-          "vod_name": "墨联 太阳 vs 太空人",
-          "vod_pic": "https://www.qiuba008.vip/teams/903d0e8ac3089b5b845364e30ef5360e.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 12:00",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T04:00:00.000Z"
+          "vod_id": "qiuba|28561|%E6%A0%BC%E9%B2%81%E5%90%89%E4%BA%9A%E7%AF%AE%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E6%8F%90%E6%AF%94%E9%87%8C%E8%A5%BF%E5%9B%BD%E7%AB%8B%E5%A4%A7%E5%AD%A6%2030%3A33%20%E7%A7%91%E5%8D%A1%E6%96%AF%E4%BA%9ABC",
+          "vod_name": "格鲁吉亚篮球超级联赛 提比里西国立大学 30:33 科卡斯亚BC",
+          "vod_pic": "",
+          "vod_remarks": "🔴 进行中 30:33 | 3路 11-13 18:00",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:00:00.000Z"
         },
         {
-          "vod_id": "qiuba|28276|%E6%97%A5%E7%AF%AEB1%20%E4%BF%A1%E5%B7%9E%E5%8B%87%E5%A3%AB%20vs%20%E7%BE%A4%E9%A9%AC%E9%9B%B7%E9%B9%A4",
-          "vod_name": "日篮B1 信州勇士 vs 群马雷鹤",
-          "vod_pic": "https://www.qiuba008.vip/teams/d304b1c20b797f3a435ed2375ece319a.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 12:05",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T04:05:00.000Z"
+          "vod_id": "qiuba|28288|%E6%97%A5%E7%AF%AEB1%20%E5%B2%9B%E6%A0%B9%E9%AD%94%E6%9C%AF%2036%3A35%20%E4%BB%99%E5%8F%B089%E4%BA%BA",
+          "vod_name": "日篮B1 岛根魔术 36:35 仙台89人",
+          "vod_pic": "https://www.qiuba008.vip/teams/eeefbdedda12dba4c46c4ab4ecbcbc4b.png",
+          "vod_remarks": "🔴 进行中 36:35 | 3路 11-13 18:05",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:05:00.000Z"
         },
         {
-          "vod_id": "qiuba|28279|%E6%BE%B3NBL%20%E6%96%B0%E8%A5%BF%E5%85%B0%E7%A0%B4%E5%9D%8F%E8%80%85%20vs%20%E5%B8%83%E9%87%8C%E6%96%AF%E7%8F%AD%E5%AD%90%E5%BC%B9",
-          "vod_name": "澳NBL 新西兰破坏者 vs 布里斯班子弹",
-          "vod_pic": "https://www.qiuba008.vip/teams/n4e20cb4a61519f6a810b6b307ff8b574.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 14:30",
-          "_status": "not_started",
-          "_signal_count": 0,
-          "_start_time": "2026-11-13T06:30:00.000Z"
+          "vod_id": "qiuba|28289|%E6%97%A5%E7%AF%AEB2%20%E4%B8%9C%E4%BA%AC%E8%81%94%E5%90%88%2026%3A31%20%E7%86%8A%E6%9C%AC%E7%81%AB%E5%B1%B1",
+          "vod_name": "日篮B2 东京联合 26:31 熊本火山",
+          "vod_pic": "https://www.qiuba008.vip/teams/42a97215019ab03ef4f0cd8166e62904.png",
+          "vod_remarks": "🔴 进行中 26:31 | 3路 11-13 18:05",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:05:00.000Z"
         },
         {
-          "vod_id": "qiuba|28280|%E6%96%B0%E8%A5%BF%E5%85%B0%E5%A5%B3%E8%81%94%20%E5%8D%97%E6%96%B9%E9%BB%84%E7%9C%BC%E4%BC%81%E9%B9%85%E5%A5%B3%E7%AF%AE%20vs%20%E9%99%B6%E5%85%B0%E5%8A%A0%E6%80%80%E4%BC%8A%E5%A5%B3%E7%AF%AE",
-          "vod_name": "新西兰女联 南方黄眼企鹅女篮 vs 陶兰加怀伊女篮",
-          "vod_pic": "https://www.qiuba008.vip/teams/6e46c86df4d3da8c33d691e00d7dd833.png",
-          "vod_remarks": "⚪ 未开始 0:0 11-13 14:30",
+          "vod_id": "qiuba|28290|%E6%97%A5%E7%AF%AEB1%20%E5%8C%97%E6%B5%B7%E9%81%93%E9%A3%8E%E7%A5%9E%2030%3A27%20%E7%A5%9E%E6%88%B7%E9%B9%B3%E9%B8%9F",
+          "vod_name": "日篮B1 北海道风神 30:27 神户鹳鸟",
+          "vod_pic": "https://www.qiuba008.vip/teams/91dbdd6543d4ba046a7e386f6d4726f1.png",
+          "vod_remarks": "🔴 进行中 30:27 | 3路 11-13 18:05",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:05:00.000Z"
+        },
+        {
+          "vod_id": "qiuba|28291|%E6%97%A5%E7%AF%AEB1%20%E5%B7%9D%E5%B4%8E%E9%9B%B7%E9%9C%86%E5%8B%87%E8%80%85%2031%3A35%20%E4%BD%90%E8%B4%BA%E6%B0%94%E7%90%83%E4%BA%BA",
+          "vod_name": "日篮B1 川崎雷霆勇者 31:35 佐贺气球人",
+          "vod_pic": "https://www.qiuba008.vip/teams/e8edc9b94b7fd45ec9de586cacb1df6b.png",
+          "vod_remarks": "🔴 进行中 31:35 | 3路 11-13 18:05",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:05:00.000Z"
+        },
+        {
+          "vod_id": "qiuba|28292|%E6%97%A5%E7%AF%AEB1%20%E4%BA%AC%E9%83%BD%E5%88%9B%E8%8D%A3%2029%3A23%20%E8%8C%A8%E5%9F%8E%E6%9C%BA%E5%99%A8%E4%BA%BA",
+          "vod_name": "日篮B1 京都创荣 29:23 茨城机器人",
+          "vod_pic": "https://www.qiuba008.vip/teams/706def05df715f6e1a0c2e8e3cfcdc33.png",
+          "vod_remarks": "🔴 进行中 29:23 | 3路 11-13 18:15",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:15:00.000Z"
+        },
+        {
+          "vod_id": "qiuba|28294|%E6%97%A5%E7%AF%AEB1%20%E7%A7%8B%E7%94%B0%E5%8C%97%E9%83%A8%E5%96%9C%E6%82%A6%209%3A13%20%E5%90%8D%E5%8F%A4%E5%B1%8B%E9%92%BB%E7%9F%B3%E6%B5%B7%E8%B1%9A",
+          "vod_name": "日篮B1 秋田北部喜悦 9:13 名古屋钻石海豚",
+          "vod_pic": "https://www.qiuba008.vip/teams/518fcabe90dafc4100d80de02554a004.png",
+          "vod_remarks": "🔴 进行中 9:13 | 3路 11-13 18:30",
+          "_status": "live",
+          "_signal_count": 3,
+          "_start_time": "2026-11-13T10:30:00.000Z"
+        },
+        {
+          "vod_id": "qiuba|28303|%E4%BF%84%E7%AF%AE%E8%B6%85%20%E9%A9%AC%E9%92%A2%E5%9F%8E%E5%86%B6%E9%87%91%20vs%20%E5%BA%93%E5%B0%94%E6%96%AF%E5%85%8B%E7%BD%97%E6%96%AF%E4%BA%BA",
+          "vod_name": "俄篮超 马钢城冶金 vs 库尔斯克罗斯人",
+          "vod_pic": "https://www.qiuba008.vip/teams/4f313ff84e5a97eea3b99be6cf1819d9.png",
+          "vod_remarks": "⚪ 未开始 0:0 11-13 22:00",
           "_status": "not_started",
           "_signal_count": 0,
-          "_start_time": "2026-11-13T06:30:00.000Z"
+          "_start_time": "2026-11-13T14:00:00.000Z"
         }
       ]
     }
