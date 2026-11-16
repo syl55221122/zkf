@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 15:05:00",
+  "updated_at": "2026-11-17 01:01:44",
   "home": {
     "class": [
       {
@@ -13,22 +13,67 @@
     ],
     "list": [
       {
-        "vod_id": "qiuba|28986|%E5%8D%B0%E7%8F%AD%E8%B6%85%20%E7%8F%AD%E5%8A%A0%E7%BD%97%E5%B0%94%E6%A0%B9%E6%BA%90%201%3A0%20%E7%89%B9%E5%85%8B%E5%B0%BC%E5%85%8B",
-        "vod_name": "印班超 班加罗尔根源 1:0 特克尼克",
-        "vod_pic": "https://www.qiuba008.vip/teams/bc575d043f92657a6dd97751cd326cce.png",
-        "vod_remarks": "🔴 进行中 1:0 | 2路 11-16 13:25",
+        "vod_id": "qiuba|29148|%E6%AC%A7%E5%9B%BD%E8%81%94%20%E5%86%B0%E5%B2%9B%200%3A0%20%E5%8D%A2%E6%A3%AE%E5%A0%A1",
+        "vod_name": "欧国联 冰岛 0:0 卢森堡",
+        "vod_pic": "https://www.qiuba008.vip/teams/430fda3112134b44b54eeba89eec5189.png",
+        "vod_remarks": "🔴 进行中 0:0 | 4路 11-17 01:00",
         "_status": "live",
-        "_signal_count": 2,
-        "_start_time": "2026-11-16T05:25:00.000Z"
+        "_signal_count": 4,
+        "_start_time": "2026-11-16T17:00:00.000Z"
       },
       {
-        "vod_id": "qiuba|29239|%E8%8F%B2%E5%BE%8B%E5%AE%BE%20NCAA%20%E5%9C%A3%E8%B4%9D%E8%BE%BE%E7%BA%A2%E7%8B%AE%200%3A0%20%E6%B0%B8%E4%B9%85%E9%98%BF%E5%B0%94%E5%A1%94%E6%96%AF",
-        "vod_name": "菲律宾 NCAA 圣贝达红狮 0:0 永久阿尔塔斯",
-        "vod_pic": "",
-        "vod_remarks": "🔴 进行中 0:0 | 2路 11-16 15:00",
+        "vod_id": "qiuba|29149|%E6%AC%A7%E5%9B%BD%E8%81%94%20%E7%88%B1%E6%B2%99%E5%B0%BC%E4%BA%9A%200%3A0%20%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A",
+        "vod_name": "欧国联 爱沙尼亚 0:0 保加利亚",
+        "vod_pic": "https://www.qiuba008.vip/teams/350035841e1182bf4389c52752d8bd0d.png",
+        "vod_remarks": "🔴 进行中 0:0 | 4路 11-17 01:00",
+        "_status": "live",
+        "_signal_count": 4,
+        "_start_time": "2026-11-16T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29150|%E6%AC%A7%E5%9B%BD%E8%81%94%20%E7%AB%8B%E9%99%B6%E5%AE%9B%200%3A0%20%E5%88%97%E6%94%AF%E6%95%A6%E5%A3%AB%E7%99%BB",
+        "vod_name": "欧国联 立陶宛 0:0 列支敦士登",
+        "vod_pic": "https://www.qiuba008.vip/teams/f2b6806d6ed60d2d87b0dd5ae62e6f20.png",
+        "vod_remarks": "🔴 进行中 0:0 | 2路 11-17 01:00",
         "_status": "live",
         "_signal_count": 2,
-        "_start_time": "2026-11-16T07:00:00.000Z"
+        "_start_time": "2026-11-16T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29146|%E9%9D%9E%E6%B4%B2%E6%9D%AF%20%E5%8E%84%E7%AB%8B%E7%89%B9%E9%87%8C%E4%BA%9A%200%3A1%20%E5%87%A0%E5%86%85%E4%BA%9A",
+        "vod_name": "非洲杯 厄立特里亚 0:1 几内亚",
+        "vod_pic": "https://www.qiuba008.vip/teams/c8c1fad8f7b657fa96c4e5da96ada7c2.png",
+        "vod_remarks": "🔴 进行中 0:1 | 3路 11-17 00:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-16T16:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29147|%E9%9D%9E%E6%B4%B2%E6%9D%AF%20%E4%B8%AD%E9%9D%9E%200%3A0%20%E8%B4%9D%E5%AE%81",
+        "vod_name": "非洲杯 中非 0:0 贝宁",
+        "vod_pic": "https://www.qiuba008.vip/teams/24b9e0931d66349fbfb639e2d60de183.png",
+        "vod_remarks": "🔴 进行中 0:0 | 3路 11-17 00:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-16T16:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29250|%E6%96%AF%E4%BC%90%E7%94%B2%20%E6%89%91%E9%9B%B7%E7%B4%A2%E5%A4%AB%200%3A0%20%E6%B3%BD%E6%B2%83%E4%BC%A6%E7%81%AB%E8%BD%A6%E5%A4%B4",
+        "vod_name": "斯伐甲 扑雷索夫 0:0 泽沃伦火车头",
+        "vod_pic": "https://www.qiuba008.vip/teams/d58e9c957ece735462e6cd0c80052e57.png",
+        "vod_remarks": "🔴 进行中 0:0 | 2路 11-17 00:00",
+        "_status": "live",
+        "_signal_count": 2,
+        "_start_time": "2026-11-16T16:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29251|%E6%AC%A7%E9%9D%92U21%E5%A4%96%20%E5%B8%8C%E8%85%8AU21%200%3A0%20%E5%86%B0%E5%B2%9BU21",
+        "vod_name": "欧青U21外 希腊U21 0:0 冰岛U21",
+        "vod_pic": "https://www.qiuba008.vip/teams/8ba6b4f123aa2cf2832d19b58bf194ef.png",
+        "vod_remarks": "🔴 进行中 0:0 | 3路 11-17 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-16T17:00:00.000Z"
       }
     ],
     "filters": {}
