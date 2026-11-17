@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 16:51:37",
+  "updated_at": "2026-11-18 02:13:15",
   "home": {
     "class": [
       {
@@ -13,49 +13,184 @@
     ],
     "list": [
       {
-        "vod_id": "qiuba|29231|U17%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B7%B4%E5%8B%92%E6%96%AF%E5%9D%A6U17%201%3A1%20%E5%8D%B0%E5%BA%A6U17",
-        "vod_name": "U17亚洲杯 巴勒斯坦U17 1:1 印度U17",
-        "vod_pic": "https://www.qiuba008.vip/teams/72fb22982ac69857cb2432f13589836e.png",
-        "vod_remarks": "🔴 进行中 1:1 | 2路 11-17 15:30",
-        "_status": "live",
-        "_signal_count": 2,
-        "_start_time": "2026-11-17T07:30:00.000Z"
-      },
-      {
-        "vod_id": "qiuba|29181|%E5%8D%B0%E7%8F%AD%E8%B6%85%20%E6%96%AF%E5%9B%BE%E6%8B%89%E5%BE%B7%201%3A1%20%E7%8F%AD%E5%8A%A0%E7%BD%97%E5%B0%94%E5%9F%8E",
-        "vod_name": "印班超 斯图拉德 1:1 班加罗尔城",
-        "vod_pic": "https://www.qiuba008.vip/teams/ea6e7468642b0b6e9f46c23b50a929e4.png",
-        "vod_remarks": "🔴 进行中 1:1 | 1路 11-17 15:55",
-        "_status": "live",
-        "_signal_count": 1,
-        "_start_time": "2026-11-17T07:55:00.000Z"
-      },
-      {
-        "vod_id": "qiuba|29182|%E6%BE%B3%E5%A5%B3%E7%AF%AE%20%E9%98%BF%E5%BE%B7%E8%8E%B1%E5%BE%B7%E9%97%AA%E7%94%B5%E5%A5%B3%E7%AF%AE%2033%3A31%20%E5%90%89%E6%9C%97%E6%AF%92%E6%B6%B2%E5%A5%B3%E7%AF%AE",
-        "vod_name": "澳女篮 阿德莱德闪电女篮 33:31 吉朗毒液女篮",
-        "vod_pic": "https://www.qiuba008.vip/teams/d08a111d5ed37a380093202fd5a277ff.png",
-        "vod_remarks": "🔴 进行中 33:31 | 3路 11-17 16:00",
+        "vod_id": "qiuba|29268|%E6%AC%A7%E5%8D%8F%E6%9D%AF%20%E5%9C%9F%E8%80%B3%E5%85%B6%E7%94%B5%E4%BF%A1%2070%3A68%20%E7%89%B9%E5%86%85%E9%87%8C%E8%B4%B9",
+        "vod_name": "欧协杯 土耳其电信 70:68 特内里费",
+        "vod_pic": "https://www.qiuba008.vip/teams/4020fad7d6e6f9272cd6630a3fe4f450.png",
+        "vod_remarks": "🔴 进行中 70:68 | 3路 11-18 00:30",
         "_status": "live",
         "_signal_count": 3,
-        "_start_time": "2026-11-17T08:00:00.000Z"
+        "_start_time": "2026-11-17T16:30:00.000Z"
       },
       {
-        "vod_id": "qiuba|29426|U17%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E4%BC%8A%E6%8B%89%E5%85%8BU17%202%3A0%20%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%ABU17",
-        "vod_name": "U17亚洲杯 伊拉克U17 2:0 马尔代夫U17",
-        "vod_pic": "https://www.qiuba008.vip/teams/cc40d06ff0a16a793d066dbfa2917bab.png",
-        "vod_remarks": "🔴 进行中 2:0 | 1路 11-17 16:00",
+        "vod_id": "qiuba|29466|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E7%A7%91%E5%A8%81%E7%89%B9%200%3A2%20%E6%B4%AA%E9%83%BD%E6%8B%89%E6%96%AF",
+        "vod_name": "国际友谊 科威特 0:2 洪都拉斯",
+        "vod_pic": "https://www.qiuba008.vip/teams/29a83a8a9641bb860a679d7e5ba52d26.png",
+        "vod_remarks": "🔴 进行中 0:2 | 2路 11-18 00:30",
         "_status": "live",
-        "_signal_count": 1,
-        "_start_time": "2026-11-17T08:00:00.000Z"
+        "_signal_count": 2,
+        "_start_time": "2026-11-17T16:30:00.000Z"
       },
       {
-        "vod_id": "qiuba|29427|U17%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E9%98%BF%E5%AF%8C%E6%B1%97U17%200%3A1%20%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9AU17",
-        "vod_name": "U17亚洲杯 阿富汗U17 0:1 印度尼西亚U17",
-        "vod_pic": "https://www.qiuba008.vip/teams/a4cc3a85c7cda24dd3e028306403697d.png",
-        "vod_remarks": "🔴 进行中 0:1 | 1路 11-17 16:30",
+        "vod_id": "qiuba|29269|%E6%AC%A7%E7%AF%AE%E8%81%94%20%E7%89%B9%E6%8B%89%E7%BB%B4%E5%A4%AB%E9%A9%AC%E5%8D%A1%E6%AF%94%2049%3A59%20%E5%A5%A5%E6%9E%97%E5%8C%B9%E4%BA%9A%E7%A7%91%E6%96%AF",
+        "vod_name": "欧篮联 特拉维夫马卡比 49:59 奥林匹亚科斯",
+        "vod_pic": "https://www.qiuba008.vip/teams/7ee25ad1863a6d376abebd6013c03cab.png",
+        "vod_remarks": "🔴 进行中 49:59 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29270|%E6%AC%A7%E5%8D%8F%E6%9D%AF%20%E5%B7%B4%E5%B0%94%E5%9D%8E%2045%3A40%20%E4%B9%8C%E5%B0%94%E5%A7%86%E5%85%B0%E8%92%82%E5%A5%A5%E5%B8%95%E5%A7%86",
+        "vod_name": "欧协杯 巴尔坎 45:40 乌尔姆兰蒂奥帕姆",
+        "vod_pic": "https://www.qiuba008.vip/teams/a45ceb20ce4f6b51f86e9f2b7ea744aa.png",
+        "vod_remarks": "🔴 进行中 45:40 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29271|%E6%AC%A7%E4%BF%B1%E6%9D%AF%20%E7%B1%B3%E7%A7%91%E8%AF%BA%E6%96%AF%2044%3A47%20%E5%A5%A5%E6%9E%97%E8%B4%9D%E7%BA%B3%E9%80%9A",
+        "vod_name": "欧俱杯 米科诺斯 44:47 奥林贝纳通",
+        "vod_pic": "https://www.qiuba008.vip/teams/d94f2819d2a0659c4bdf57593ed8786a.png",
+        "vod_remarks": "🔴 进行中 44:47 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29272|%E6%AC%A7%E4%BF%B1%E6%9D%AF%20%E4%BB%A3%E5%B0%BC%E5%85%B9%E5%88%A9%2040%3A41%20%E6%9C%AC%E8%8F%B2%E5%8D%A1",
+        "vod_name": "欧俱杯 代尼兹利 40:41 本菲卡",
+        "vod_pic": "https://www.qiuba008.vip/teams/1fcd60342b8e79c5b8babc306f3a7337.png",
+        "vod_remarks": "🔴 进行中 40:41 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29467|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E5%85%8B%E7%BD%97%E5%9C%B0%E4%BA%9AU21%201%3A1%20%E5%BE%B7%E5%9B%BDU21",
+        "vod_name": "国际友谊 克罗地亚U21 1:1 德国U21",
+        "vod_pic": "https://www.qiuba008.vip/teams/100ef6b1daa5461ba5cd1d6daf434a74.png",
+        "vod_remarks": "🔴 进行中 1:1 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29478|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E6%B3%A2%E5%85%B0U21%201%3A0%20%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9AU21",
+        "vod_name": "国际友谊 波兰U21 1:0 塞尔维亚U21",
+        "vod_pic": "https://www.qiuba008.vip/teams/9f7e7f7ffd205420b4ea54f89d501bd7.png",
+        "vod_remarks": "🔴 进行中 1:0 | 1路 11-18 01:00",
         "_status": "live",
         "_signal_count": 1,
-        "_start_time": "2026-11-17T08:30:00.000Z"
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29485|%E6%96%AF%E6%B4%9B%E6%96%87%E5%B0%BC%E4%BA%9A%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%20%E7%89%B9%E9%87%8C%E6%A0%BC%E6%8B%89%E5%A4%AB%E5%85%8B%E6%8B%89%E5%B0%BC%2041%3A57%20%E7%A7%91%E7%91%9E%E5%8D%A1",
+        "vod_name": "斯洛文尼亚篮球联赛 特里格拉夫克拉尼 41:57 科瑞卡",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 41:57 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29486|FIBA%E6%AC%A7%E6%B4%B2%E5%A5%B3%E5%AD%90%E7%AF%AE%E7%90%83%E9%94%A6%E6%A0%87%E8%B5%9B2027%E8%B5%84%E6%A0%BC%E8%B5%9B%20%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B%20%28%E5%A5%B3%29%2047%3A61%20%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%20%28%E5%A5%B3%29",
+        "vod_name": "FIBA欧洲女子篮球锦标赛2027资格赛 斯洛伐克 (女) 47:61 塞尔维亚 (女)",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 47:61 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29487|FIBA%E6%AC%A7%E6%B4%B2%E5%A5%B3%E5%AD%90%E7%AF%AE%E7%90%83%E9%94%A6%E6%A0%87%E8%B5%9B2027%E8%B5%84%E6%A0%BC%E8%B5%9B%20%E5%85%8B%E7%BD%97%E5%9C%B0%E4%BA%9A%20%28%E5%A5%B3%29%2048%3A56%20%E8%A5%BF%E7%8F%AD%E7%89%99%20%28%E5%A5%B3%29",
+        "vod_name": "FIBA欧洲女子篮球锦标赛2027资格赛 克罗地亚 (女) 48:56 西班牙 (女)",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 48:56 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29488|FIBA%E6%AC%A7%E6%B4%B2%E5%A5%B3%E5%AD%90%E7%AF%AE%E7%90%83%E9%94%A6%E6%A0%87%E8%B5%9B2027%E8%B5%84%E6%A0%BC%E8%B5%9B%20%E6%8B%89%E8%84%B1%E7%BB%B4%E4%BA%9A%20%28%E5%A5%B3%29%2051%3A54%20%E6%84%8F%E5%A4%A7%E5%88%A9%20%28%E5%A5%B3%29",
+        "vod_name": "FIBA欧洲女子篮球锦标赛2027资格赛 拉脱维亚 (女) 51:54 意大利 (女)",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 51:54 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29489|FIBA%E6%AC%A7%E6%B4%B2%E5%A5%B3%E5%AD%90%E7%AF%AE%E7%90%83%E9%94%A6%E6%A0%87%E8%B5%9B2027%E8%B5%84%E6%A0%BC%E8%B5%9B%20%E6%96%AF%E6%B4%9B%E6%96%87%E5%B0%BC%E4%BA%9A%20%28%E5%A5%B3%29%2069%3A34%20%E5%A5%A5%E5%9C%B0%E5%88%A9%20%28%E5%A5%B3%29",
+        "vod_name": "FIBA欧洲女子篮球锦标赛2027资格赛 斯洛文尼亚 (女) 69:34 奥地利 (女)",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 69:34 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29490|FIBA%E6%AC%A7%E6%B4%B2%E5%A5%B3%E5%AD%90%E7%AF%AE%E7%90%83%E9%94%A6%E6%A0%87%E8%B5%9B2027%E8%B5%84%E6%A0%BC%E8%B5%9B%20%E9%BB%91%E5%B1%B1%20%28%E5%A5%B3%29%2036%3A53%20%E4%BB%A5%E8%89%B2%E5%88%97%20%28%E5%A5%B3%29",
+        "vod_name": "FIBA欧洲女子篮球锦标赛2027资格赛 黑山 (女) 36:53 以色列 (女)",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 36:53 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29491|FIBA%E6%AC%A7%E6%B4%B2%E5%A5%B3%E5%AD%90%E7%AF%AE%E7%90%83%E9%94%A6%E6%A0%87%E8%B5%9B2027%E8%B5%84%E6%A0%BC%E8%B5%9B%20%E5%8C%88%E7%89%99%E5%88%A9%20%28%E5%A5%B3%29%2061%3A44%20%E4%B8%B9%E9%BA%A6%20%28%E5%A5%B3%29",
+        "vod_name": "FIBA欧洲女子篮球锦标赛2027资格赛 匈牙利 (女) 61:44 丹麦 (女)",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 61:44 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29492|%E6%AC%A7%E6%B4%B2%E7%B2%BE%E8%8B%B1%E8%81%94%E8%B5%9B%20U20%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20U20%200%3A0%20%E6%B3%A2%E5%85%B0%20U20",
+        "vod_name": "欧洲精英联赛 U20 罗马尼亚 U20 0:0 波兰 U20",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 0:0 | 3路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29493|%E9%98%BF%E6%A0%B9%E5%BB%B7%E5%A5%B3%E5%AD%90%E7%94%B2%E7%BB%84%E8%81%94%E8%B5%9B%20%E9%98%BF%E6%A0%B9%E5%BB%B7%E7%8B%AC%E7%AB%8B%20%28%E5%A5%B3%29%201%3A1%20%E7%BA%BD%E7%BB%B4%E5%B0%94%E8%80%81%E7%94%B7%E5%AD%A9%20%28%E5%A5%B3%29",
+        "vod_name": "阿根廷女子甲组联赛 阿根廷独立 (女) 1:1 纽维尔老男孩 (女)",
+        "vod_pic": "",
+        "vod_remarks": "🔴 进行中 1:1 | 2路 11-18 01:00",
+        "_status": "live",
+        "_signal_count": 2,
+        "_start_time": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29273|%E6%AC%A7%E4%BF%B1%E6%9D%AF%20%E5%8D%A1%E5%8B%92%E5%A4%AB%2039%3A37%20%E7%93%A6%E7%B1%B3%E5%B0%94%E6%8B%89",
+        "vod_name": "欧俱杯 卡勒夫 39:37 瓦米尔拉",
+        "vod_pic": "https://www.qiuba008.vip/teams/3297c883664efaf2d7d4fceb3ab255ec.png",
+        "vod_remarks": "🔴 进行中 39:37 | 3路 11-18 01:30",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:30:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29274|%E7%AF%AE%E5%86%A0%E8%81%94%20%E6%AF%94%E5%86%85%E6%B5%B7%E5%B0%94%E5%85%B9%E5%88%A9%E4%BA%9A%2042%3A41%20%E7%89%B9%E5%8A%9B%E5%BA%B7",
+        "vod_name": "篮冠联 比内海尔兹利亚 42:41 特力康",
+        "vod_pic": "https://www.qiuba008.vip/teams/397b6f01f29645fba871671c66b9ddf1.png",
+        "vod_remarks": "🔴 进行中 42:41 | 3路 11-18 01:30",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:30:00.000Z"
+      },
+      {
+        "vod_id": "qiuba|29275|%E5%9B%BD%E9%99%85%E5%8F%8B%E8%B0%8A%20%E8%91%A1%E8%90%84%E7%89%99U21%200%3A0%20%E6%8C%AA%E5%A8%81U21",
+        "vod_name": "国际友谊 葡萄牙U21 0:0 挪威U21",
+        "vod_pic": "https://www.qiuba008.vip/teams/d92d7ec47187a662aacda2d4b4c7628e.png",
+        "vod_remarks": "🔴 进行中 0:0 | 3路 11-18 01:30",
+        "_status": "live",
+        "_signal_count": 3,
+        "_start_time": "2026-11-17T17:30:00.000Z"
       }
     ],
     "filters": {}
