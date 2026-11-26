@@ -1,11 +1,29 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/405-v8626.jpg?v=1794310853091" group-title="NBA",NBA | 76人 vs 热火 | 0-0 | 中文解说1 | 中文解说1
-https://live01-cn-ali.xqnbu.com/live/65173191_tsc.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/405-v8626.jpg?v=1794310853091" group-title="NBA",NBA | 76人 vs 热火 | 0-0 | 中文解说1 | 直播5
-https://hello.ooo0ooo.top/live/3931499.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/405-v8626.jpg?v=1794310853091" group-title="NBA",NBA | 76人 vs 热火 | 0-0 | 中文解说1 | 原声1
-https://pul-tenm.gkykp.com/live/hd-en-2-3931499.m3u8?txSecret=d45a294c52e785389abe507618fcb7e5&txTime=6B08AE38
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/33-v141.jpg?v=1794310853091" group-title="欧篮联",欧篮联 | 皇家马德里 vs 萨拉基利斯 | 108-93 | 直播33 | 直播33
-https://hello.ooo0ooo.top/live/3926643.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/33-v141.jpg?v=1794310853091" group-title="欧篮联",欧篮联 | 皇家马德里 vs 萨拉基利斯 | 108-93 | 直播33 | 原声16
-https://pul-tenm.gkykp.com/live/sd-2-3926643.m3u8?txSecret=a258eaaf98c0c4e50ec58fdd2f3cd4b8&txTime=6B08AA78
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/qq_416_v8500.jpg?v=1794310853091" group-title="NBA",NBA | 开拓者 vs 马刺 | 51-52 | 中文解说12 | 中文解说12
+https://live01-cn-ali.xqnbu.com/live/41587229_tsc.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/qq_416_v8500.jpg?v=1794310853091" group-title="NBA",NBA | 开拓者 vs 马刺 | 51-52 | 中文解说12 | 直播5
+https://hello.ooo0ooo.top/live/3931507.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/qq_416_v8500.jpg?v=1794310853091" group-title="NBA",NBA | 开拓者 vs 马刺 | 51-52 | 中文解说12 | 原声5
+https://pul-tenm.gkykp.com/live/hd-en-2-3931507.m3u8?txSecret=f2a1eaa516e1667eaf289e19638aa731&txTime=6B090221
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/405-v8627.jpg?v=1794310853091" group-title="NBA",NBA | 勇士 vs 国王 | 72-53 | 中文解说1 | 中文解说1
+https://live01-cn-ali.xqnbu.com/live/24834675_tsc.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/405-v8627.jpg?v=1794310853091" group-title="NBA",NBA | 勇士 vs 国王 | 72-53 | 中文解说1 | 直播2
+https://hello.ooo0ooo.top/live/3931506.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/405-v8627.jpg?v=1794310853091" group-title="NBA",NBA | 勇士 vs 国王 | 72-53 | 中文解说1 | 原声4
+https://pul-tenm.gkykp.com/live/hd-en-2-3931506.m3u8?txSecret=3b9157bf1c718ff8dbce25515c261128&txTime=6B090221
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/6-v279.jpg?v=1794310853091" group-title="NCAA",NCAA | 弗吉尼亚联邦大学 vs 华盛顿大学 | 43-45 | 直播6 | 直播6
+https://hello.ooo0ooo.top/live/3961594.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/1-v286.jpg?v=1794310853091" group-title="自由直播",自由直播 | 0-0 | 直播1 | 直播1
+https://hello.ooo0ooo.top/live/3949648.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/23-v191.jpg?v=1794310853091" group-title="墨西超",墨西超 | 蒙特雷 vs 墨西哥美洲 | 0-0 | 直播23 | 直播23
+https://hello.ooo0ooo.top/live/4671969.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/23-v191.jpg?v=1794310853091" group-title="墨西超",墨西超 | 蒙特雷 vs 墨西哥美洲 | 0-0 | 直播23 | 原声8
+https://pul-tenm.gkykp.com/live/sd-1-4671969.m3u8?txSecret=2096af8cac4ac0f26de5268b6e6b6ca5&txTime=6B090221
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v256.jpg?v=1794310853091" group-title="自由直播",自由直播 | 0-0 | 直播4 | 直播4
+https://hello.ooo0ooo.top/live/3953419.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/208-v408.jpg?v=1794310853091" group-title="NBA",NBA | 勇士 vs 国王 | 72-53 | 原声4 | 原声4
+https://pul-tenm.gkykp.com/live/hd-en-2-3931506.m3u8?txSecret=8417b510b11eb1ec24d079637b0c3f53&txTime=6B090298
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/205-v431.jpg?v=1794310853091" group-title="自由直播",自由直播 | 0-0 | 原声1 | 原声1
+https://pul-tenm.gkykp.com/live/sd-2-3949648.m3u8?txSecret=d0d585548c8df2b37c16a8c8e92b6feb&txTime=6B08FED8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/206-v418.jpg?v=1794310853091" group-title="自由直播",自由直播 | 0-0 | 原声2 | 原声2
+https://pul-tenm.gkykp.com/live/sd-2-3953419.m3u8?txSecret=4cf1eb8ba786db6a211a2d16bd8d5edf&txTime=6B08FD71
