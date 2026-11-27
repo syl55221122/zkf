@@ -1,81 +1,85 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="qiuba_31404_0" tvg-name="哥斯达黎加U17 vs 巴西U17" group-title="U17世界杯",U17世界杯: 哥斯达黎加U17 vs 巴西U17 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4544849.m3u8?txSecret=fe005c328df6c2a67740543603892c1f&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31404_1" tvg-name="哥斯达黎加U17 vs 巴西U17" group-title="U17世界杯",U17世界杯: 哥斯达黎加U17 vs 巴西U17 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4544849.m3u8%3FtxSecret%3D32980f161b8b9b676cc57801effafa70%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31404_2" tvg-name="哥斯达黎加U17 vs 巴西U17" group-title="U17世界杯",U17世界杯: 哥斯达黎加U17 vs 巴西U17 - 高清K
-https://hello.ooo0ooo.top/live/4544849.m3u8
-#EXTINF:-1 tvg-id="qiuba_31405_0" tvg-name="爱尔兰U17 vs 坦桑尼亚U17" group-title="U17世界杯",U17世界杯: 爱尔兰U17 vs 坦桑尼亚U17 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4544861.m3u8?txSecret=b9bbf4eaeb9458f542b5c2fd06f26d60&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31405_1" tvg-name="爱尔兰U17 vs 坦桑尼亚U17" group-title="U17世界杯",U17世界杯: 爱尔兰U17 vs 坦桑尼亚U17 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4544861.m3u8%3FtxSecret%3Dfed5548417f7a64b54bb1e4bb418a19c%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31405_2" tvg-name="爱尔兰U17 vs 坦桑尼亚U17" group-title="U17世界杯",U17世界杯: 爱尔兰U17 vs 坦桑尼亚U17 - 高清K
-https://hello.ooo0ooo.top/live/4544861.m3u8
-#EXTINF:-1 tvg-id="qiuba_31410_0" tvg-name="黑山U17 vs 智利U17" group-title="U17世界杯",U17世界杯: 黑山U17 vs 智利U17 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4544866.m3u8?txSecret=f598337516a7becf4f013beec9b6f868&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31410_1" tvg-name="黑山U17 vs 智利U17" group-title="U17世界杯",U17世界杯: 黑山U17 vs 智利U17 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4544866.m3u8%3FtxSecret%3D137efe86e10c0e5cab21750ea873e384%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31410_2" tvg-name="黑山U17 vs 智利U17" group-title="U17世界杯",U17世界杯: 黑山U17 vs 智利U17 - 高清K
-https://hello.ooo0ooo.top/live/4544866.m3u8
-#EXTINF:-1 tvg-id="qiuba_31408_0" tvg-name="哈萨克斯坦 vs 科威特" group-title="亚杯预",亚杯预: 哈萨克斯坦 vs 科威特 - 高清B
-https://pul-tenm.gkykp.com/live/sd-2-3943509.m3u8?txSecret=9cb66f6b20b4d20af28eaa968271d8b1&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31408_1" tvg-name="哈萨克斯坦 vs 科威特" group-title="亚杯预",亚杯预: 哈萨克斯坦 vs 科威特 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3943509.m3u8%3FtxSecret%3Df23019e6357217755c338fd8a925e259%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31408_2" tvg-name="哈萨克斯坦 vs 科威特" group-title="亚杯预",亚杯预: 哈萨克斯坦 vs 科威特 - 高清K
-https://hello.ooo0ooo.top/live/3943509.m3u8
-#EXTINF:-1 tvg-id="qiuba_31403_0" tvg-name="赛利亚 vs 加拉法体育" group-title="卡塔尔联",卡塔尔联: 赛利亚 vs 加拉法体育 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4591272.m3u8?txSecret=0d6d7b3453131711f1eb4373c814ea46&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31403_1" tvg-name="赛利亚 vs 加拉法体育" group-title="卡塔尔联",卡塔尔联: 赛利亚 vs 加拉法体育 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4591272.m3u8%3FtxSecret%3D52b0f400381e67966d3effc823eea2fa%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31403_2" tvg-name="赛利亚 vs 加拉法体育" group-title="卡塔尔联",卡塔尔联: 赛利亚 vs 加拉法体育 - 高清K
-https://hello.ooo0ooo.top/live/4591272.m3u8
-#EXTINF:-1 tvg-id="qiuba_31412_0" tvg-name="卢赛尔 vs 多哈阿拉伯人" group-title="卡塔尔联",卡塔尔联: 卢赛尔 vs 多哈阿拉伯人 - 高清K
-https://hello.ooo0ooo.top/live/4591274.m3u8
-#EXTINF:-1 tvg-id="qiuba_31406_0" tvg-name="喀什国际 vs 丘吉尔兄弟" group-title="印度超",印度超: 喀什国际 vs 丘吉尔兄弟 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4655874.m3u8?txSecret=2f0b0c241578f451b858457388d9f446&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31406_1" tvg-name="喀什国际 vs 丘吉尔兄弟" group-title="印度超",印度超: 喀什国际 vs 丘吉尔兄弟 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4655874.m3u8%3FtxSecret%3D0d7546b206fa5a9c04dbe2c714614c40%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31406_2" tvg-name="喀什国际 vs 丘吉尔兄弟" group-title="印度超",印度超: 喀什国际 vs 丘吉尔兄弟 - 高清K
-https://hello.ooo0ooo.top/live/4655874.m3u8
-#EXTINF:-1 tvg-id="qiuba_31759_0" tvg-name="东里法 vs 伊迪法克" group-title="巴林超",巴林超: 东里法 vs 伊迪法克 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4662684.m3u8?txSecret=f30efc2c2418b5e9459c1d4c21432e4b&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31759_1" tvg-name="东里法 vs 伊迪法克" group-title="巴林超",巴林超: 东里法 vs 伊迪法克 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4662684.m3u8%3FtxSecret%3D5779c68e7a0f8a93ebe8c39bfa9b4171%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31759_2" tvg-name="东里法 vs 伊迪法克" group-title="巴林超",巴林超: 东里法 vs 伊迪法克 - 高清K
-https://hello.ooo0ooo.top/live/4662684.m3u8
-#EXTINF:-1 tvg-id="qiuba_31760_0" tvg-name="玛基亚 vs 麦纳麦" group-title="巴林超",巴林超: 玛基亚 vs 麦纳麦 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4662685.m3u8?txSecret=d43fe5a1448b23d03bdbbcfb112c9c87&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31760_1" tvg-name="玛基亚 vs 麦纳麦" group-title="巴林超",巴林超: 玛基亚 vs 麦纳麦 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4662685.m3u8%3FtxSecret%3D9920557a04bf27dc558ae648839035a2%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31760_2" tvg-name="玛基亚 vs 麦纳麦" group-title="巴林超",巴林超: 玛基亚 vs 麦纳麦 - 高清K
-https://hello.ooo0ooo.top/live/4662685.m3u8
-#EXTINF:-1 tvg-id="qiuba_31752_0" tvg-name="博洛尼亚U20 vs 白化莱夫青年队" group-title="意青联甲",意青联甲: 博洛尼亚U20 vs 白化莱夫青年队 - 高清K
-https://hello.ooo0ooo.top/live/4570752.m3u8
-#EXTINF:-1 tvg-id="qiuba_31753_0" tvg-name="恩波利青年队 vs 拉齐奥U20" group-title="意青联甲",意青联甲: 恩波利青年队 vs 拉齐奥U20 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4570754.m3u8?txSecret=8c28fe0495c8f71533dfaa0c3ece8ac0&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31753_1" tvg-name="恩波利青年队 vs 拉齐奥U20" group-title="意青联甲",意青联甲: 恩波利青年队 vs 拉齐奥U20 - 高清K
-https://hello.ooo0ooo.top/live/4570754.m3u8
-#EXTINF:-1 tvg-id="qiuba_31407_0" tvg-name="胡拜尔库迪西亚 vs 费哈" group-title="沙特超",沙特超: 胡拜尔库迪西亚 vs 费哈 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4599656.m3u8?txSecret=61973c28bff4d7eacec1f2069735257b&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31407_1" tvg-name="胡拜尔库迪西亚 vs 费哈" group-title="沙特超",沙特超: 胡拜尔库迪西亚 vs 费哈 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4599656.m3u8%3FtxSecret%3D885530c604f332515c8e26191841eb46%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31407_2" tvg-name="胡拜尔库迪西亚 vs 费哈" group-title="沙特超",沙特超: 胡拜尔库迪西亚 vs 费哈 - 高清K
-https://hello.ooo0ooo.top/live/4599656.m3u8
-#EXTINF:-1 tvg-id="qiuba_31754_0" tvg-name="阿洛顿 vs 艾沙尔特" group-title="约超联",约超联: 阿洛顿 vs 艾沙尔特 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4654240.m3u8?txSecret=4d969e286e29956be50ddb4b1b354c78&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31754_1" tvg-name="阿洛顿 vs 艾沙尔特" group-title="约超联",约超联: 阿洛顿 vs 艾沙尔特 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4654240.m3u8%3FtxSecret%3Dbef09fd20bc535916989d1adb5ebfda6%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31754_2" tvg-name="阿洛顿 vs 艾沙尔特" group-title="约超联",约超联: 阿洛顿 vs 艾沙尔特 - 高清K
-https://hello.ooo0ooo.top/live/4654240.m3u8
-#EXTINF:-1 tvg-id="qiuba_31411_0" tvg-name="克卢日大学 vs 舍佩斯" group-title="罗甲",罗甲: 克卢日大学 vs 舍佩斯 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4567851.m3u8?txSecret=f42375d99d5a845b70eb0649014e446b&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31411_1" tvg-name="克卢日大学 vs 舍佩斯" group-title="罗甲",罗甲: 克卢日大学 vs 舍佩斯 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4567851.m3u8%3FtxSecret%3D5988c1b8a1e1afa125ac42f3b5618cbf%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31411_2" tvg-name="克卢日大学 vs 舍佩斯" group-title="罗甲",罗甲: 克卢日大学 vs 舍佩斯 - 高清K
-https://hello.ooo0ooo.top/live/4567851.m3u8
-#EXTINF:-1 tvg-id="qiuba_31758_0" tvg-name="尼菲治巴库 vs 兹拉" group-title="阿塞超",阿塞超: 尼菲治巴库 vs 兹拉 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4595653.m3u8?txSecret=82c61b1677884548e032566528a5b780&txTime=6B0AED60
-#EXTINF:-1 tvg-id="qiuba_31758_1" tvg-name="尼菲治巴库 vs 兹拉" group-title="阿塞超",阿塞超: 尼菲治巴库 vs 兹拉 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4595653.m3u8%3FtxSecret%3D94f2d5c5237269272cda7fd167b2bb0d%26txTime%3D6B09B10A
-#EXTINF:-1 tvg-id="qiuba_31758_2" tvg-name="尼菲治巴库 vs 兹拉" group-title="阿塞超",阿塞超: 尼菲治巴库 vs 兹拉 - 高清K
-https://hello.ooo0ooo.top/live/4595653.m3u8
+#EXTINF:-1 tvg-id="qiuba_32069_0" tvg-name="牙买加 vs 哥斯达黎加" group-title="2029年FIBA美洲杯资格预选赛",2029年FIBA美洲杯资格预选赛: 牙买加 vs 哥斯达黎加 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3961752.m3u8?txSecret=c948c39d710b4781daf9affeee3ec4e9&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_32069_1" tvg-name="牙买加 vs 哥斯达黎加" group-title="2029年FIBA美洲杯资格预选赛",2029年FIBA美洲杯资格预选赛: 牙买加 vs 哥斯达黎加 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3961752.m3u8%3FtxSecret%3D997e961121beab36cad2ff06a9f397b7%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_32069_2" tvg-name="牙买加 vs 哥斯达黎加" group-title="2029年FIBA美洲杯资格预选赛",2029年FIBA美洲杯资格预选赛: 牙买加 vs 哥斯达黎加 - 高清K
+https://hello.ooo0ooo.top/live/3961752.m3u8
+#EXTINF:-1 tvg-id="qiuba_31723_0" tvg-name="堪萨斯大学 vs 维兰诺瓦大学" group-title="NCAA",NCAA: 堪萨斯大学 vs 维兰诺瓦大学 - 高清K
+https://hello.ooo0ooo.top/live/3949667.m3u8
+#EXTINF:-1 tvg-id="qiuba_31724_0" tvg-name="伊利诺伊大学 vs 西肯塔基" group-title="NCAA",NCAA: 伊利诺伊大学 vs 西肯塔基 - 高清K
+https://hello.ooo0ooo.top/live/3949665.m3u8
+#EXTINF:-1 tvg-id="qiuba_31725_0" tvg-name="印第安纳大学 vs 柏林格林大学" group-title="NCAA",NCAA: 印第安纳大学 vs 柏林格林大学 - 高清K
+https://hello.ooo0ooo.top/live/3951922.m3u8
+#EXTINF:-1 tvg-id="qiuba_31773_0" tvg-name="加州圣玛丽大学 vs 德克萨斯大学" group-title="NCAA",NCAA: 加州圣玛丽大学 vs 德克萨斯大学 - 高清K
+https://hello.ooo0ooo.top/live/3961800.m3u8
+#EXTINF:-1 tvg-id="qiuba_32048_0" tvg-name="杨斯镇州立 vs 布莱恩特斯特拉顿学院俄亥俄分校" group-title="NCAA",NCAA: 杨斯镇州立 vs 布莱恩特斯特拉顿学院俄亥俄分校 - 高清K
+https://hello.ooo0ooo.top/live/3956852.m3u8
+#EXTINF:-1 tvg-id="qiuba_32049_0" tvg-name="圣约翰大学 vs 爱荷华州立" group-title="NCAA",NCAA: 圣约翰大学 vs 爱荷华州立 - 高清K
+https://hello.ooo0ooo.top/live/3961807.m3u8
+#EXTINF:-1 tvg-id="qiuba_32058_0" tvg-name="美国大学 vs 拉德福德大学" group-title="NCAA",NCAA: 美国大学 vs 拉德福德大学 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3949660.m3u8%3FtxSecret%3D94ef612afc36e1bf397e74f664990dde%26txTime%3D6B0A269A
+#EXTINF:-1 tvg-id="qiuba_32058_1" tvg-name="美国大学 vs 拉德福德大学" group-title="NCAA",NCAA: 美国大学 vs 拉德福德大学 - 高清K
+https://hello.ooo0ooo.top/live/3949660.m3u8
+#EXTINF:-1 tvg-id="qiuba_32059_0" tvg-name="波士顿学院 vs 辛辛那提大学" group-title="NCAA",NCAA: 波士顿学院 vs 辛辛那提大学 - 高清B
+https://pul-tenm.gkykp.com/live/sd-2-3953437.m3u8?txSecret=0d9a20ba31732eab5366da6f8e094766&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_32059_1" tvg-name="波士顿学院 vs 辛辛那提大学" group-title="NCAA",NCAA: 波士顿学院 vs 辛辛那提大学 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3953437.m3u8%3FtxSecret%3D61d275f2da7f5b2486f251360b8aea75%26txTime%3D6B0A269A
+#EXTINF:-1 tvg-id="qiuba_32059_2" tvg-name="波士顿学院 vs 辛辛那提大学" group-title="NCAA",NCAA: 波士顿学院 vs 辛辛那提大学 - 高清K
+https://hello.ooo0ooo.top/live/3953437.m3u8
+#EXTINF:-1 tvg-id="qiuba_32060_0" tvg-name="拉法叶学院 vs 尼亚加拉大学" group-title="NCAA",NCAA: 拉法叶学院 vs 尼亚加拉大学 - 高清K
+https://hello.ooo0ooo.top/live/3953576.m3u8
+#EXTINF:-1 tvg-id="qiuba_31731_0" tvg-name="牙买加女足 vs 哥斯达黎加女足" group-title="世女美预",世女美预: 牙买加女足 vs 哥斯达黎加女足 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4549790.m3u8?txSecret=1522f623ff798f85c240e35175dccab1&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31731_1" tvg-name="牙买加女足 vs 哥斯达黎加女足" group-title="世女美预",世女美预: 牙买加女足 vs 哥斯达黎加女足 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4549790.m3u8%3FtxSecret%3D5ce70ef67c4f64e3c01de635ad1f68c9%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31731_2" tvg-name="牙买加女足 vs 哥斯达黎加女足" group-title="世女美预",世女美预: 牙买加女足 vs 哥斯达黎加女足 - 高清K
+https://hello.ooo0ooo.top/live/4549790.m3u8
+#EXTINF:-1 tvg-id="qiuba_31530_0" tvg-name="智利 vs 墨西哥" group-title="世预美",世预美: 智利 vs 墨西哥 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-2-3931133.m3u8?txSecret=81a982470eb2930b97cfb98a5ffdfac6&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31530_1" tvg-name="智利 vs 墨西哥" group-title="世预美",世预美: 智利 vs 墨西哥 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931133.m3u8%3FtxSecret%3Dca0194a6c461db0bca25a30ed190717b%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31530_2" tvg-name="智利 vs 墨西哥" group-title="世预美",世预美: 智利 vs 墨西哥 - 高清V2
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931133.m3u8%3FtxSecret%3D5c8e17438e2c279e323cfc3e59c173ac%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31530_3" tvg-name="智利 vs 墨西哥" group-title="世预美",世预美: 智利 vs 墨西哥 - 高清K
+https://hello.ooo0ooo.top/live/3931133.m3u8
+#EXTINF:-1 tvg-id="qiuba_31535_0" tvg-name="巴西 vs 美国" group-title="世预美",世预美: 巴西 vs 美国 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-2-3931132.m3u8?txSecret=0e1fd6f8737b78654a64ea687301c3d6&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31535_1" tvg-name="巴西 vs 美国" group-title="世预美",世预美: 巴西 vs 美国 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-2-3931132.m3u8%3FtxSecret%3D3b2e9d3a3db147831b7e328d29bd600d%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31535_2" tvg-name="巴西 vs 美国" group-title="世预美",世预美: 巴西 vs 美国 - 高清V2
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931132.m3u8%3FtxSecret%3Dcd99c48d0e64b391c8a0002a7ea95872%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31535_3" tvg-name="巴西 vs 美国" group-title="世预美",世预美: 巴西 vs 美国 - 高清K
+https://hello.ooo0ooo.top/live/3931132.m3u8
+#EXTINF:-1 tvg-id="qiuba_31536_0" tvg-name="蒙特维多竞技 vs 蒙得维的亚" group-title="乌拉甲",乌拉甲: 蒙特维多竞技 vs 蒙得维的亚 - 高清K
+https://hello.ooo0ooo.top/live/4671948.m3u8
+#EXTINF:-1 tvg-id="qiuba_31537_0" tvg-name="卡利体育会 vs 布卡拉曼加" group-title="哥伦甲",哥伦甲: 卡利体育会 vs 布卡拉曼加 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4671058.m3u8?txSecret=93c051247b22de1911dc40ac308ab5fc&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31537_1" tvg-name="卡利体育会 vs 布卡拉曼加" group-title="哥伦甲",哥伦甲: 卡利体育会 vs 布卡拉曼加 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4671058.m3u8%3FtxSecret%3D4586eb006e3ff9a693afd63ea4a81f99%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31537_2" tvg-name="卡利体育会 vs 布卡拉曼加" group-title="哥伦甲",哥伦甲: 卡利体育会 vs 布卡拉曼加 - 高清K
+https://hello.ooo0ooo.top/live/4671058.m3u8
+#EXTINF:-1 tvg-id="qiuba_31532_0" tvg-name="卢克尼奥竞技 vs 亚松森奥林匹亚" group-title="巴拉甲",巴拉甲: 卢克尼奥竞技 vs 亚松森奥林匹亚 - 高清K
+https://hello.ooo0ooo.top/live/4631246.m3u8
+#EXTINF:-1 tvg-id="qiuba_31534_0" tvg-name="维拉诺瓦 vs 戈亚尼亚竞技" group-title="巴西乙",巴西乙: 维拉诺瓦 vs 戈亚尼亚竞技 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4669860.m3u8?txSecret=0ac89302ed7bff2b571b2755a6ee82e5&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31534_1" tvg-name="维拉诺瓦 vs 戈亚尼亚竞技" group-title="巴西乙",巴西乙: 维拉诺瓦 vs 戈亚尼亚竞技 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4669860.m3u8%3FtxSecret%3Dc781e7b06c497dfd91424b70c15cb9b1%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31534_2" tvg-name="维拉诺瓦 vs 戈亚尼亚竞技" group-title="巴西乙",巴西乙: 维拉诺瓦 vs 戈亚尼亚竞技 - 高清K
+https://hello.ooo0ooo.top/live/4669860.m3u8
+#EXTINF:-1 tvg-id="qiuba_31531_0" tvg-name="弗鲁米嫩塞 vs 克鲁塞罗" group-title="巴西甲",巴西甲: 弗鲁米嫩塞 vs 克鲁塞罗 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4465889.m3u8?txSecret=24c9033d6d784b9cd5fa3d2af0ca081c&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31531_1" tvg-name="弗鲁米嫩塞 vs 克鲁塞罗" group-title="巴西甲",巴西甲: 弗鲁米嫩塞 vs 克鲁塞罗 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4465889.m3u8%3FtxSecret%3D228bb105eb717397e95275c96303736a%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31531_2" tvg-name="弗鲁米嫩塞 vs 克鲁塞罗" group-title="巴西甲",巴西甲: 弗鲁米嫩塞 vs 克鲁塞罗 - 高清K
+https://hello.ooo0ooo.top/live/4465889.m3u8
+#EXTINF:-1 tvg-id="qiuba_31533_0" tvg-name="石油独立 vs 奥鲁罗" group-title="玻利甲",玻利甲: 石油独立 vs 奥鲁罗 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4661458.m3u8?txSecret=4efcbf9ecaf5ccbe27d48e3c2143366f&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31533_1" tvg-name="石油独立 vs 奥鲁罗" group-title="玻利甲",玻利甲: 石油独立 vs 奥鲁罗 - 高清V
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4661458.m3u8%3FtxSecret%3Da494f477ef44f93468cf4172cb849a7f%26txTime%3D6B0A26D9
+#EXTINF:-1 tvg-id="qiuba_31533_2" tvg-name="石油独立 vs 奥鲁罗" group-title="玻利甲",玻利甲: 石油独立 vs 奥鲁罗 - 高清K
+https://hello.ooo0ooo.top/live/4661458.m3u8
+#EXTINF:-1 tvg-id="qiuba_31529_0" tvg-name="阿特兰大竞技 vs 博利瓦尔" group-title="阿乙",阿乙: 阿特兰大竞技 vs 博利瓦尔 - 高清B
+https://pul-tenm.gkykp.com/live/sd-1-4669959.m3u8?txSecret=557199aaedf2fadf5ddd0953869b4123&txTime=6B0B6308
+#EXTINF:-1 tvg-id="qiuba_31529_1" tvg-name="阿特兰大竞技 vs 博利瓦尔" group-title="阿乙",阿乙: 阿特兰大竞技 vs 博利瓦尔 - 高清K
+https://hello.ooo0ooo.top/live/4669959.m3u8
