@@ -1,11 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/425-v8409.jpg?v=1794310853091" group-title="NFL",NFL | 老鹰 vs 牛仔 | 0-0 | 中文解说21 | 中文解说21
-https://live01-cn-ali.xqnbu.com/live/94813870_tsc.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/3-v310.jpg?v=1794310853091" group-title="世预美",世预美 | 乌拉圭 vs 加拿大 | 33-21 | 直播3 | 直播3
-https://hello.ooo0ooo.top/live/3931131.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/3-v310.jpg?v=1794310853091" group-title="世预美",世预美 | 乌拉圭 vs 加拿大 | 33-21 | 直播3 | 原声1
-https://pul-tenm.gkykp.com/live/sd-2-3931131.m3u8?txSecret=886b811fedcc46c33a2c72a070d9205d&txTime=6B0A0738
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/8-v280.jpg?v=1794310853091" group-title="NCAA",NCAA | 密歇根大学 vs 迈阿密大学 | 70-97 | 直播8 | 直播8
-https://hello.ooo0ooo.top/live/3961577.m3u8
-#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/7-v285.jpg?v=1794310853091" group-title="NCAA",NCAA | 爱荷华州立 vs 田纳西大学 | 48-58 | 直播7 | 直播7
-https://hello.ooo0ooo.top/live/3961580.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/26-v178.jpg?v=1794310853091" group-title="墨西超",墨西超 | 莱昂 vs 蓝十字 | 0-2 | 直播26 | 直播26
+https://hello.ooo0ooo.top/live/4671967.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/26-v178.jpg?v=1794310853091" group-title="墨西超",墨西超 | 莱昂 vs 蓝十字 | 0-2 | 直播26 | 原声5
+https://pul-tenm.gkykp.com/live/hd-en-1-4671967.m3u8?txSecret=34644b7cfccf9c8e764009282ad3d22d&txTime=6B0A59B8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v262.jpg?v=1794310853091" group-title="俱乐部友谊赛",俱乐部友谊赛 | 林同女篮 vs 河内女篮 | 48-69 | 直播4 | 直播4
+https://hello.ooo0ooo.top/live/3961774.m3u8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/4-v262.jpg?v=1794310853091" group-title="俱乐部友谊赛",俱乐部友谊赛 | 林同女篮 vs 河内女篮 | 48-69 | 直播4 | 原声2
+https://pul-tenm.gkykp.com/live/sd-2-3961774.m3u8?txSecret=825cdda173cf117498cc10260432e70c&txTime=6B0A59B8
+#EXTINF:-1 tvg-logo="https://kafeizhibo.cc/static/screenshots/3-v311.jpg?v=1794310853091" group-title="印班超",印班超 | 班加罗尔联 vs 马德拉斯工兵 | 1-1 | 直播3 | 直播3
+https://hello.ooo0ooo.top/live/4671112.m3u8
