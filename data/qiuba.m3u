@@ -1,27 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="qiuba_31414_0" tvg-name="密歇根州立大学 vs 阿肯色大学" group-title="NCAA",NCAA: 密歇根州立大学 vs 阿肯色大学 - 高清K
-https://hello.ooo0ooo.top/live/3953097.m3u8
-#EXTINF:-1 tvg-id="qiuba_31415_0" tvg-name="加州大学洛杉矶分校 vs 加州圣玛丽大学" group-title="NCAA",NCAA: 加州大学洛杉矶分校 vs 加州圣玛丽大学 - 高清K
-https://hello.ooo0ooo.top/live/3949656.m3u8
-#EXTINF:-1 tvg-id="qiuba_31444_0" tvg-name="爱荷华州立 vs 田纳西大学" group-title="NCAA",NCAA: 爱荷华州立 vs 田纳西大学 - 高清K
-https://hello.ooo0ooo.top/live/3961580.m3u8
-#EXTINF:-1 tvg-id="qiuba_31728_0" tvg-name="佐治亚大学 vs 辛辛那提大学" group-title="NCAA",NCAA: 佐治亚大学 vs 辛辛那提大学 - 高清K
-https://hello.ooo0ooo.top/live/3953436.m3u8
-#EXTINF:-1 tvg-id="qiuba_31363_0" tvg-name="乌拉圭 vs 加拿大" group-title="世预美",世预美: 乌拉圭 vs 加拿大 - 高清B
-https://pul-tenm.gkykp.com/live/sd-2-3931131.m3u8?txSecret=b66aa0648ec084035458dd679ca6b8af&txTime=6B0A0BE8
-#EXTINF:-1 tvg-id="qiuba_31363_1" tvg-name="乌拉圭 vs 加拿大" group-title="世预美",世预美: 乌拉圭 vs 加拿大 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-2-3931131.m3u8%3FtxSecret%3D5d6663c22b9da2b8ca4a0ef08dfec0fd%26txTime%3D6B08CFA6
-#EXTINF:-1 tvg-id="qiuba_31363_2" tvg-name="乌拉圭 vs 加拿大" group-title="世预美",世预美: 乌拉圭 vs 加拿大 - 高清K
-https://hello.ooo0ooo.top/live/3931131.m3u8
-#EXTINF:-1 tvg-id="qiuba_31729_0" tvg-name="波特诺山丘 vs 自由队" group-title="巴拉圭杯",巴拉圭杯: 波特诺山丘 vs 自由队 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4670823.m3u8?txSecret=6b532b1a2570f11516c971bd2ec390b6&txTime=6B0A0BE8
-#EXTINF:-1 tvg-id="qiuba_31729_1" tvg-name="波特诺山丘 vs 自由队" group-title="巴拉圭杯",巴拉圭杯: 波特诺山丘 vs 自由队 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4670823.m3u8%3FtxSecret%3D339ddefc32e9d76ba39714467380ca4e%26txTime%3D6B08CFA6
-#EXTINF:-1 tvg-id="qiuba_31729_2" tvg-name="波特诺山丘 vs 自由队" group-title="巴拉圭杯",巴拉圭杯: 波特诺山丘 vs 自由队 - 高清K
-https://hello.ooo0ooo.top/live/4670823.m3u8
-#EXTINF:-1 tvg-id="qiuba_31364_0" tvg-name="圣保罗 vs 雷莫" group-title="巴西甲",巴西甲: 圣保罗 vs 雷莫 - 高清B
-https://pul-tenm.gkykp.com/live/sd-1-4465921.m3u8?txSecret=223e4d949731cfd525341117e9837997&txTime=6B0A0BE8
-#EXTINF:-1 tvg-id="qiuba_31364_1" tvg-name="圣保罗 vs 雷莫" group-title="巴西甲",巴西甲: 圣保罗 vs 雷莫 - 高清V
-https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4465921.m3u8%3FtxSecret%3D868713cd0c25fb09b8438c6b6d1772df%26txTime%3D6B08CFA6
-#EXTINF:-1 tvg-id="qiuba_31364_2" tvg-name="圣保罗 vs 雷莫" group-title="巴西甲",巴西甲: 圣保罗 vs 雷莫 - 高清K
-https://hello.ooo0ooo.top/live/4465921.m3u8
+#EXTINF:-1 tvg-id="qiuba_31447_0" tvg-name="俄勒冈大学 vs 得克萨斯理工大学" group-title="NCAA",NCAA: 俄勒冈大学 vs 得克萨斯理工大学 - 高清K
+https://hello.ooo0ooo.top/live/3961613.m3u8
+#EXTINF:-1 tvg-id="qiuba_31448_0" tvg-name="贝勒大学 vs 冈萨加大学" group-title="NCAA",NCAA: 贝勒大学 vs 冈萨加大学 - 高清K
+https://hello.ooo0ooo.top/live/3961616.m3u8
+#EXTINF:-1 tvg-id="qiuba_31370_0" tvg-name="莱昂 vs 蓝十字" group-title="墨西超",墨西超: 莱昂 vs 蓝十字 - 高清B
+https://pul-tenm.gkykp.com/live/hd-en-1-4671967.m3u8?txSecret=bb838c969fd314ce9c5f3fcdc3168c5a&txTime=6B0A6048
+#EXTINF:-1 tvg-id="qiuba_31370_1" tvg-name="莱昂 vs 蓝十字" group-title="墨西超",墨西超: 莱昂 vs 蓝十字 - 高清V1
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fhd-en-1-4671967.m3u8%3FtxSecret%3Da67b931aedc69fd228af1e6af6895061%26txTime%3D6B0923E8
+#EXTINF:-1 tvg-id="qiuba_31370_2" tvg-name="莱昂 vs 蓝十字" group-title="墨西超",墨西超: 莱昂 vs 蓝十字 - 高清V2
+https://player.on8on8.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4671967.m3u8%3FtxSecret%3Df02b6af4e88e1b4ff1eaf47f0589a25b%26txTime%3D6B0923E8
